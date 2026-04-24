@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { contactEmail } from "@/lib/content";
 import { ActionButton } from "@/components/ui/Button";
 import { FormField } from "@/components/ui/FormField";
 import { Reveal } from "@/components/ui/Reveal";
@@ -50,8 +51,6 @@ function validate(values: FormValues) {
 export function ContactSection() {
   const [values, setValues] = useState<FormValues>(initialValues);
   const [errors, setErrors] = useState<FormErrors>({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
 
   const hasErrors = useMemo(() => Object.keys(errors).length > 0, [errors]);
 
@@ -74,20 +73,21 @@ export function ContactSection() {
     setErrors(nextErrors);
 
     if (Object.keys(nextErrors).length > 0) {
-      setSubmitted(false);
       return;
     }
 
-    setIsSubmitting(true);
-    setSubmitted(false);
+    const messageBody = [
+      `Name: ${values.name}`,
+      `Business: ${values.business}`,
+      `Email: ${values.email}`,
+      `Message: ${values.whatYouNeed}`,
+    ].join("\n");
 
-    await new Promise((resolve) => {
-      window.setTimeout(resolve, 900);
-    });
+    const mailtoUrl = `mailto:${contactEmail}?subject=${encodeURIComponent(
+      "New client inquiry",
+    )}&body=${encodeURIComponent(messageBody)}`;
 
-    setIsSubmitting(false);
-    setSubmitted(true);
-    setValues(initialValues);
+    window.location.href = mailtoUrl;
   };
 
   return (
@@ -150,26 +150,19 @@ export function ContactSection() {
               <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <p
                   className={`text-sm ${
-                    submitted
-                      ? "text-[var(--color-success)]"
-                      : hasErrors
-                        ? "text-rose-300"
-                        : "text-slate-400"
+                    hasErrors ? "text-rose-300" : "text-slate-400"
                   }`}
                   aria-live="polite"
                 >
-                  {submitted
-                    ? "Plan request captured. I will follow up with a cleaner system direction."
-                    : hasErrors
-                      ? "A few fields still need attention."
-                      : "Short, clear answers are enough. No long brief needed."}
+                  {hasErrors
+                    ? "A few fields still need attention."
+                    : "Short, clear answers are enough. No long brief needed."}
                 </p>
                 <ActionButton
                   type="submit"
-                  disabled={isSubmitting}
                   className="w-full sm:w-auto"
                 >
-                  {isSubmitting ? "Sending..." : "Get a quick system plan"}
+                  Get a quick system plan
                 </ActionButton>
               </div>
             </form>

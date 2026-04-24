@@ -1,5 +1,7 @@
 import type { PainPoint, PortfolioItem, ProcessStep, Solution } from "@/lib/types";
 
+export const contactEmail = "cnrakpinar1@gmail.com";
+
 export const navigationLinks = [
   { href: "#services", label: "Services" },
   { href: "#work", label: "Work" },
