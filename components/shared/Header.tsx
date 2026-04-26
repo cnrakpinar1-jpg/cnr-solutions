@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { Logo } from "@/components/Logo";
 
 type NavLink = { href: string; label: string };
 
@@ -10,7 +10,7 @@ type HeaderProps = {
 
 export function Header({ locale, navLinks }: HeaderProps) {
   const otherLocale = locale === "tr" ? "en" : "tr";
-  const otherLabel = locale === "tr" ? "English" : "Türkçe";
+  const otherLabel = locale === "tr" ? "EN" : "TR";
   const ctaHref =
     locale === "tr"
       ? "https://wa.me/905331970462"
@@ -18,17 +18,10 @@ export function Header({ locale, navLinks }: HeaderProps) {
   const ctaLabel = locale === "tr" ? "WhatsApp'tan Yaz" : "Get in Touch";
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/6 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-white/6 bg-[rgba(6,8,22,0.65)] backdrop-blur-md">
       <div className="container-shell flex h-16 items-center justify-between gap-4 sm:h-18">
         <Link href={`/${locale}`} className="flex-shrink-0">
-          <Image
-            src="/cnr-solutions-logo.png"
-            alt="CNR Solutions"
-            width={140}
-            height={40}
-            className="object-contain"
-            priority
-          />
+          <Logo variant="light" size="md" />
         </Link>
 
         <nav aria-label="Primary navigation" className="hidden md:block">
@@ -49,7 +42,8 @@ export function Header({ locale, navLinks }: HeaderProps) {
         <div className="flex items-center gap-3">
           <Link
             href={`/${otherLocale}`}
-            className="hidden text-sm font-medium text-slate-400 transition-colors hover:text-white sm:block"
+            className="hidden items-center justify-center rounded-md border border-white/10 px-2.5 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-slate-400 transition-colors hover:border-white/20 hover:text-white sm:inline-flex"
+            aria-label={locale === "tr" ? "Switch to English" : "Türkçe sayfaya geç"}
           >
             {otherLabel}
           </Link>

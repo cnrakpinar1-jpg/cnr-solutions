@@ -11,9 +11,6 @@ export const metadata: Metadata = {
   title: "CNR Solutions | AI-Assisted Business Systems",
   description:
     "CNR Solutions builds AI-assisted business systems — mini CRMs, client portals, booking systems, dashboards and workflow automation for modern companies.",
-  icons: {
-    icon: "/cnr-solutions-logo.png",
-  },
 };
 
 export default function RootLayout({

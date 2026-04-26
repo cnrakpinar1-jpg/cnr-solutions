@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { Logo } from "@/components/Logo";
 
 type FooterProps = {
   locale: "tr" | "en";
@@ -16,16 +16,10 @@ export function Footer({ locale }: FooterProps) {
       <div className="container-shell">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div>
-            <Link href={`/${locale}`}>
-              <Image
-                src="/cnr-solutions-logo.png"
-                alt="CNR Solutions"
-                width={100}
-                height={28}
-                className="object-contain opacity-80 transition-opacity hover:opacity-100"
-              />
+            <Link href={`/${locale}`} className="inline-block">
+              <Logo variant="light" size="sm" />
             </Link>
-            <p className="mt-3 max-w-xs text-sm leading-6 text-[var(--color-text-muted)]">
+            <p className="mt-4 max-w-xs text-sm leading-6 text-[var(--color-text-muted)]">
               {brandLine}
             </p>
           </div>
@@ -50,7 +44,7 @@ export function Footer({ locale }: FooterProps) {
 
         <div className="mt-8 border-t border-white/6 pt-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-slate-600">
-            © {new Date().getFullYear()} CNR Solutions. All rights reserved.
+            © {new Date().getFullYear()} CNR Solutions · AI Business Systems
           </p>
           <Link
             href="/"

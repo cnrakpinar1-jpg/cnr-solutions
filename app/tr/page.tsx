@@ -7,6 +7,7 @@ import { TrProblem } from "@/components/tr/TrProblem";
 import { TrSolution } from "@/components/tr/TrSolution";
 import { TrWho } from "@/components/tr/TrWho";
 import { TrProjects } from "@/components/tr/TrProjects";
+import { TrCaseStudies } from "@/components/tr/TrCaseStudies";
 import { TrWhy } from "@/components/tr/TrWhy";
 import { TrProcess } from "@/components/tr/TrProcess";
 import { TrWorkingModel } from "@/components/tr/TrWorkingModel";
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
 const navLinks = [
   { href: "#cozumler", label: "Çözümler" },
   { href: "#projeler", label: "Projeler" },
+  { href: "#vaka-analizleri", label: "Vaka Analizleri" },
   { href: "#surec", label: "Süreç" },
   { href: "#iletisim", label: "İletişim" },
 ];
@@ -40,6 +42,7 @@ export default function TrPage() {
       <TrSolution />
       <TrWho />
       <TrProjects />
+      <TrCaseStudies />
       <TrWhy />
       <TrProcess />
       <TrWorkingModel />
