@@ -2,9 +2,70 @@ import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
-import { SurfaceCard } from "@/components/ui/SurfaceCard";
 import { Tag } from "@/components/ui/Tag";
-import { portfolioItems } from "@/lib/content";
+
+const projectItems = [
+  {
+    title: "Lead Tracker Mini CRM",
+    category: "CRM / Satış Takibi",
+    description:
+      "Gelen müşteri taleplerini yakalamak, sınıflandırmak ve takip sürecine almak için sade bir lead takip sistemi. Özellikle WhatsApp, form ve sosyal medya üzerinden talep alan küçük işletmeler için uygundur.",
+    bestFor: "Emlak ofisleri, hizmet işletmeleri, küçük satış ekipleri.",
+    repo: "lead-tracker-mini-crm",
+    githubUrl: "https://github.com/cnrakpinar1-jpg/lead-tracker-mini-crm",
+    demoUrl: "https://cnrakpinar1-jpg.github.io/lead-tracker-mini-crm/",
+  },
+  {
+    title: "Client Intake System",
+    category: "Müşteri Giriş Akışı",
+    description:
+      "Yeni müşteri taleplerini düzenli şekilde almak, ilk bilgileri toplamak ve süreci standart hale getirmek için geliştirilmiş giriş sistemi. Dağınık mesaj trafiğini daha kontrollü bir akışa çevirir.",
+    bestFor: "Klinikler, danışmanlık firmaları, hizmet işletmeleri.",
+    repo: "client-intake-system",
+    githubUrl: "https://github.com/cnrakpinar1-jpg/client-intake-system",
+    demoUrl: "https://cnrakpinar1-jpg.github.io/client-intake-system/",
+  },
+  {
+    title: "CNR Mini CRM",
+    category: "CRM / Müşteri Akışı",
+    description:
+      "Potansiyel müşterileri, görüşme notlarını, durumları ve takip aşamalarını tek panelde yönetmek için hazırlanmış mini CRM yapısı. İşletme sahibine müşteri süreci üzerinde net görünürlük sağlar.",
+    bestFor: "KOBİ’ler, satış ekipleri, operasyon yöneten işletmeler.",
+    repo: "cnr-mini-crm",
+    githubUrl: "https://github.com/cnrakpinar1-jpg/cnr-mini-crm",
+    demoUrl: "https://cnrakpinar1-jpg.github.io/cnr-mini-crm/",
+  },
+  {
+    title: "CNR Booking System",
+    category: "Randevu / Admin Panel",
+    description:
+      "Randevulu çalışan işletmeler için müşteri randevularını, durumları ve takip sürecini yönetmeye yarayan admin paneli. Manuel randevu karmaşasını daha düzenli bir yapıya taşır.",
+    bestFor: "Klinikler, güzellik merkezleri, danışmanlık firmaları.",
+    repo: "cnr-booking-system",
+    githubUrl: "https://github.com/cnrakpinar1-jpg/cnr-booking-system",
+    demoUrl: "https://cnrakpinar1-jpg.github.io/cnr-booking-system/",
+  },
+  {
+    title: "CNR Analytics Dashboard",
+    category: "Dashboard / Operasyon",
+    description:
+      "İşletmenin temel metriklerini, müşteri durumlarını ve operasyon performansını tek panelde izlemeye yarayan dashboard. Karar almayı kolaylaştıran sade ve okunabilir bir yönetim ekranı sunar.",
+    bestFor: "Operasyonunu ölçmek isteyen işletmeler.",
+    repo: "cnr-analytics-dashboard",
+    githubUrl: "https://github.com/cnrakpinar1-jpg/cnr-analytics-dashboard",
+    demoUrl: "https://cnrakpinar1-jpg.github.io/cnr-analytics-dashboard/",
+  },
+  {
+    title: "CNR Client Portal",
+    category: "Client Portal / Müşteri Deneyimi",
+    description:
+      "Müşterinin kendi proje, talep, doküman veya süreç durumunu takip edebildiği profesyonel müşteri portalı. Hizmet sağlayıcılar için daha güven veren ve düzenli bir müşteri deneyimi oluşturur.",
+    bestFor: "Ajanslar, danışmanlık firmaları, hizmet sağlayıcılar.",
+    repo: "cnr-client-portal",
+    githubUrl: "https://github.com/cnrakpinar1-jpg/cnr-client-portal",
+    demoUrl: "https://cnrakpinar1-jpg.github.io/cnr-client-portal/",
+  },
+];
 
 export function TrProjects() {
   return (
@@ -13,22 +74,32 @@ export function TrProjects() {
         <SectionHeading
           eyebrow="Demo Sistemler"
           title="Geliştirdiğimiz sistem örnekleri"
-          description="Aşağıdaki sistemler, gerçek işletme problemlerini çözmek için geliştirdiğimiz demo sistemler ve çözüm prototipleridir."
+          description="Aşağıdaki çalışmalar; müşteri takibi, randevu, operasyon görünürlüğü ve müşteri deneyimi gibi gerçek işletme problemleri için hazırlanmış demo sistemler ve çözüm prototipleridir."
         />
       </Reveal>
 
-      <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        {portfolioItems.map((item, index) => (
+      <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {projectItems.map((item, index) => (
           <Reveal key={item.title} delay={index * 70}>
-            <SurfaceCard className="group flex h-full flex-col rounded-[24px] hover:-translate-y-1 hover:border-[rgba(125,211,252,0.32)]">
+            <article className="surface group flex h-full flex-col rounded-[28px] p-6 transition-all hover:-translate-y-1 hover:border-[rgba(125,211,252,0.32)] hover:shadow-[0_28px_90px_rgba(2,6,23,0.5)] sm:p-7">
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
                 {item.repo}
               </p>
-              <h3 className="mt-3 text-xl font-semibold text-white">{item.title}</h3>
+              <h3 className="mt-3 text-2xl font-semibold tracking-tight text-white">
+                {item.title}
+              </h3>
               <div className="mt-4">
                 <Tag>{item.category}</Tag>
               </div>
-              <p className="mt-4 text-base leading-7">{item.description}</p>
+              <p className="mt-5 text-base leading-7 text-slate-300">{item.description}</p>
+
+              <div className="mt-6 rounded-2xl border border-white/8 bg-white/[0.025] px-4 py-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                  Kimler için uygun?
+                </p>
+                <p className="mt-2 text-sm leading-6 text-slate-300">{item.bestFor}</p>
+              </div>
+
               <div className="mt-auto pt-6">
                 <div className="flex flex-col gap-3 sm:flex-row">
                   <Button
@@ -50,7 +121,7 @@ export function TrProjects() {
                   </Button>
                 </div>
               </div>
-            </SurfaceCard>
+            </article>
           </Reveal>
         ))}
       </div>

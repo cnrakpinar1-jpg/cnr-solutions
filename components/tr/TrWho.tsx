@@ -10,7 +10,7 @@ const targets = [
   },
   {
     title: "Güzellik Merkezleri",
-    description: "Randevu yönetimi, müşteri takibi ve tekrar ziyaret hatırlatmalarını otomatize edin.",
+    description: "Randevu yönetimi, danışan takibi ve tekrar görüşme hatırlatmalarını sisteme bağlayın.",
   },
   {
     title: "Diş Klinikleri",
@@ -18,7 +18,7 @@ const targets = [
   },
   {
     title: "Emlak Ofisleri",
-    description: "Lead'leri kaçırmayın. Hangi müşteriyle ne konuşulduğunu kayıt altına alın.",
+    description: "Sıcak lead’leri, portföy ilgisini ve geri arama sürecini tek panelde takip edin.",
   },
   {
     title: "Danışmanlık Firmaları",

@@ -16,7 +16,12 @@ import { TrCta } from "@/components/tr/TrCta";
 export const metadata: Metadata = {
   title: "CNR Solutions | İşletmeler İçin Yapay Zekâ Destekli İş Sistemleri",
   description:
-    "CNR Solutions; klinikler, güzellik merkezleri, emlak ofisleri ve hizmet işletmeleri için mini CRM, randevu sistemi, client portal ve yapay zekâ destekli otomasyon sistemleri geliştirir.",
+    "CNR Solutions; KOBİ’ler, klinikler, güzellik merkezleri, diş klinikleri, emlak ofisleri ve hizmet işletmeleri için mini CRM, dashboard, randevu paneli, client portal ve yapay zekâ destekli operasyon sistemleri kurar.",
+  openGraph: {
+    title: "CNR Solutions — İşletmeleri Yapay Zekâ Çağına Taşıyan Sistemler",
+    description:
+      "Dağınık müşteri taleplerini, manuel süreçleri ve takip karmaşasını sade, ölçülebilir ve yapay zekâ destekli iş sistemlerine dönüştürüyoruz.",
+  },
 };
 
 const navLinks = [

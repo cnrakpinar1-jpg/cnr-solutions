@@ -9,13 +9,11 @@ type HeaderProps = {
 };
 
 export function Header({ locale, navLinks }: HeaderProps) {
-  const otherLocale = locale === "tr" ? "en" : "tr";
-  const otherLabel = locale === "tr" ? "EN" : "TR";
   const ctaHref =
     locale === "tr"
-      ? "https://wa.me/905331970462"
+      ? "https://wa.me/905331970462?text=Merhaba%2C%20CNR%20Solutions%20sitesinden%20geliyorum.%20%C4%B0%C5%9Fletmem%20i%C3%A7in%20bir%20sistem%20konu%C5%9Fmak%20istiyorum."
       : `mailto:cnrakpinar1@gmail.com`;
-  const ctaLabel = locale === "tr" ? "WhatsApp'tan Yaz" : "Get in Touch";
+  const ctaLabel = locale === "tr" ? "WhatsApp’tan Yaz" : "Get in Touch";
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/6 bg-[rgba(6,8,22,0.65)] backdrop-blur-md">
@@ -40,13 +38,41 @@ export function Header({ locale, navLinks }: HeaderProps) {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link
-            href={`/${otherLocale}`}
-            className="hidden items-center justify-center rounded-md border border-white/10 px-2.5 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-slate-400 transition-colors hover:border-white/20 hover:text-white sm:inline-flex"
-            aria-label={locale === "tr" ? "Switch to English" : "Türkçe sayfaya geç"}
+          <div
+            className="hidden items-center rounded-full border border-white/10 bg-white/[0.03] p-0.5 sm:flex"
+            aria-label="Language selector"
           >
-            {otherLabel}
-          </Link>
+            {locale === "tr" ? (
+              <span
+                aria-current="true"
+                className="rounded-full bg-[var(--color-accent)] px-2.5 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-slate-950"
+              >
+                TR
+              </span>
+            ) : (
+              <Link
+                href="/tr"
+                className="rounded-full px-2.5 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-slate-400 transition-colors hover:text-white"
+              >
+                TR
+              </Link>
+            )}
+            {locale === "en" ? (
+              <span
+                aria-current="true"
+                className="rounded-full bg-[var(--color-accent)] px-2.5 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-slate-950"
+              >
+                EN
+              </span>
+            ) : (
+              <Link
+                href="/en"
+                className="rounded-full px-2.5 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-slate-400 transition-colors hover:text-white"
+              >
+                EN
+              </Link>
+            )}
+          </div>
           <a
             href={ctaHref}
             target={locale === "tr" ? "_blank" : undefined}

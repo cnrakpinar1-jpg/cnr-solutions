@@ -3,6 +3,9 @@ import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
 
+const whatsappUrl =
+  "https://wa.me/905331970462?text=Merhaba%2C%20CNR%20Solutions%20sitesinden%20geliyorum.%20%C4%B0%C5%9Fletmemdeki%20m%C3%BC%C5%9Fteri%20ak%C4%B1%C5%9F%C4%B1n%C4%B1%20sisteme%20%C3%A7evirmek%20istiyorum.";
+
 const bullets = [
   "Gelen talepleri tek yerde toplarız.",
   "Müşterileri durumlarına göre takip edilebilir hale getiririz.",
@@ -40,11 +43,11 @@ export function TrCuriosity() {
 
           <div className="mt-8">
             <Button
-              href="https://wa.me/905331970462"
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
-              İşletmem için nasıl çalışır?
+              İşletmem İçin Sistem Planla
             </Button>
           </div>
         </Reveal>

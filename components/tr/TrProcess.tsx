@@ -7,31 +7,30 @@ const steps = [
     step: "01",
     title: "Problemi anlıyoruz",
     description:
-      "İş akışını, sürtüşme noktalarını ve sistemin gerçekte yapması gereken işi haritalandırıyoruz.",
+      "Müşteri nereden geliyor, nerede kayboluyor, hangi süreç manuel ilerliyor analiz ederiz.",
   },
   {
     step: "02",
     title: "Sistemi tasarlıyoruz",
     description:
-      "Dağınık orta kısmı temiz bir iç araça dönüştürüyoruz: doğru görünümler, mantık ve izinlerle.",
+      "İşletmeye uygun lead, CRM, randevu, portal veya dashboard yapısını planlarız.",
   },
   {
     step: "03",
     title: "İlk versiyonu kuruyoruz",
-    description:
-      "Sistem kullanılabilir bir formda hızla hayata geçirilir. Ekibin mevcut çalışma şekline uyan bir yapıyla.",
+    description: "Hızlı, sade ve kullanılabilir bir MVP geliştiririz.",
   },
   {
     step: "04",
     title: "Test edip iyileştiriyoruz",
     description:
-      "Canlıya geçtikten sonra iş akışını rafine ediyoruz, pürüzleri gideriyoruz ve kaldıraç yarattığı yerleri genişletiyoruz.",
+      "Gerçek kullanımda eksikleri görür, akışı daha verimli hale getiririz.",
   },
   {
     step: "05",
     title: "Destek ve geliştirme",
     description:
-      "İşletmeniz büyüdükçe sistem de büyür. Süregelen destek ve yeni ihtiyaçlara göre geliştirme sağlıyoruz.",
+      "İhtiyaca göre aylık destek, yeni özellik ve optimizasyon sunarız.",
   },
 ];
 
@@ -42,19 +41,20 @@ export function TrProcess() {
         <SectionHeading
           eyebrow="Süreç"
           title="Nasıl çalışıyoruz?"
+          description="Önce işi ve müşteri akışını netleştiririz. Sonra işletmenin gerçekten kullanacağı sade bir sistemi adım adım kurarız."
         />
       </Reveal>
 
       <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
         {steps.map((step, index) => (
           <Reveal key={step.step} delay={index * 80}>
-            <div className="flex flex-col gap-4 rounded-2xl border border-white/8 bg-white/[0.03] p-5 lg:col-span-1">
-              <div className="text-2xl font-bold tracking-tight text-[var(--color-accent)]">
+            <div className="surface group flex h-full flex-col gap-5 rounded-[24px] p-5 transition-all hover:-translate-y-1 hover:border-[rgba(125,211,252,0.28)] lg:col-span-1">
+              <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-[rgba(125,211,252,0.2)] bg-[rgba(125,211,252,0.08)] text-lg font-bold tracking-tight text-[var(--color-accent)]">
                 {step.step}
               </div>
               <div>
                 <h3 className="text-base font-semibold text-white">{step.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-400">{step.description}</p>
+                <p className="mt-3 text-sm leading-6 text-slate-400">{step.description}</p>
               </div>
             </div>
           </Reveal>

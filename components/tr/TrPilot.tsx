@@ -10,9 +10,12 @@ type SectorCase = {
   systemPoints: string[];
   outcome: string;
   cta: string;
+  ctaMessage: string;
 };
 
-const whatsappUrl = "https://wa.me/905331970462";
+function whatsappLink(message: string) {
+  return `https://wa.me/905331970462?text=${encodeURIComponent(message)}`;
+}
 
 const sectorCases: SectorCase[] = [
   {
@@ -31,6 +34,8 @@ const sectorCases: SectorCase[] = [
     outcome:
       "Daha düzenli hasta takibi, daha hızlı dönüş ve daha profesyonel danışma süreci.",
     cta: "Benzer sistemi konuşalım",
+    ctaMessage:
+      "Merhaba, diş kliniği için hasta talebi ve ön görüşme sistemi hakkında konuşmak istiyorum.",
   },
   {
     label: "Demo Sistem Taslağı",
@@ -48,6 +53,8 @@ const sectorCases: SectorCase[] = [
     outcome:
       "Daha düzenli randevu yönetimi, daha iyi takip ve daha az unutulan danışan.",
     cta: "Güzellik merkezi için demo iste",
+    ctaMessage:
+      "Merhaba, güzellik merkezi için danışan, paket ve randevu akışı demosu hakkında konuşmak istiyorum.",
   },
   {
     label: "Pilot Çalışma Senaryosu",
@@ -65,6 +72,8 @@ const sectorCases: SectorCase[] = [
     outcome:
       "Daha görünür hasta akışı, daha net takip ve daha kontrollü operasyon.",
     cta: "Klinik sistemini planlayalım",
+    ctaMessage:
+      "Merhaba, klinik için hasta başvuru ve takip paneli planlamak istiyorum.",
   },
   {
     label: "Sektör Değerlendirmesi",
@@ -82,6 +91,8 @@ const sectorCases: SectorCase[] = [
     outcome:
       "Daha az kaçan lead, daha düzenli müşteri takibi ve daha profesyonel portföy yönetimi.",
     cta: "Emlak ofisi için sistem konuşalım",
+    ctaMessage:
+      "Merhaba, emlak ofisi için ilan lead’i ve müşteri takip sistemi hakkında konuşmak istiyorum.",
   },
 ];
 
@@ -167,7 +178,7 @@ export function TrPilot() {
 
               <div className="mt-auto pt-7">
                 <Button
-                  href={whatsappUrl}
+                  href={whatsappLink(item.ctaMessage)}
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="secondary"
@@ -198,12 +209,14 @@ export function TrPilot() {
             </div>
 
             <Button
-              href={whatsappUrl}
+              href={whatsappLink(
+                "Merhaba, işletmem için sektör odaklı bir sistem taslağı hazırlatmak istiyorum.",
+              )}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full shrink-0 sm:w-auto"
             >
-              WhatsApp&apos;tan Yaz
+              WhatsApp’tan Yaz
             </Button>
           </div>
         </div>

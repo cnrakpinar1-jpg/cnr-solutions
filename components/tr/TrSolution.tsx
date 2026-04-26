@@ -7,7 +7,7 @@ const solutions = [
   {
     title: "Lead Toplama Sistemi",
     description:
-      "WhatsApp, Instagram DM, form ve telefon gibi farklı kanallardan gelen talepleri tek bir akışa toplarız. Hiçbir müşteri kaçmaz.",
+      "WhatsApp, Instagram DM, form ve telefon gibi farklı kanallardan gelen talepleri tek bir akışa toplarız. Kaçan lead’leri azaltır, takip sürecini görünür hale getiririz.",
   },
   {
     title: "Mini CRM",
@@ -15,22 +15,22 @@ const solutions = [
       "Müşterileri durumlarına göre takip edin. Kim nerede, hangi aşamada, ne zaman takip edilmesi gerekiyor — hepsi bir panelde.",
   },
   {
-    title: "Randevu / Booking Paneli",
+    title: "Randevu / Admin Panel",
     description:
       "Randevu taleplerini, onayları ve iptal süreçlerini yönetin. Manuel koordinasyon yerine sistemin yönettiği bir akış.",
   },
   {
-    title: "Client Portal",
+    title: "Müşteri Portalı",
     description:
       "Müşterilerinize teklif, dosya, güncelleme ve iletişim için tek bir temiz panel. E-posta karmaşasından kurtulun.",
   },
   {
-    title: "Admin Dashboard",
+    title: "Yönetim Dashboard’u",
     description:
-      "İşletmenizin tüm operasyonunu tek ekrandan görün. Lead'ler, randevular, satışlar ve ekip durumu — net ve hızlı.",
+      "İşletmenizin tüm operasyonunu tek ekrandan görün. Lead’ler, randevular, satışlar ve ekip durumu net bir yönetim ekranında toplansın.",
   },
   {
-    title: "AI Assistant & Otomasyon",
+    title: "AI Destekli Asistan ve Otomasyon",
     description:
       "Gelen talepleri özetleyin, sınıflandırın ve cevap önerileri alın. Yapay zekâyı vitrin süsü değil, iş akışı aracı olarak kullanın.",
   },
