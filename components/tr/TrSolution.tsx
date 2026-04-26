@@ -17,22 +17,22 @@ const solutions = [
   {
     title: "Randevu / Admin Panel",
     description:
-      "Randevu taleplerini, onayları ve iptal süreçlerini düzenleriz. Manuel koordinasyonu sistemli ve takip edilebilir bir akışa çeviririz.",
+      "Randevu taleplerini, onayları ve iptal süreçlerini düzenli bir akışa taşırız. Manuel koordinasyonu sistemli ve takip edilebilir hale getiririz.",
   },
   {
     title: "Müşteri Portalı",
     description:
-      "Teklif, dosya, güncelleme ve iletişimi müşterileriniz için tek bir temiz panelde toplarız. Daha düzenli ve güven veren bir müşteri deneyimi kurarız.",
+      "Müşterilerinize teklif, dosya, güncelleme ve iletişim için tek bir temiz panel sunarız. E-posta ve mesaj karmaşasını azaltırız.",
   },
   {
     title: "Yönetim Dashboard’u",
     description:
-      "İşletmenizin tüm operasyonunu tek ekranda gösteririz. Lead’leri, randevuları, satışları ve ekip durumunu net bir yönetim panelinde toplarız.",
+      "İşletmenizin tüm operasyonunu tek ekrandan görünür hale getiririz. Lead’leri, randevuları, satışları ve ekip durumunu net bir yönetim panelinde toplarız.",
   },
   {
     title: "AI Destekli Asistan ve Otomasyon",
     description:
-      "Gelen talepleri özetleyen, sınıflandıran ve cevap önerisi üreten iş akışları kurarız. Yapay zekâyı vitrin süsü değil, iş akışı aracı olarak kullanırız.",
+      "Gelen talepleri özetleyen, sınıflandıran ve cevap önerileri üreten yapay zekâ destekli akışlar kurarız. Yapay zekâyı vitrin süsü değil, iş akışı aracı olarak kullanırız.",
   },
 ];
 

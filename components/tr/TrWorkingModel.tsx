@@ -23,7 +23,7 @@ const models = [
   {
     title: "Custom AI Business System",
     description:
-      "Müşteri portalı, gelişmiş dashboard, AI destekli asistan, özel iş akışları ve entegrasyonlarla işletmeye özel sistem kurarız.",
+      "Müşteri portalı, gelişmiş dashboard, AI destekli asistan, özel iş akışı ve entegrasyonlarla işletmeye özel sistem kurarız.",
     forText:
       "Daha profesyonel, ölçeklenebilir ve yapay zekâ destekli yapı isteyen işletmeler.",
   },

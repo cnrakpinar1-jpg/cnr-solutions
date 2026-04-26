@@ -11,7 +11,7 @@ const content = {
     stats: [
       ["42", "Active requests"],
       ["18m", "Avg response"],
-      ["94%", "Attendance"],
+      ["Demo flow", "Status"],
     ],
     activity: [
       ["New inquiry captured", "Form -> routing -> owner assigned"],
@@ -36,7 +36,7 @@ const content = {
     stats: [
       ["42", "Açık talep"],
       ["18 dk", "Ort. dönüş"],
-      ["Demo", "Akış durumu"],
+      ["Demo akış", "Örnek durum"],
     ],
     activity: [
       ["Yeni talep yakalandı", "Form -> yönlendirme -> sorumlu atandı"],
