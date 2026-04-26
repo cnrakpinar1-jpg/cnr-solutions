@@ -182,17 +182,6 @@ export function TrCaseStudies() {
       </div>
 
       <Reveal delay={200}>
-        <p className="mt-10 max-w-3xl text-xs leading-6 text-slate-500">
-          <span className="font-semibold uppercase tracking-[0.18em] text-slate-400">
-            Not:
-          </span>{" "}
-          Bu bölümdeki çalışmalar demo, pilot veya örnek senaryo niteliğindedir.
-          Gerçek müşteri sonuçları, pilot uygulamalar tamamlandıkça ayrıca vaka
-          analizi olarak paylaşılacaktır.
-        </p>
-      </Reveal>
-
-      <Reveal delay={260}>
         <div className="mt-10 flex flex-col items-start gap-5 rounded-3xl border border-white/8 bg-[rgba(12,18,34,0.5)] p-6 sm:flex-row sm:items-center sm:justify-between sm:p-7">
           <p className="text-base font-medium text-white sm:text-lg">
             İşletmenize özel benzer bir değerlendirme hazırlayalım.

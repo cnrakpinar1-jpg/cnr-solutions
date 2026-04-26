@@ -181,15 +181,7 @@ export function TrPilot() {
         ))}
       </div>
 
-      <Reveal delay={180}>
-        <p className="mt-10 rounded-2xl border border-white/8 bg-white/[0.025] px-5 py-4 text-sm leading-6 text-slate-400">
-          Bu bölümdeki çalışmalar demo, pilot veya örnek senaryo niteliğindedir. Gerçek
-          müşteri sonuçları, pilot uygulamalar tamamlandıkça ayrıca vaka analizi olarak
-          paylaşılacaktır.
-        </p>
-      </Reveal>
-
-      <Reveal delay={260}>
+      <Reveal delay={200}>
         <div className="mt-10 overflow-hidden rounded-[28px] border border-[rgba(125,211,252,0.2)] bg-[linear-gradient(135deg,rgba(125,211,252,0.12),rgba(12,18,34,0.78)_42%,rgba(7,10,22,0.92))] p-6 shadow-[0_24px_80px_rgba(2,6,23,0.42)] sm:p-8">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl">
