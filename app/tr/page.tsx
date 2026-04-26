@@ -7,7 +7,6 @@ import { TrProblem } from "@/components/tr/TrProblem";
 import { TrSolution } from "@/components/tr/TrSolution";
 import { TrWho } from "@/components/tr/TrWho";
 import { TrProjects } from "@/components/tr/TrProjects";
-import { TrCaseStudies } from "@/components/tr/TrCaseStudies";
 import { TrWhy } from "@/components/tr/TrWhy";
 import { TrProcess } from "@/components/tr/TrProcess";
 import { TrWorkingModel } from "@/components/tr/TrWorkingModel";
@@ -42,11 +41,10 @@ export default function TrPage() {
       <TrSolution />
       <TrWho />
       <TrProjects />
-      <TrCaseStudies />
+      <TrPilot />
       <TrWhy />
       <TrProcess />
       <TrWorkingModel />
-      <TrPilot />
       <TrCta />
       <Footer locale="tr" />
     </main>
