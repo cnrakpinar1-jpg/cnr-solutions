@@ -11,7 +11,9 @@ import { TrWhy } from "@/components/tr/TrWhy";
 import { TrProcess } from "@/components/tr/TrProcess";
 import { TrWorkingModel } from "@/components/tr/TrWorkingModel";
 import { TrPilot } from "@/components/tr/TrPilot";
+import { TrFaq } from "@/components/tr/TrFaq";
 import { TrCta } from "@/components/tr/TrCta";
+import { TrFloatingWhatsApp } from "@/components/tr/TrFloatingWhatsApp";
 
 export const metadata: Metadata = {
   title: "CNR Solutions | İşletmeler İçin Yapay Zekâ Destekli İş Sistemleri",
@@ -50,8 +52,10 @@ export default function TrPage() {
       <TrWhy />
       <TrProcess />
       <TrWorkingModel />
+      <TrFaq />
       <TrCta />
       <Footer locale="tr" />
+      <TrFloatingWhatsApp />
     </main>
   );
 }

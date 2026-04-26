@@ -10,7 +10,7 @@ type SectorCase = {
   systemPoints: string[];
   outcome: string;
   cta: string;
-  ctaMessage: string;
+  ctaHref: string;
 };
 
 function whatsappLink(message: string) {
@@ -34,8 +34,8 @@ const sectorCases: SectorCase[] = [
     outcome:
       "Daha düzenli hasta takibi, daha hızlı dönüş ve daha profesyonel danışma süreci.",
     cta: "Benzer sistemi konuşalım",
-    ctaMessage:
-      "Merhaba, diş kliniği için hasta talebi ve ön görüşme sistemi hakkında konuşmak istiyorum.",
+    ctaHref:
+      "https://wa.me/905331970462?text=Merhaba%2C%20di%C5%9F%20klini%C4%9Fi%20i%C3%A7in%20hasta%20talep%20takip%20sistemi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.",
   },
   {
     label: "Demo Sistem Taslağı",
@@ -53,8 +53,8 @@ const sectorCases: SectorCase[] = [
     outcome:
       "Daha düzenli randevu yönetimi, daha iyi takip ve daha az unutulan danışan.",
     cta: "Güzellik merkezi için demo iste",
-    ctaMessage:
-      "Merhaba, güzellik merkezi için danışan, paket ve randevu akışı demosu hakkında konuşmak istiyorum.",
+    ctaHref:
+      "https://wa.me/905331970462?text=Merhaba%2C%20g%C3%BCzellik%20merkezi%20i%C3%A7in%20dan%C4%B1%C5%9Fan%20ve%20randevu%20takip%20sistemi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.",
   },
   {
     label: "Pilot Çalışma Senaryosu",
@@ -72,8 +72,8 @@ const sectorCases: SectorCase[] = [
     outcome:
       "Daha görünür hasta akışı, daha net takip ve daha kontrollü operasyon.",
     cta: "Klinik sistemini planlayalım",
-    ctaMessage:
-      "Merhaba, klinik için hasta başvuru ve takip paneli planlamak istiyorum.",
+    ctaHref:
+      "https://wa.me/905331970462?text=Merhaba%2C%20klini%C4%9Fim%20i%C3%A7in%20hasta%20ba%C5%9Fvuru%20ve%20takip%20sistemi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.",
   },
   {
     label: "Sektör Değerlendirmesi",
@@ -91,8 +91,8 @@ const sectorCases: SectorCase[] = [
     outcome:
       "Daha az kaçan lead, daha düzenli müşteri takibi ve daha profesyonel portföy yönetimi.",
     cta: "Emlak ofisi için sistem konuşalım",
-    ctaMessage:
-      "Merhaba, emlak ofisi için ilan lead’i ve müşteri takip sistemi hakkında konuşmak istiyorum.",
+    ctaHref:
+      "https://wa.me/905331970462?text=Merhaba%2C%20emlak%20ofisim%20i%C3%A7in%20lead%20takip%20sistemi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.",
   },
 ];
 
@@ -178,7 +178,7 @@ export function TrPilot() {
 
               <div className="mt-auto pt-7">
                 <Button
-                  href={whatsappLink(item.ctaMessage)}
+                  href={item.ctaHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="secondary"
