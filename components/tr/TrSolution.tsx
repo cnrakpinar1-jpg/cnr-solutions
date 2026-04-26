@@ -5,17 +5,17 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const solutions = [
   {
-    title: "Lead Toplama Sistemi",
+    title: "Müşteri Talebi Toplama Sistemi",
     description:
-      "WhatsApp, Instagram DM, form ve telefon gibi farklı kanallardan gelen talepleri tek bir akışa toplarız. Kaçan lead’leri azaltır, takip sürecini görünür hale getiririz.",
+      "WhatsApp, web formu, sosyal medya ve telefon üzerinden gelen müşteri taleplerini tek yerde toplarız. Kaçan talepleri azaltır, takip sürecini görünür hale getiririz.",
   },
   {
-    title: "Mini CRM",
+    title: "Mini CRM / Müşteri Takip Sistemi",
     description:
       "Müşterileri durumlarına göre takip edilebilir hale getiririz. Kim nerede, hangi aşamada, ne zaman takip edilmeli; hepsi tek panelde görünür olur.",
   },
   {
-    title: "Randevu / Admin Panel",
+    title: "Randevu Yönetim Paneli",
     description:
       "Randevu taleplerini, onayları ve iptal süreçlerini düzenli bir akışa taşırız. Manuel koordinasyon yerine sistemli bir takip yapısı kurarız.",
   },
@@ -25,12 +25,12 @@ const solutions = [
       "Müşterilerinize teklif, dosya, güncelleme ve iletişim için tek bir temiz panel sunarız. E-posta ve mesaj karmaşasını azaltırız.",
   },
   {
-    title: "Yönetim Dashboard’u",
+    title: "Yönetim Paneli",
     description:
-      "İşletmenizin tüm operasyonunu tek ekrandan görünür hale getiririz. Lead’ler, randevular, satışlar ve ekip durumu net bir yönetim ekranında toplanır.",
+      "İşletmenizin tüm operasyonunu tek ekrandan görünür hale getiririz. Müşteri talepleri, randevular, satışlar ve ekip durumu net bir yönetim ekranında toplanır.",
   },
   {
-    title: "AI Destekli Asistan ve Otomasyon",
+    title: "Yapay Zekâ Destekli Takip Akışları",
     description:
       "Gelen talepleri özetleyen, sınıflandıran ve cevap önerileri üreten yapay zekâ destekli akışlar kurarız. Yapay zekâyı vitrin süsü değil, iş akışı aracı olarak kullanırız.",
   },

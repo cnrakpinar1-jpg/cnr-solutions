@@ -10,20 +10,20 @@ const models = [
   {
     title: "Başlangıç Kurulumu",
     description:
-      "Lead form, mini CRM veya basit takip paneliyle tek bir net problemi çözeriz.",
+      "Müşteri talep formu, mini müşteri takip sistemi veya basit takip paneliyle tek bir net problemi çözeriz.",
     forText: "İlk kez sistem kurmak isteyen küçük işletmeler.",
   },
   {
-    title: "Growth System",
+    title: "Büyüme Sistemi",
     description:
-      "Lead toplama, CRM, randevu akışı, dashboard ve temel otomasyonu tek yapıda toplarız.",
+      "Müşteri talebi toplama, müşteri takip sistemi, randevu akışı, yönetim paneli ve temel otomatik takip akışlarını tek yapıda toplarız.",
     forText:
       "Düzenli müşteri talebi alan ve operasyonunu büyütmek isteyen işletmeler.",
   },
   {
-    title: "Custom AI Business System",
+    title: "İşletmeye Özel Yapay Zekâ Destekli Sistem",
     description:
-      "Müşteri portalı, gelişmiş dashboard, AI destekli asistan, özel iş akışı ve entegrasyonlarla işletmeye özel sistem kurarız.",
+      "Müşteri portalı, gelişmiş yönetim paneli, yapay zekâ destekli asistan, özel iş akışı ve entegrasyonlarla işletmeye özel sistem kurarız.",
     forText:
       "Daha profesyonel, ölçeklenebilir ve yapay zekâ destekli yapı isteyen işletmeler.",
   },

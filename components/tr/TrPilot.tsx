@@ -26,10 +26,10 @@ const sectorCases: SectorCase[] = [
     systemPoints: [
       "Tedavi talep formu",
       "Hasta ön bilgi toplama akışı",
-      "Mini CRM ile hasta durum takibi",
+      "Mini müşteri takip sistemiyle hasta durum takibi",
       "Randevu / görüşme paneli",
       "Takip notları",
-      "AI destekli talep özeti ve cevap önerisi",
+      "Yapay zekâ destekli talep özeti ve cevap önerisi",
     ],
     outcome:
       "Daha düzenli hasta takibi, daha hızlı dönüş ve daha profesyonel danışma süreci.",
@@ -48,7 +48,7 @@ const sectorCases: SectorCase[] = [
       "Randevu takip paneli",
       "Tekrar görüşme hatırlatmaları",
       "Danışan durum kartları",
-      "Dashboard ile günlük / haftalık takip görünümü",
+      "Kontrol paneliyle günlük / haftalık takip görünümü",
     ],
     outcome:
       "Daha düzenli randevu yönetimi, daha iyi takip ve daha az unutulan danışan.",
@@ -67,7 +67,7 @@ const sectorCases: SectorCase[] = [
       "Durum takibi: yeni, arandı, randevu verildi, bekliyor, tamamlandı",
       "İç notlar",
       "Randevu akışı",
-      "AI ile talep özeti",
+      "Yapay zekâ ile talep özeti",
     ],
     outcome:
       "Daha görünür hasta akışı, daha net takip ve daha kontrollü operasyon.",
@@ -77,22 +77,22 @@ const sectorCases: SectorCase[] = [
   },
   {
     label: "Sektör Değerlendirmesi",
-    title: "Emlak ofisleri için ilan lead’i ve müşteri takip sistemi",
+    title: "Emlak ofisleri için ilan talebi ve müşteri takip sistemi",
     problem:
-      "Emlak ofislerinde Sahibinden, Instagram, WhatsApp ve telefon üzerinden gelen potansiyel alıcı/kiracı talepleri dağınık kalır. Hangi müşteri hangi portföyle ilgilendi, kim geri aranacak, kim sıcak lead belli olmaz.",
+      "Emlak ofislerinde Sahibinden, Instagram, WhatsApp ve telefon üzerinden gelen potansiyel alıcı/kiracı talepleri dağınık kalır. Hangi müşteri hangi portföyle ilgilendi, kim geri aranacak, kim öncelikli takip edilmeli belli olmaz.",
     systemPoints: [
-      "İlan lead takip ekranı",
+      "İlan talebi takip ekranı",
       "Müşteri ilgi alanı kaydı",
       "Portföy eşleştirme notları",
       "Takip durumu: yeni, arandı, gezdirildi, teklif verdi, kaybedildi",
-      "Hatırlatma / follow-up listesi",
-      "Dashboard ile sıcak lead görünümü",
+      "Hatırlatma / geri arama listesi",
+      "Kontrol paneliyle öncelikli müşteri görünümü",
     ],
     outcome:
-      "Daha az kaçan lead, daha düzenli müşteri takibi ve daha profesyonel portföy yönetimi.",
+      "Daha az kaçan müşteri talebi, daha düzenli müşteri takibi ve daha profesyonel portföy yönetimi.",
     cta: "Emlak ofisi için sistem konuşalım",
     ctaHref:
-      "https://wa.me/905331970462?text=Merhaba%2C%20emlak%20ofisim%20i%C3%A7in%20lead%20takip%20sistemi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.",
+      "https://wa.me/905331970462?text=Merhaba%2C%20emlak%20ofisim%20i%C3%A7in%20m%C3%BC%C5%9Fteri%20talep%20takip%20sistemi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.",
   },
 ];
 

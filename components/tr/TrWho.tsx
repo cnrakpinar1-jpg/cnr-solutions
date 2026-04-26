@@ -21,7 +21,7 @@ const targets = [
   {
     title: "Emlak Ofisleri",
     description:
-      "Sıcak lead’leri, portföy ilgisini ve geri arama sürecini tek panelde takip edilebilir hale getiririz.",
+      "Öncelikli müşteri taleplerini, portföy ilgisini ve geri arama sürecini tek panelde takip edilebilir hale getiririz.",
   },
   {
     title: "Danışmanlık Firmaları",

@@ -41,7 +41,7 @@ const content = {
     activity: [
       ["Yeni talep yakalandı", "Form -> yönlendirme -> sorumlu atandı"],
       ["Ön görüşme bekliyor", "Müşteri notu panele eklendi"],
-      ["Randevu akışı güncellendi", "Durum dashboard ile senkron"],
+      ["Randevu akışı güncellendi", "Durum kontrol paneliyle senkron"],
     ],
     pipeline: "Talep Akışı",
     stages: [

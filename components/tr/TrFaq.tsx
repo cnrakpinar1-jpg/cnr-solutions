@@ -30,7 +30,7 @@ const faqs = [
   {
     question: "Bu bir web sitesi hizmeti mi?",
     answer:
-      "Hayır. Web sitesi yapılabilir ama ana odak bu değildir. CNR Solutions; müşteri takibi, randevu akışı, mini CRM, dashboard, müşteri portalı ve otomasyon gibi işletmenin günlük işleyişinde kullanılan sistemler kurar.",
+      "Hayır. Web sitesi yapılabilir ama ana odak bu değildir. CNR Solutions; müşteri takibi, randevu akışı, mini müşteri takip sistemi, yönetim paneli, müşteri portalı ve otomatik takip akışları gibi işletmenin günlük işleyişinde kullanılan sistemler kurar.",
   },
   {
     question: "Sistemi kullanmak zor olur mu?",

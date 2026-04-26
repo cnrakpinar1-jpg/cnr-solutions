@@ -14,7 +14,24 @@ export function TrFloatingWhatsApp() {
         aria-hidden="true"
         className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[var(--color-accent)] text-sm font-bold text-slate-950 shadow-[0_10px_28px_rgba(56,189,248,0.25)]"
       >
-        W
+        <svg
+          viewBox="0 0 24 24"
+          className="h-5 w-5"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.4 18.2 4.5 20l.55-2.72A8.1 8.1 0 1 1 12 20.1a8 8 0 0 1-5.6-1.9Z"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M9.3 8.6c.18-.38.36-.44.66-.44h.5c.2 0 .36.08.45.3l.62 1.43c.08.2.05.4-.1.56l-.35.39c-.12.14-.14.32-.04.48.43.73 1.04 1.34 1.84 1.82.17.1.36.08.5-.05l.42-.38c.15-.14.34-.18.53-.1l1.47.64c.2.09.3.25.3.47v.45c0 .42-.18.7-.55.86-.47.2-.98.26-1.52.18-1.16-.16-2.42-.86-3.56-2-1.12-1.12-1.84-2.4-2-3.56-.08-.48-.02-.95.17-1.35Z"
+            fill="currentColor"
+          />
+        </svg>
       </span>
       <span className="min-w-0">
         <span className="block text-sm font-semibold text-white sm:hidden">WhatsApp</span>

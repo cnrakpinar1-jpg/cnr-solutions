@@ -13,12 +13,12 @@ const steps = [
     step: "02",
     title: "Sistemi tasarlıyoruz",
     description:
-      "İşletmeye uygun lead, CRM, randevu, portal veya dashboard yapısını planlarız.",
+      "İşletmeye uygun müşteri talebi, müşteri takip sistemi, randevu, müşteri portalı veya yönetim paneli yapısını planlarız.",
   },
   {
     step: "03",
     title: "İlk versiyonu kuruyoruz",
-    description: "Hızlı, sade ve kullanılabilir bir MVP geliştiririz.",
+    description: "Hızlı, sade ve kullanılabilir ilk versiyonu geliştiririz.",
   },
   {
     step: "04",

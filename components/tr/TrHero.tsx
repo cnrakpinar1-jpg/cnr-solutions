@@ -19,7 +19,7 @@ export function TrHero() {
         <div className="grid flex-1 items-center gap-14 pb-20 pt-14 lg:grid-cols-[minmax(0,1fr)_minmax(28rem,0.95fr)] lg:gap-16 lg:pb-28">
           <Reveal className="max-w-2xl">
             <p className="eyebrow">
-              Founder-led AI Business Systems · KOBİ · Klinik · Hizmet işletmesi
+              Yapay zekâ destekli iş sistemleri · KOBİ · Klinik · Hizmet işletmesi
             </p>
             <h1 className="text-balance mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-[3.75rem] lg:leading-[1.05]">
               Türkiye’deki işletmeleri yapay zekâ çağına taşıyan sistemler kuruyoruz.
@@ -29,12 +29,12 @@ export function TrHero() {
             </p>
             <p className="mt-5 max-w-xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
               CNR Solutions; KOBİ’ler, klinikler, güzellik merkezleri, diş klinikleri, emlak
-              ofisleri ve hizmet işletmeleri için müşteri takibi, mini CRM, randevu akışı,
-              müşteri portalı, dashboard ve yapay zekâ destekli otomasyon sistemleri geliştirir.
+              ofisleri ve hizmet işletmeleri için müşteri takibi, randevu yönetimi, kontrol
+              paneli, müşteri portalı ve yapay zekâ destekli takip sistemleri kurar.
             </p>
             <p className="mt-5 text-base font-medium text-slate-200">
-              Dağınık mesajları, kaçan lead’leri ve manuel süreçleri tek bir işletme sistemine
-              dönüştürüyoruz.
+              Dağınık mesajları, kaçan müşteri taleplerini ve manuel süreçleri tek bir işletme
+              sistemine dönüştürüyoruz.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">

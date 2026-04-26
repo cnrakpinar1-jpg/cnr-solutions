@@ -6,16 +6,16 @@ import { Tag } from "@/components/ui/Tag";
 
 const projectItems = [
   {
-    title: "Lead Tracker Mini CRM",
-    category: "CRM / Satış Takibi",
+    title: "Müşteri Talebi Mini CRM",
+    category: "Müşteri Talebi / Satış Takibi",
     description:
-      "Gelen müşteri taleplerini yakalamak, sınıflandırmak ve takip sürecine almak için sade bir lead takip sistemi. Özellikle WhatsApp, form ve sosyal medya üzerinden talep alan küçük işletmeler için uygundur.",
+      "Gelen müşteri taleplerini yakalamak, sınıflandırmak ve takip sürecine almak için sade bir müşteri talebi takip sistemi. Özellikle WhatsApp, form ve sosyal medya üzerinden talep alan küçük işletmeler için uygundur.",
     bestFor: "Emlak ofisleri, hizmet işletmeleri, küçük satış ekipleri.",
     githubUrl: "https://github.com/cnrakpinar1-jpg/lead-tracker-mini-crm",
     demoUrl: "https://cnrakpinar1-jpg.github.io/lead-tracker-mini-crm/",
   },
   {
-    title: "Client Intake System",
+    title: "Müşteri Giriş Sistemi",
     category: "Müşteri Giriş Akışı",
     description:
       "Yeni müşteri taleplerini düzenli şekilde almak, ilk bilgileri toplamak ve süreci standart hale getirmek için geliştirilmiş giriş sistemi. Dağınık mesaj trafiğini daha kontrollü bir akışa çevirir.",
@@ -24,34 +24,34 @@ const projectItems = [
     demoUrl: "https://cnrakpinar1-jpg.github.io/client-intake-system/",
   },
   {
-    title: "CNR Mini CRM",
-    category: "CRM / Müşteri Akışı",
+    title: "CNR Mini Müşteri Takip Sistemi",
+    category: "Müşteri Takip Sistemi",
     description:
-      "Potansiyel müşterileri, görüşme notlarını, durumları ve takip aşamalarını tek panelde yönetmek için hazırlanmış mini CRM yapısı. İşletme sahibine müşteri süreci üzerinde net görünürlük sağlar.",
+      "Potansiyel müşterileri, görüşme notlarını, durumları ve takip aşamalarını tek panelde yönetmek için hazırlanmış müşteri takip sistemi. İşletme sahibine müşteri süreci üzerinde net görünürlük sağlar.",
     bestFor: "KOBİ’ler, satış ekipleri, operasyon yöneten işletmeler.",
     githubUrl: "https://github.com/cnrakpinar1-jpg/cnr-mini-crm",
     demoUrl: "https://cnrakpinar1-jpg.github.io/cnr-mini-crm/",
   },
   {
-    title: "CNR Booking System",
-    category: "Randevu / Admin Panel",
+    title: "CNR Randevu Sistemi",
+    category: "Randevu Yönetim Paneli",
     description:
-      "Randevulu çalışan işletmeler için müşteri randevularını, durumları ve takip sürecini yönetmeye yarayan admin paneli. Manuel randevu karmaşasını daha düzenli bir yapıya taşır.",
+      "Randevulu çalışan işletmeler için müşteri randevularını, durumları ve takip sürecini yönetmeye yarayan panel. Manuel randevu karmaşasını daha düzenli bir yapıya taşır.",
     bestFor: "Klinikler, güzellik merkezleri, danışmanlık firmaları.",
     githubUrl: "https://github.com/cnrakpinar1-jpg/cnr-booking-system",
     demoUrl: "https://cnrakpinar1-jpg.github.io/cnr-booking-system/",
   },
   {
-    title: "CNR Analytics Dashboard",
-    category: "Dashboard / Operasyon",
+    title: "CNR Yönetim Paneli",
+    category: "Yönetim Paneli",
     description:
-      "İşletmenin temel metriklerini, müşteri durumlarını ve operasyon performansını tek panelde izlemeye yarayan dashboard. Karar almayı kolaylaştıran sade ve okunabilir bir yönetim ekranı sunar.",
+      "İşletmenin temel göstergelerini, müşteri durumlarını ve operasyon performansını tek panelde izlemeye yarayan yönetim ekranı. Karar almayı kolaylaştıran sade ve okunabilir bir görünüm sunar.",
     bestFor: "Operasyonunu ölçmek isteyen işletmeler.",
     githubUrl: "https://github.com/cnrakpinar1-jpg/cnr-analytics-dashboard",
     demoUrl: "https://cnrakpinar1-jpg.github.io/cnr-analytics-dashboard/",
   },
   {
-    title: "CNR Client Portal",
+    title: "CNR Müşteri Portalı",
     category: "Müşteri Portalı / Müşteri Deneyimi",
     description:
       "Müşterinin kendi proje, talep, doküman veya süreç durumunu takip edebildiği profesyonel müşteri portalı. Hizmet sağlayıcılar için daha güven veren ve düzenli bir müşteri deneyimi oluşturur.",

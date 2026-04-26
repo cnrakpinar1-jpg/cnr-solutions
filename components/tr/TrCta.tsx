@@ -18,8 +18,8 @@ export function TrCta() {
             bir düzene almak istiyorsanız, işletmenize uygun sistemi birlikte planlayabiliriz.
           </p>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-slate-400">
-            İlk görüşmede satış baskısı yok. Önce işletmenizdeki akışı anlarız, sonra uygun
-            sistem taslağını çıkarırız.
+            İlk adımda işletmenizin mevcut müşteri ve operasyon akışını analiz eder,
+            ardından ihtiyacınıza uygun sistem yapısını birlikte netleştiririz.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
