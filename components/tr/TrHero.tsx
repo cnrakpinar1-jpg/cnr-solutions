@@ -30,7 +30,7 @@ export function TrHero() {
             <p className="mt-5 max-w-xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
               CNR Solutions; KOBİ’ler, klinikler, güzellik merkezleri, diş klinikleri, emlak
               ofisleri ve hizmet işletmeleri için müşteri takibi, mini CRM, randevu akışı,
-              client portal, dashboard ve yapay zekâ destekli otomasyon sistemleri geliştirir.
+              müşteri portalı, dashboard ve yapay zekâ destekli otomasyon sistemleri geliştirir.
             </p>
             <p className="mt-5 text-base font-medium text-slate-200">
               Dağınık mesajları, kaçan lead’leri ve manuel süreçleri tek bir işletme sistemine
@@ -53,7 +53,7 @@ export function TrHero() {
               >
                 WhatsApp’tan Yaz
               </Button>
-              <Button href="#projeler" variant="secondary">
+              <Button href="#projects" variant="secondary">
                 Projeleri Gör
               </Button>
             </div>

@@ -98,7 +98,7 @@ const sectorCases: SectorCase[] = [
 
 export function TrPilot() {
   return (
-    <SectionShell id="vaka-analizleri">
+    <SectionShell id="case-studies">
       <Reveal>
         <SectionHeading
           eyebrow="YAPTIKLARIMIZ"

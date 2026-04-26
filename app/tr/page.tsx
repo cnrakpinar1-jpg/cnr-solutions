@@ -16,7 +16,7 @@ import { TrCta } from "@/components/tr/TrCta";
 export const metadata: Metadata = {
   title: "CNR Solutions | İşletmeler İçin Yapay Zekâ Destekli İş Sistemleri",
   description:
-    "CNR Solutions; KOBİ’ler, klinikler, güzellik merkezleri, diş klinikleri, emlak ofisleri ve hizmet işletmeleri için mini CRM, dashboard, randevu paneli, client portal ve yapay zekâ destekli operasyon sistemleri kurar.",
+    "CNR Solutions; KOBİ’ler, klinikler, güzellik merkezleri, diş klinikleri, emlak ofisleri ve hizmet işletmeleri için mini CRM, dashboard, randevu paneli, müşteri portalı ve yapay zekâ destekli operasyon sistemleri kurar.",
   openGraph: {
     title: "CNR Solutions — İşletmeleri Yapay Zekâ Çağına Taşıyan Sistemler",
     description:
@@ -26,10 +26,10 @@ export const metadata: Metadata = {
 
 const navLinks = [
   { href: "#cozumler", label: "Çözümler" },
-  { href: "#projeler", label: "Projeler" },
-  { href: "#vaka-analizleri", label: "Vaka Analizleri" },
+  { href: "#projects", label: "Projeler" },
+  { href: "#case-studies", label: "Vaka Analizleri" },
   { href: "#surec", label: "Süreç" },
-  { href: "#iletisim", label: "İletişim" },
+  { href: "#contact", label: "İletişim" },
 ];
 
 export default function TrPage() {

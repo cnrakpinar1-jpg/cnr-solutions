@@ -14,10 +14,10 @@ export function Footer({ locale }: FooterProps) {
     locale === "tr"
       ? [
           { href: "#cozumler", label: "Çözümler" },
-          { href: "#projeler", label: "Projeler" },
-          { href: "#vaka-analizleri", label: "Vaka Analizleri" },
+          { href: "#projects", label: "Projeler" },
+          { href: "#case-studies", label: "Vaka Analizleri" },
           { href: "#surec", label: "Süreç" },
-          { href: "#iletisim", label: "İletişim" },
+          { href: "#contact", label: "İletişim" },
         ]
       : [
           { href: "#systems", label: "Systems" },
@@ -88,7 +88,7 @@ export function Footer({ locale }: FooterProps) {
               href="/"
               className="text-xs text-slate-600 transition-colors hover:text-slate-400"
             >
-              {locale === "tr" ? "Dil Seçimi" : "Language Selector"}
+              {locale === "tr" ? "Dil değiştir" : "Language"}
             </a>
             <div
               className="flex items-center rounded-full border border-white/10 bg-white/[0.03] p-0.5"

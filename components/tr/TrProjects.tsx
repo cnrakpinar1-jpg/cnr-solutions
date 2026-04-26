@@ -11,7 +11,6 @@ const projectItems = [
     description:
       "Gelen müşteri taleplerini yakalamak, sınıflandırmak ve takip sürecine almak için sade bir lead takip sistemi. Özellikle WhatsApp, form ve sosyal medya üzerinden talep alan küçük işletmeler için uygundur.",
     bestFor: "Emlak ofisleri, hizmet işletmeleri, küçük satış ekipleri.",
-    repo: "lead-tracker-mini-crm",
     githubUrl: "https://github.com/cnrakpinar1-jpg/lead-tracker-mini-crm",
     demoUrl: "https://cnrakpinar1-jpg.github.io/lead-tracker-mini-crm/",
   },
@@ -21,7 +20,6 @@ const projectItems = [
     description:
       "Yeni müşteri taleplerini düzenli şekilde almak, ilk bilgileri toplamak ve süreci standart hale getirmek için geliştirilmiş giriş sistemi. Dağınık mesaj trafiğini daha kontrollü bir akışa çevirir.",
     bestFor: "Klinikler, danışmanlık firmaları, hizmet işletmeleri.",
-    repo: "client-intake-system",
     githubUrl: "https://github.com/cnrakpinar1-jpg/client-intake-system",
     demoUrl: "https://cnrakpinar1-jpg.github.io/client-intake-system/",
   },
@@ -31,7 +29,6 @@ const projectItems = [
     description:
       "Potansiyel müşterileri, görüşme notlarını, durumları ve takip aşamalarını tek panelde yönetmek için hazırlanmış mini CRM yapısı. İşletme sahibine müşteri süreci üzerinde net görünürlük sağlar.",
     bestFor: "KOBİ’ler, satış ekipleri, operasyon yöneten işletmeler.",
-    repo: "cnr-mini-crm",
     githubUrl: "https://github.com/cnrakpinar1-jpg/cnr-mini-crm",
     demoUrl: "https://cnrakpinar1-jpg.github.io/cnr-mini-crm/",
   },
@@ -41,7 +38,6 @@ const projectItems = [
     description:
       "Randevulu çalışan işletmeler için müşteri randevularını, durumları ve takip sürecini yönetmeye yarayan admin paneli. Manuel randevu karmaşasını daha düzenli bir yapıya taşır.",
     bestFor: "Klinikler, güzellik merkezleri, danışmanlık firmaları.",
-    repo: "cnr-booking-system",
     githubUrl: "https://github.com/cnrakpinar1-jpg/cnr-booking-system",
     demoUrl: "https://cnrakpinar1-jpg.github.io/cnr-booking-system/",
   },
@@ -51,17 +47,15 @@ const projectItems = [
     description:
       "İşletmenin temel metriklerini, müşteri durumlarını ve operasyon performansını tek panelde izlemeye yarayan dashboard. Karar almayı kolaylaştıran sade ve okunabilir bir yönetim ekranı sunar.",
     bestFor: "Operasyonunu ölçmek isteyen işletmeler.",
-    repo: "cnr-analytics-dashboard",
     githubUrl: "https://github.com/cnrakpinar1-jpg/cnr-analytics-dashboard",
     demoUrl: "https://cnrakpinar1-jpg.github.io/cnr-analytics-dashboard/",
   },
   {
     title: "CNR Client Portal",
-    category: "Client Portal / Müşteri Deneyimi",
+    category: "Müşteri Portalı / Müşteri Deneyimi",
     description:
       "Müşterinin kendi proje, talep, doküman veya süreç durumunu takip edebildiği profesyonel müşteri portalı. Hizmet sağlayıcılar için daha güven veren ve düzenli bir müşteri deneyimi oluşturur.",
     bestFor: "Ajanslar, danışmanlık firmaları, hizmet sağlayıcılar.",
-    repo: "cnr-client-portal",
     githubUrl: "https://github.com/cnrakpinar1-jpg/cnr-client-portal",
     demoUrl: "https://cnrakpinar1-jpg.github.io/cnr-client-portal/",
   },
@@ -69,7 +63,7 @@ const projectItems = [
 
 export function TrProjects() {
   return (
-    <SectionShell id="projeler">
+    <SectionShell id="projects">
       <Reveal>
         <SectionHeading
           eyebrow="Demo Sistemler"
@@ -82,10 +76,7 @@ export function TrProjects() {
         {projectItems.map((item, index) => (
           <Reveal key={item.title} delay={index * 70}>
             <article className="surface group flex h-full flex-col rounded-[28px] p-6 transition-all hover:-translate-y-1 hover:border-[rgba(125,211,252,0.32)] hover:shadow-[0_28px_90px_rgba(2,6,23,0.5)] sm:p-7">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-                {item.repo}
-              </p>
-              <h3 className="mt-3 text-2xl font-semibold tracking-tight text-white">
+              <h3 className="text-2xl font-semibold tracking-tight text-white">
                 {item.title}
               </h3>
               <div className="mt-4">

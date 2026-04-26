@@ -36,7 +36,7 @@ const content = {
     stats: [
       ["42", "Açık talep"],
       ["18 dk", "Ort. dönüş"],
-      ["94%", "Örnek katılım"],
+      ["Demo", "Akış durumu"],
     ],
     activity: [
       ["Yeni talep yakalandı", "Form -> yönlendirme -> sorumlu atandı"],
