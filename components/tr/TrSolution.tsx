@@ -12,12 +12,12 @@ const solutions = [
   {
     title: "Mini CRM",
     description:
-      "Müşterileri durumlarına göre takip edilebilir hale getiririz. Kim nerede, hangi aşamada, ne zaman takip edilmeli; hepsini tek panelde gösteririz.",
+      "Müşterileri durumlarına göre takip edilebilir hale getiririz. Kim nerede, hangi aşamada, ne zaman takip edilmeli; hepsi tek panelde görünür olur.",
   },
   {
     title: "Randevu / Admin Panel",
     description:
-      "Randevu taleplerini, onayları ve iptal süreçlerini düzenli bir akışa taşırız. Manuel koordinasyonu sistemli ve takip edilebilir hale getiririz.",
+      "Randevu taleplerini, onayları ve iptal süreçlerini düzenli bir akışa taşırız. Manuel koordinasyon yerine sistemli bir takip yapısı kurarız.",
   },
   {
     title: "Müşteri Portalı",
@@ -27,7 +27,7 @@ const solutions = [
   {
     title: "Yönetim Dashboard’u",
     description:
-      "İşletmenizin tüm operasyonunu tek ekrandan görünür hale getiririz. Lead’leri, randevuları, satışları ve ekip durumunu net bir yönetim panelinde toplarız.",
+      "İşletmenizin tüm operasyonunu tek ekrandan görünür hale getiririz. Lead’ler, randevular, satışlar ve ekip durumu net bir yönetim ekranında toplanır.",
   },
   {
     title: "AI Destekli Asistan ve Otomasyon",

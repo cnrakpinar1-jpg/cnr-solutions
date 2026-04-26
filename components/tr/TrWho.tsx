@@ -6,27 +6,31 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 const targets = [
   {
     title: "Klinikler",
-    description: "Hasta taleplerini, randevuları ve takip süreçlerini sisteme taşıyın.",
+    description: "Hasta taleplerini, randevuları ve takip süreçlerini sisteme taşırız.",
   },
   {
     title: "Güzellik Merkezleri",
-    description: "Randevu yönetimi, danışan takibi ve tekrar görüşme hatırlatmalarını sisteme bağlayın.",
+    description:
+      "Randevu yönetimi, danışan takibi ve tekrar görüşme hatırlatmalarını sisteme bağlarız.",
   },
   {
     title: "Diş Klinikleri",
-    description: "Hasta kabulünden tedavi takibine kadar tüm süreci tek panelde görün.",
+    description:
+      "Hasta kabulünden tedavi takibine kadar tüm süreci tek panelde görünür hale getiririz.",
   },
   {
     title: "Emlak Ofisleri",
-    description: "Sıcak lead’leri, portföy ilgisini ve geri arama sürecini tek panelde takip edin.",
+    description:
+      "Sıcak lead’leri, portföy ilgisini ve geri arama sürecini tek panelde takip edilebilir hale getiririz.",
   },
   {
     title: "Danışmanlık Firmaları",
-    description: "Teklif, proje ve müşteri iletişimini düzenli bir sisteme taşıyın.",
+    description: "Teklif, proje ve müşteri iletişimini düzenli bir sisteme taşırız.",
   },
   {
     title: "Hizmet İşletmeleri",
-    description: "Gelen talepleri takip edin, kaçan fırsatları azaltın, operasyonu düzenleyin.",
+    description:
+      "Gelen talepleri takip edilebilir hale getirir, kaçan fırsatları azaltır ve operasyonu düzenleriz.",
   },
 ];
 
