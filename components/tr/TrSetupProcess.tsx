@@ -14,7 +14,7 @@ export function TrSetupProcess() {
   return (
     <SectionShell id="surec">
       <Reveal>
-        <SectionHeading eyebrow="Süreç" title="Nasıl çalışır?" />
+        <SectionHeading eyebrow="Süreç" title="Nasıl başlarız?" />
       </Reveal>
 
       <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_18rem]">
@@ -42,6 +42,14 @@ export function TrSetupProcess() {
             <p className="mt-3 text-sm leading-6 text-slate-400">
               Mevcut veri akışınız birlikte çıkarılır.
             </p>
+            <a
+              href="https://wa.me/905331970462?text=Merhaba%2C%20ilk%20veri%20haritas%C4%B1%20i%C3%A7in%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex rounded-full bg-[var(--color-accent)] px-4 py-2 text-sm font-semibold text-slate-950 transition-all hover:-translate-y-0.5 hover:bg-[var(--color-accent-strong)]"
+            >
+              İlk veri haritası için görüşelim
+            </a>
           </div>
         </Reveal>
       </div>

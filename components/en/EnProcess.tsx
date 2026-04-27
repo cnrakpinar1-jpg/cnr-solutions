@@ -14,7 +14,7 @@ export function EnProcess() {
   return (
     <SectionShell id="process">
       <Reveal>
-        <SectionHeading eyebrow="Process" title="How we work" />
+        <SectionHeading eyebrow="Process" title="How we start" />
       </Reveal>
 
       <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_18rem]">
@@ -42,6 +42,14 @@ export function EnProcess() {
             <p className="mt-3 text-sm leading-6 text-slate-400">
               We map how your data currently moves.
             </p>
+            <a
+              href="https://wa.me/905331970462?text=Hello%2C%20I%20want%20to%20review%20our%20first%20data%20map."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex rounded-full bg-[var(--color-accent)] px-4 py-2 text-sm font-semibold text-slate-950 transition-all hover:-translate-y-0.5 hover:bg-[var(--color-accent-strong)]"
+            >
+              Review the first data map
+            </a>
           </div>
         </Reveal>
       </div>

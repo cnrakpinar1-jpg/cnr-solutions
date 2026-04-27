@@ -11,11 +11,12 @@ export function TrCbam() {
           <div className="mx-auto max-w-3xl">
             <p className="eyebrow">Regülasyon</p>
             <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              CBAM gibi talepler için hazır olun
+              CBAM ve benzeri regülasyonlara hazır olun
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-300">
-              Sistem CBAM ve benzeri regülasyon taleplerine hazır olacak şekilde kurulur.
-              CBAM bir örnektir; ürünün kendisi değildir.
+              CBAM ve benzeri regülasyonlar, üreticilerin verilerini izlenebilir
+              ve paylaşılabilir hale getirmesini zorunlu kılıyor. CNR Data Room,
+              verinizi bu taleplere hazır hale getirmek için kullanılır.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               {tags.map((tag) => (

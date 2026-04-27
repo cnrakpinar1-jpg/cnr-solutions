@@ -6,17 +6,17 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 const risks = [
   {
     icon: "RQ",
-    title: "Geç müşteri dönüşü",
+    title: "Müşteriye geç cevap",
     text: "Talep açık kalır, ekip dosya arar.",
   },
   {
     icon: "!",
-    title: "Eksik veya hatalı veri",
+    title: "Yanlış/eksik veri gönderimi",
     text: "Yanlış sürüm müşteriye gidebilir.",
   },
   {
     icon: "HR",
-    title: "Boşa giden ekip saatleri",
+    title: "Kaybedilen saatler",
     text: "Arama, düzeltme ve takip tekrar eder.",
   },
   {
@@ -31,7 +31,7 @@ const risks = [
   },
   {
     icon: "RG",
-    title: "Regülasyon hazırlık riski",
+    title: "Regülasyona hazırlıksız",
     text: "Veri son anda toparlanmaya çalışılır.",
   },
 ];
@@ -42,7 +42,7 @@ export function TrCost() {
       <Reveal>
         <SectionHeading
           eyebrow="Risk"
-          title="Bu sadece operasyon değil, ticari risktir"
+          title="Bu sadece operasyonel değil, ticari risktir"
         />
       </Reveal>
 
@@ -71,7 +71,7 @@ export function TrCost() {
             Hidden cost
           </p>
           <p className="mt-2 text-xl font-semibold leading-8 text-white">
-            Dosya arama, düzeltme ve takip için kaybedilen saatler.
+            Dosya arama ve düzeltmelerde kaybolan saatler.
           </p>
         </div>
       </Reveal>

@@ -4,11 +4,12 @@ import { SectionShell } from "@/components/ui/SectionShell";
 import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const problems = [
-  { icon: "XL", text: "Data lives in different spreadsheets" },
+  { icon: "XL", text: "Data sits in multiple spreadsheets" },
   { icon: "TM", text: "Teams work separately" },
   { icon: "V2", text: "Duplicate or incorrect versions circulate" },
   { icon: "RQ", text: "Files are searched when clients ask" },
   { icon: "!", text: "Missing data appears too late" },
+  { icon: "?", text: "Ownership is unclear" },
 ];
 
 const disconnectedItems = ["Excel files", "Emails", "Folders", "Production notes"];
@@ -20,11 +21,11 @@ export function EnProblem() {
         <SectionHeading
           eyebrow="Problem"
           title={<>Most manufacturers don&apos;t have a data problem. They have a system problem.</>}
-          description="Data exists. The operating system around it does not."
+          description="Data exists, but it is spread across spreadsheets and teams. The result is slow work and frequent errors."
         />
       </Reveal>
 
-      <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-5">
+      <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
         {problems.map((item, index) => (
           <Reveal key={item.text} delay={index * 80}>
             <SurfaceCard className="h-full relative overflow-hidden border-amber-300/10 hover:-translate-y-1 hover:border-amber-300/26">

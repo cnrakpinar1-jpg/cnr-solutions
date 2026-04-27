@@ -22,7 +22,7 @@ export function EnCta() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Book a 15-minute call
+              Book a 15-Min Call
             </Button>
             <Button
               href="mailto:cnrakpinar1@gmail.com"

@@ -4,11 +4,12 @@ import { SectionShell } from "@/components/ui/SectionShell";
 import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const problems = [
-  { icon: "XL", text: "Veri farklı Excel'lerde tutulur" },
-  { icon: "TM", text: "Ekipler ayrı çalışır" },
-  { icon: "V2", text: "Aynı verinin farklı veya hatalı versiyonları dolaşır" },
-  { icon: "RQ", text: "Müşteri talebi geldiğinde dosya aranır" },
-  { icon: "!", text: "Eksik veri son anda fark edilir" },
+  { icon: "XL", text: "Veri farklı Excel'lerde" },
+  { icon: "TM", text: "Ekipler ayrı çalışıyor" },
+  { icon: "V2", text: "Birden fazla versiyon oluşuyor" },
+  { icon: "RQ", text: "Müşteri talebi geldiğinde dosya aranıyor" },
+  { icon: "!", text: "Eksik veri son anda çıkıyor" },
+  { icon: "?", text: "Kimin ne yapacağı belirsiz" },
 ];
 
 const disconnectedItems = ["Excel files", "Emails", "Folders", "Production notes"];
@@ -19,12 +20,12 @@ export function TrProblem() {
       <Reveal>
         <SectionHeading
           eyebrow="Gerçek durum"
-          title="Bugün içeride olan gerçek durum"
-          description="Çoğu üreticide veri vardır ama sistem yoktur."
+          title="Gerçek problem veri değil, sistem eksikliği."
+          description="Veri çoğu firmada var ama farklı Excel dosyalarında ve ekipler arasında dağınık. Sonuçta süreçler yavaş, hatalar sık."
         />
       </Reveal>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
+      <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {problems.map((problem, index) => (
           <Reveal key={problem.text} delay={index * 60}>
             <SurfaceCard className="h-full relative overflow-hidden border-amber-300/10 hover:-translate-y-1 hover:border-amber-300/26">

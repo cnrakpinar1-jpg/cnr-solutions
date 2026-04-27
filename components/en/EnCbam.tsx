@@ -11,11 +11,12 @@ export function EnCbam() {
           <div className="mx-auto max-w-3xl">
             <p className="eyebrow">Regulation</p>
             <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              Be ready for requests like CBAM
+              Be ready for CBAM and similar requirements
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-300">
-              The system is built to support CBAM and similar regulatory requests.
-              CBAM is one example, not the product itself.
+              Regulations and customer data requests require structured,
+              traceable data. CNR Data Room gives your team the system behind
+              those workflows. CBAM is one use case, not the product itself.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               {tags.map((tag) => (

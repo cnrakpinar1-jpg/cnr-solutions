@@ -24,13 +24,13 @@ export function EnHero() {
               </p>
             </div>
 
-            <span className="eyebrow">For export-oriented manufacturers</span>
+            <span className="eyebrow">Operational data room for export manufacturers</span>
             <h1 className="text-balance mt-2 text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-[4.6rem] lg:leading-[0.98]">
               Your export data shouldn&apos;t be scattered.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-8 text-slate-300 sm:text-lg sm:leading-9">
-              We centralize product, production, energy and customer data into a
-              system your team can actually use.
+              CNR Data Room centralizes product, production, energy, quality and
+              customer data into one system your team can actually use.
             </p>
             <p className="mt-4 text-base font-medium text-slate-200">
               No more Excel chaos. No more file searching.

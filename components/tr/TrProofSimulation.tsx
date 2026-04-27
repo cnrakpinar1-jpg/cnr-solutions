@@ -8,17 +8,17 @@ const rows = [
     customer: "EU Customer A",
     status: "Hazır",
     missing: "—",
-    owner: "Export Team",
+    owner: "İhracat",
     action: "Paketi gönder",
     badge: "border-emerald-300/20 bg-emerald-300/10 text-emerald-300",
   },
   {
     product: "STEEL-18",
     customer: "EU Customer B",
-    status: "Riskte",
+    status: "Riskli",
     missing: "Enerji verisi",
-    owner: "Production",
-    action: "Enerji dosyası yükle",
+    owner: "Üretim",
+    action: "Enerji dosyasını yükle",
     badge: "border-orange-300/20 bg-orange-300/10 text-orange-300",
   },
   {
@@ -26,7 +26,7 @@ const rows = [
     customer: "EU Customer C",
     status: "Kontrol gerekli",
     missing: "GTİP/CN kodu",
-    owner: "Export",
+    owner: "İhracat",
     action: "Kodu doğrula",
     badge: "border-amber-300/20 bg-amber-300/10 text-amber-300",
   },
@@ -34,18 +34,18 @@ const rows = [
     product: "CAST-ALU-22",
     customer: "EU Customer D",
     status: "Bekliyor",
-    missing: "Üretim hacmi",
-    owner: "Operations",
-    action: "Aylık veri ekle",
+    missing: "Üretim miktarı",
+    owner: "Operasyon",
+    action: "Miktarı gir",
     badge: "border-slate-300/20 bg-slate-300/10 text-slate-300",
   },
   {
     product: "SHEET-METAL-09",
     customer: "EU Customer E",
-    status: "Devam ediyor",
+    status: "Hazırlanıyor",
     missing: "Kalite dokümanı",
-    owner: "Quality",
-    action: "Sertifika ekle",
+    owner: "Kalite",
+    action: "Sertifikayı yükle",
     badge: "border-violet-300/20 bg-violet-300/10 text-violet-300",
   },
 ];
@@ -57,7 +57,7 @@ export function TrProofSimulation() {
         <Reveal>
           <SectionHeading
             eyebrow="Örnek durum"
-            title="Example operational visibility"
+            title="Örnek görünürlük"
             description="Bu görünürlük olmadan ekipler kör çalışır."
           />
         </Reveal>
@@ -70,8 +70,8 @@ export function TrProofSimulation() {
                 <span>Müşteri</span>
                 <span>Durum</span>
                 <span>Eksik veri</span>
-                <span>Sahip</span>
-                <span>Sonraki aksiyon</span>
+                <span>Sorumlu</span>
+                <span>Sonraki adım</span>
               </div>
               <div className="divide-y divide-white/8">
                 {rows.map((row) => (

@@ -2,22 +2,22 @@ import { Reveal } from "@/components/ui/Reveal";
 import { SectionShell } from "@/components/ui/SectionShell";
 
 const doNot = [
-  "Sertifikalı karbon doğrulaması yapmıyoruz",
-  "Resmi beyan sistemi değiliz",
-  "Genel danışmanlık raporu satmıyoruz",
+  "Sertifikalı karbon doğrulaması",
+  "Resmi beyan",
+  "Genel danışmanlık raporu",
 ];
 
 const doItems = [
   "Veriyi toplarız",
-  "Standart hale getiririz",
-  "İzlenebilir hale getiririz",
-  "Ekiplerinizin gerçekten kullanacağı sistem kurarız",
-  "Müşteriye hazır veri paketleri oluştururuz",
+  "Düzenleriz",
+  "Takip edilebilir hale getiririz",
+  "Ekip akışı kurarız",
+  "Müşteri/regülasyon paketleri çıkarırız",
 ];
 
 export function TrTrust() {
   return (
-    <SectionShell>
+    <SectionShell id="guven">
       <Reveal>
         <h2 className="mb-10 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
           Net sınırımız

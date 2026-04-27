@@ -13,19 +13,19 @@ export function Footer({ locale }: FooterProps) {
   const navLinks =
     locale === "tr"
       ? [
-          { href: "#risk", label: "Risk" },
           { href: "#cozum", label: "Çözüm" },
-          { href: "#akis", label: "Akış" },
-          { href: "#ornek", label: "Örnek" },
-          { href: "#surec", label: "Süreç" },
+          { href: "#kullanim", label: "Kullanım Alanları" },
+          { href: "#akis", label: "Nasıl Çalışır" },
+          { href: "#guven", label: "Güven" },
+          { href: "#proje-ornekleri", label: "Proje Örnekleri" },
           { href: "#contact", label: "İletişim" },
         ]
       : [
-          { href: "#risk", label: "Risk" },
           { href: "#solution", label: "Solution" },
-          { href: "#flow", label: "Flow" },
-          { href: "#proof", label: "Proof" },
-          { href: "#process", label: "Process" },
+          { href: "#use-cases", label: "Use Cases" },
+          { href: "#flow", label: "How It Works" },
+          { href: "#trust", label: "Trust" },
+          { href: "#past-projects", label: "Past Projects" },
           { href: "#contact", label: "Contact" },
         ];
   const navHeading = locale === "tr" ? "Navigasyon" : "Navigation";

@@ -13,14 +13,14 @@ export function TrCta() {
           <div aria-hidden="true" className="dashboard-grid absolute inset-0 opacity-25" />
           <div className="relative">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Operasyon içinde veri kaybetmeyi bırakın.
+            Verinizi kaybetmeyin. Operasyonu kontrol altına alın.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-            Mevcut veri akışınızı birlikte gözden geçirip Data Room’un bunu nasıl yapılandıracağını gösterelim.
+            15 dakikalık bir görüşmede mevcut veri akışınızı değerlendirelim ve Data Room’unuzun nasıl kurulabileceğini gösterelim.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Button href={contactUrl} target="_blank" rel="noopener noreferrer">
-              15 dakikalık görüşme planla
+              15 Dakikalık Görüşme
             </Button>
             <Button href="mailto:cnrakpinar1@gmail.com" variant="secondary">
               E-posta gönder

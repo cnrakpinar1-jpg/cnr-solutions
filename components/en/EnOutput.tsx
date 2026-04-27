@@ -4,37 +4,37 @@ import { SectionShell } from "@/components/ui/SectionShell";
 
 const outputs = [
   {
-    title: "Ready products",
+    title: "Which products are ready",
     description: "12 records",
     icon: "✓",
     iconClass: "border-emerald-300/20 bg-emerald-300/10 text-emerald-300",
   },
   {
-    title: "Missing fields",
+    title: "Which data is missing",
     description: "7 fields",
     icon: "!",
     iconClass: "border-amber-300/20 bg-amber-300/10 text-amber-300",
   },
   {
-    title: "Waiting customers",
+    title: "Which customers are waiting",
     description: "5 requests",
     icon: "→",
     iconClass: "border-sky-300/20 bg-sky-300/10 text-sky-300",
   },
   {
-    title: "Action owners",
+    title: "Who needs to act",
     description: "18 tasks",
     icon: "→",
     iconClass: "border-sky-300/20 bg-sky-300/10 text-sky-300",
   },
   {
-    title: "Risk status",
+    title: "Requests at risk",
     description: "3 records at risk",
     icon: "!",
     iconClass: "border-rose-300/20 bg-rose-300/10 text-rose-300",
   },
   {
-    title: "Completed files",
+    title: "Which files are complete",
     description: "24 files",
     icon: "FL",
     iconClass: "border-violet-300/20 bg-violet-300/10 text-violet-300",

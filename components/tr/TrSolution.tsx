@@ -7,6 +7,24 @@ const demoUrl =
 
 const sources = ["Excel", "Email", "ERP", "Production", "Energy", "Quality Docs"];
 const outputs = ["Customer package", "Missing data list", "Action owner", "Readiness status"];
+const pillars = [
+  {
+    title: "Veriyi toplar",
+    text: "Excel, e-posta, ERP, üretim ve enerji kaynaklarını bir araya getirir.",
+  },
+  {
+    title: "Standart hale getirir",
+    text: "Ürün, müşteri ve dönem bazında ortak yapı kurar.",
+  },
+  {
+    title: "Eksikleri gösterir",
+    text: "Eksik, hatalı veya bekleyen alanları görünür yapar.",
+  },
+  {
+    title: "Paket oluşturur",
+    text: "Müşteri ve regülasyon talepleri için hazır veri seti çıkarır.",
+  },
+];
 
 export function TrSolution() {
   return (
@@ -16,7 +34,7 @@ export function TrSolution() {
           <div className="max-w-2xl">
           <p className="eyebrow">Çözüm</p>
           <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            CNR Data Room
+            Çözüm: CNR Data Room
           </h2>
           <p className="mt-5 text-lg leading-8 text-slate-300">
             Veriyi tek merkezde toplayan, standart hale getiren ve ekiplerin
@@ -25,9 +43,17 @@ export function TrSolution() {
           <p className="mt-4 text-base font-medium text-slate-200">
             Dosya arama yerine sistem kullanılır.
           </p>
-          <p className="mt-4 rounded-2xl border border-[rgba(125,211,252,0.18)] bg-[rgba(56,189,248,0.06)] px-5 py-4 text-base font-semibold leading-7 text-white">
-            We don&apos;t prepare reports; we build the system behind them.
+          <p className="mt-4 rounded-2xl border border-rose-300/20 bg-rose-300/[0.05] px-5 py-4 text-base font-semibold leading-7 text-white">
+            Biz rapor hazırlamıyoruz. Rapor hazırlayabilmeniz için sistemi kuruyoruz.
           </p>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            {pillars.map((pillar) => (
+              <div key={pillar.title} className="rounded-2xl border border-white/8 bg-white/[0.035] p-4">
+                <h3 className="font-semibold text-white">{pillar.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-400">{pillar.text}</p>
+              </div>
+            ))}
+          </div>
           <div className="mt-8">
             <Button href={demoUrl} target="_blank" rel="noopener noreferrer">
               Nasıl çalıştığını göster

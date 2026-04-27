@@ -14,6 +14,7 @@ import { TrProofSimulation } from "@/components/tr/TrProofSimulation";
 import { TrSetupProcess } from "@/components/tr/TrSetupProcess";
 import { TrCta } from "@/components/tr/TrCta";
 import { TrFloatingWhatsApp } from "@/components/tr/TrFloatingWhatsApp";
+import { PastProjects } from "@/components/shared/PastProjects";
 
 export const metadata: Metadata = {
   title: "CNR Data Room | İhracat Üreticileri İçin Operasyon Veri Sistemi",
@@ -27,11 +28,11 @@ export const metadata: Metadata = {
 };
 
 const navLinks = [
-  { href: "#risk", label: "Risk" },
   { href: "#cozum", label: "Çözüm" },
-  { href: "#akis", label: "Akış" },
-  { href: "#ornek", label: "Örnek" },
-  { href: "#surec", label: "Süreç" },
+  { href: "#kullanim", label: "Kullanım Alanları" },
+  { href: "#akis", label: "Nasıl Çalışır" },
+  { href: "#guven", label: "Güven" },
+  { href: "#proje-ornekleri", label: "Proje Örnekleri" },
   { href: "#contact", label: "İletişim" },
 ];
 
@@ -54,6 +55,7 @@ export default function TrPage() {
       <TrTrust />
       <TrProofSimulation />
       <TrSetupProcess />
+      <PastProjects locale="tr" />
       <TrCta />
       <Footer locale="tr" />
       <TrFloatingWhatsApp />

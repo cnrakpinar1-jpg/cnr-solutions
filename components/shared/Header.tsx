@@ -13,7 +13,7 @@ export function Header({ locale, navLinks }: HeaderProps) {
     locale === "tr"
       ? "https://wa.me/905331970462?text=Merhaba%2C%20CNR%20Solutions%20sitesinden%20geliyorum.%20%C4%B0%C5%9Fletmem%20i%C3%A7in%20bir%20sistem%20konu%C5%9Fmak%20istiyorum."
       : "https://wa.me/905331970462?text=Hello%2C%20I%20want%20to%20see%20how%20CNR%20Data%20Room%20works.";
-  const ctaLabel = locale === "tr" ? "Birlikte bakalım" : "Talk to us";
+  const ctaText = locale === "tr" ? "15 Dakikalık Görüşme" : "Book a 15-Min Call";
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/6 bg-[rgba(6,8,22,0.65)] backdrop-blur-md">
@@ -79,7 +79,7 @@ export function Header({ locale, navLinks }: HeaderProps) {
             rel="noopener noreferrer"
             className="inline-flex min-h-9 items-center justify-center rounded-full bg-[var(--color-accent)] px-4 text-sm font-semibold text-slate-950 shadow-[0_8px_24px_rgba(56,189,248,0.22)] transition-all hover:-translate-y-0.5 hover:bg-[var(--color-accent-strong)]"
           >
-            {ctaLabel}
+            {ctaText}
           </a>
         </div>
       </div>

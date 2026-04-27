@@ -4,6 +4,24 @@ import { Button } from "@/components/ui/Button";
 
 const sources = ["Excel", "Email", "ERP", "Production", "Energy", "Quality Docs"];
 const outputs = ["Customer package", "Missing data list", "Action owner", "Readiness status"];
+const pillars = [
+  {
+    title: "Collects data",
+    text: "Brings Excel, email, ERP, production and energy sources together.",
+  },
+  {
+    title: "Standardizes it",
+    text: "Creates one structure by product, customer and period.",
+  },
+  {
+    title: "Shows gaps",
+    text: "Makes missing, incorrect or pending fields visible.",
+  },
+  {
+    title: "Creates packages",
+    text: "Builds data sets for customer and regulatory requests.",
+  },
+];
 
 export function EnSolution() {
   return (
@@ -25,6 +43,14 @@ export function EnSolution() {
           <p className="mt-4 rounded-2xl border border-[rgba(125,211,252,0.18)] bg-[rgba(56,189,248,0.06)] px-5 py-4 text-base font-semibold leading-7 text-white">
             We don&apos;t prepare reports; we build the system behind them.
           </p>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            {pillars.map((pillar) => (
+              <div key={pillar.title} className="rounded-2xl border border-white/8 bg-white/[0.035] p-4">
+                <h3 className="font-semibold text-white">{pillar.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-400">{pillar.text}</p>
+              </div>
+            ))}
+          </div>
           <div className="mt-8">
             <Button href="#flow">Show me how it works</Button>
           </div>

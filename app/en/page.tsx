@@ -13,6 +13,7 @@ import { EnWhy } from "@/components/en/EnWhy";
 import { EnProofSimulation } from "@/components/en/EnProofSimulation";
 import { EnProcess } from "@/components/en/EnProcess";
 import { EnCta } from "@/components/en/EnCta";
+import { PastProjects } from "@/components/shared/PastProjects";
 
 export const metadata: Metadata = {
   title: "CNR Data Room | Operational Data System",
@@ -21,11 +22,11 @@ export const metadata: Metadata = {
 };
 
 const navLinks = [
-  { href: "#risk", label: "Risk" },
   { href: "#solution", label: "Solution" },
-  { href: "#flow", label: "Flow" },
-  { href: "#proof", label: "Example" },
-  { href: "#process", label: "Process" },
+  { href: "#use-cases", label: "Use Cases" },
+  { href: "#flow", label: "How It Works" },
+  { href: "#trust", label: "Trust" },
+  { href: "#past-projects", label: "Past Projects" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -48,6 +49,7 @@ export default function EnPage() {
       <EnWhy />
       <EnProofSimulation />
       <EnProcess />
+      <PastProjects locale="en" />
       <EnCta />
       <Footer locale="en" />
     </main>

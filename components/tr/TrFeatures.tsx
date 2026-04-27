@@ -4,37 +4,37 @@ import { SectionShell } from "@/components/ui/SectionShell";
 
 const features = [
   {
-    title: "Hazır ürünler",
-    description: "12 kayıt",
+    title: "Hangi ürün hazır",
+    description: "12 hazır kayıt",
     icon: "✓",
     iconClass: "border-emerald-300/20 bg-emerald-300/10 text-emerald-300",
   },
   {
-    title: "Eksik alanlar",
+    title: "Hangi veri eksik",
     description: "7 alan",
     icon: "!",
     iconClass: "border-amber-300/20 bg-amber-300/10 text-amber-300",
   },
   {
-    title: "Bekleyen müşteriler",
+    title: "Hangi müşteri veri bekliyor",
     description: "5 talep",
     icon: "→",
     iconClass: "border-sky-300/20 bg-sky-300/10 text-sky-300",
   },
   {
-    title: "Aksiyon sahipleri",
+    title: "Hangi ekip/kişi aksiyon alacak",
     description: "18 görev",
     icon: "→",
     iconClass: "border-sky-300/20 bg-sky-300/10 text-sky-300",
   },
   {
-    title: "Risk durumu",
+    title: "Risk altında olan talepler",
     description: "3 kayıt riskte",
     icon: "!",
     iconClass: "border-rose-300/20 bg-rose-300/10 text-rose-300",
   },
   {
-    title: "Tamamlanan dosyalar",
+    title: "Hangi dosyalar tamamlandı",
     description: "24 dosya",
     icon: "FL",
     iconClass: "border-violet-300/20 bg-violet-300/10 text-violet-300",
@@ -47,7 +47,7 @@ export function TrFeatures() {
       <Reveal>
         <SectionHeading
           eyebrow="Çıktı"
-          title="Sistem size ne sağlar?"
+          title="Sistem sonunda ne görürsünüz?"
         />
       </Reveal>
 

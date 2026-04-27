@@ -28,17 +28,17 @@ export function TrHero() {
             </div>
 
             <p className="eyebrow">
-              İhracat yapan üreticiler için veri odası ve operasyon sistemi
+              İhracatçı üreticiler için operasyonel veri odası
             </p>
             <h1 className="text-balance mt-2 text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-[4.6rem] lg:leading-[0.98]">
               İhracat veriniz dağınık kalmasın.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-9 text-slate-300">
-              Ürün, üretim, enerji ve müşteri verilerini tek yerde toplayıp
-              ekipler arası dağınıklığı ortadan kaldıran operasyon sistemi.
+              CNR Data Room; ürün, üretim, enerji, kalite ve müşteri verilerini
+              tek yerde toplar. Ekipler arası dağınıklığı ortadan kaldırır.
             </p>
             <p className="mt-4 text-base font-medium text-slate-200">
-              Her ekip aynı veriye bakar. Herkes ne yapacağını bilir.
+              Her ekip aynı veriyi görür. Herkes ne yapacağını bilir.
             </p>
             <p className="mt-3 text-sm text-slate-500">
               Excel, e-posta ve klasör kaosu ortadan kalkar.

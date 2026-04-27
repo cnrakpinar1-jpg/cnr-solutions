@@ -21,12 +21,12 @@ const useCases = [
   },
   {
     icon: "QD",
-    title: "Quality documentation",
+    title: "Quality and documentation management",
     description: "Documents are structured so teams can find and use them.",
   },
   {
     icon: "RG",
-    title: "Compliance and reporting workflows",
+    title: "Regulation and reporting readiness",
     description: "CBAM is one example, not the product itself.",
   },
   {

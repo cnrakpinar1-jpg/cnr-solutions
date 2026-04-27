@@ -2,22 +2,22 @@ import { Reveal } from "@/components/ui/Reveal";
 import { SectionShell } from "@/components/ui/SectionShell";
 
 const doNot = [
-  "We do not provide certification",
-  "We are not an official declaration system",
-  "We do not sell generic consulting reports",
+  "Certified carbon verification",
+  "Official declaration filing",
+  "Generic consulting reports",
 ];
 
 const doItems = [
   "We collect data",
-  "We standardize it",
+  "We organize it",
   "We make it trackable",
-  "We build systems your teams actually use",
-  "We prepare customer-ready data packages",
+  "We build team workflows",
+  "We create customer/regulation packages",
 ];
 
 export function EnWhy() {
   return (
-    <SectionShell>
+    <SectionShell id="trust">
       <Reveal>
         <h2 className="mb-10 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
           Clear boundary

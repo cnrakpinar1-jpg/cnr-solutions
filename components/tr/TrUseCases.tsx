@@ -21,12 +21,12 @@ const useCases = [
   },
   {
     icon: "QD",
-    title: "Kalite dokümantasyonu",
+    title: "Kalite ve dokümantasyon yönetimi",
     description: "Belgeler ekiplerin ulaşabileceği düzende dursun.",
   },
   {
     icon: "RG",
-    title: "Uyum ve raporlama süreçleri",
+    title: "Regülasyon ve raporlama hazırlığı",
     description: "CBAM bu süreçlerden sadece biridir.",
   },
   {
