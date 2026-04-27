@@ -4,23 +4,31 @@ import { SectionShell } from "@/components/ui/SectionShell";
 const steps = [
   {
     number: "01",
+    icon: "IN",
     label: "Veri gelir",
     detail: "Excel, mail, üretim sistemleri",
+    badge: "Input",
   },
   {
     number: "02",
+    icon: "CN",
     label: "Merkezileştirilir ve temizlenir",
     detail: "Tek standart yapıya alınır",
+    badge: "Clean",
   },
   {
     number: "03",
+    icon: "!",
     label: "Eksik ve hatalı veriler görünür",
     detail: "Ne eksik, nerede hata var",
+    badge: "Flagged",
   },
   {
     number: "04",
+    icon: "PK",
     label: "Aksiyon alınabilir veri paketleri oluşur",
     detail: "Müşteri ve regülasyon talepleri için",
+    badge: "Ready",
   },
 ];
 
@@ -46,11 +54,17 @@ export function TrFlow() {
                   →
                 </span>
               )}
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-[rgba(125,211,252,0.22)] bg-[rgba(125,211,252,0.09)] text-sm font-bold text-[var(--color-accent)] transition-all group-hover:border-[rgba(125,211,252,0.42)] group-hover:bg-[rgba(125,211,252,0.16)]">
-                {step.number}
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-[rgba(125,211,252,0.22)] bg-[rgba(125,211,252,0.09)] text-[0.68rem] font-bold text-[var(--color-accent)] transition-all group-hover:border-[rgba(125,211,252,0.42)] group-hover:bg-[rgba(125,211,252,0.16)]">
+                  {step.icon}
+                </div>
+                <span className="rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-slate-400">
+                  {step.badge}
+                </span>
               </div>
               <div>
-                <p className="text-base font-semibold text-white">{step.label}</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">{step.number}</p>
+                <p className="mt-2 text-base font-semibold text-white">{step.label}</p>
                 <p className="mt-1 text-sm leading-6 text-slate-500">{step.detail}</p>
               </div>
             </div>

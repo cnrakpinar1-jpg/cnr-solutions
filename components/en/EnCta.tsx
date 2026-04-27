@@ -6,12 +6,14 @@ export function EnCta() {
   return (
     <SectionShell id="contact" className="pb-24">
       <Reveal>
-        <div className="surface-strong mx-auto max-w-3xl rounded-[32px] p-10 text-center sm:p-14">
-          <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Do not lose your data. Bring the operation under control.
+        <div className="surface-strong relative mx-auto max-w-5xl overflow-hidden rounded-[36px] p-10 text-center shadow-[0_30px_100px_rgba(2,6,23,0.58),0_0_80px_rgba(56,189,248,0.14)] sm:p-16">
+          <div aria-hidden="true" className="dashboard-grid absolute inset-0 opacity-25" />
+          <div className="relative">
+          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            Stop losing data inside the operation.
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-slate-300">
-            We can show how it works through a short 15-minute example.
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
+            Let&apos;s review your current data flow and show how a Data Room could structure it.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -20,7 +22,7 @@ export function EnCta() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Let&apos;s look together
+              Book a 15-minute call
             </Button>
             <Button
               href="mailto:cnrakpinar1@gmail.com"
@@ -49,6 +51,7 @@ export function EnCta() {
             >
               +90 533 197 0462
             </a>
+          </div>
           </div>
         </div>
       </Reveal>

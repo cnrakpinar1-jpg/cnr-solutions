@@ -4,6 +4,7 @@ import { SectionShell } from "@/components/ui/SectionShell";
 const doNot = [
   "We do not provide certification",
   "We are not an official declaration system",
+  "We do not sell generic consulting reports",
 ];
 
 const doItems = [
@@ -11,6 +12,7 @@ const doItems = [
   "We standardize it",
   "We make it trackable",
   "We build systems your teams actually use",
+  "We prepare customer-ready data packages",
 ];
 
 export function EnWhy() {

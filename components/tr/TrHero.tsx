@@ -1,31 +1,16 @@
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
+import { DataRoomDashboard } from "@/components/visuals/DataRoomDashboard";
+import { OperationsStrip } from "@/components/visuals/OperationsStrip";
 
 const contactUrl =
   "https://wa.me/905331970462?text=Merhaba%2C%20CNR%20Data%20Room%20nas%C4%B1l%20%C3%A7al%C4%B1%C5%9Ft%C4%B1%C4%9F%C4%B1n%C4%B1%20g%C3%B6rmek%20istiyorum.";
-
-const rows = [
-  {
-    product: "ALU-320",
-    status: "Ready",
-    className: "border-emerald-300/20 bg-emerald-300/10 text-emerald-300",
-  },
-  {
-    product: "STEEL-18",
-    status: "Missing energy data",
-    className: "border-amber-300/20 bg-amber-300/10 text-amber-300",
-  },
-  {
-    product: "FASTENER-M8",
-    status: "Needs GTIP check",
-    className: "border-sky-300/20 bg-sky-300/10 text-sky-300",
-  },
-];
 
 export function TrHero() {
   return (
     <section className="relative isolate overflow-hidden">
       <div aria-hidden="true" className="dashboard-grid pointer-events-none absolute inset-0 opacity-70" />
+      <div aria-hidden="true" className="data-flow-lines pointer-events-none absolute inset-0 opacity-70" />
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-0 top-0 h-[40rem] bg-[radial-gradient(ellipse_at_20%_10%,rgba(56,189,248,0.18),transparent_52%),linear-gradient(180deg,rgba(6,8,22,0.18),rgba(6,8,22,0.92))]"
@@ -70,33 +55,11 @@ export function TrHero() {
           </Reveal>
 
           <Reveal delay={120}>
-            <div className="surface-strong overflow-hidden rounded-[28px] shadow-[0_28px_90px_rgba(2,6,23,0.58),0_0_60px_rgba(56,189,248,0.12)]">
-              <div className="border-b border-white/8 px-6 py-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--color-accent)]">
-                  CNR Data Room
-                </p>
-                <h2 className="mt-2 text-xl font-semibold text-white">
-                  Operasyon veri durumu
-                </h2>
-              </div>
-              <div className="grid grid-cols-[0.8fr_1.2fr] border-b border-white/8 bg-white/[0.04] px-6 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
-                <span>Product</span>
-                <span>Status</span>
-              </div>
-              <div className="divide-y divide-white/8">
-                {rows.map((row) => (
-                  <div key={row.product} className="grid grid-cols-[0.8fr_1.2fr] items-center gap-4 px-6 py-5 transition-colors hover:bg-white/[0.035]">
-                    <span className="font-semibold text-white">{row.product}</span>
-                    <span className={`inline-flex w-fit rounded-full border px-3 py-1 text-sm font-semibold ${row.className}`}>
-                      {row.status}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <DataRoomDashboard locale="tr" />
           </Reveal>
         </div>
       </div>
+      <OperationsStrip locale="tr" />
     </section>
   );
 }

@@ -1,28 +1,13 @@
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
-
-const rows = [
-  {
-    product: "ALU-320",
-    status: "Ready",
-    className: "border-emerald-300/20 bg-emerald-300/10 text-emerald-300",
-  },
-  {
-    product: "STEEL-18",
-    status: "Missing energy data",
-    className: "border-amber-300/20 bg-amber-300/10 text-amber-300",
-  },
-  {
-    product: "FASTENER-M8",
-    status: "Needs GTIP check",
-    className: "border-sky-300/20 bg-sky-300/10 text-sky-300",
-  },
-];
+import { DataRoomDashboard } from "@/components/visuals/DataRoomDashboard";
+import { OperationsStrip } from "@/components/visuals/OperationsStrip";
 
 export function EnHero() {
   return (
     <section className="relative isolate overflow-hidden">
       <div aria-hidden="true" className="dashboard-grid pointer-events-none absolute inset-0 opacity-70" />
+      <div aria-hidden="true" className="data-flow-lines pointer-events-none absolute inset-0 opacity-70" />
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-0 top-0 h-[40rem] bg-[radial-gradient(ellipse_at_20%_10%,rgba(56,189,248,0.18),transparent_52%),linear-gradient(180deg,rgba(6,8,22,0.18),rgba(6,8,22,0.92))]"
@@ -71,33 +56,11 @@ export function EnHero() {
           </Reveal>
 
           <Reveal delay={120}>
-            <div className="surface-strong overflow-hidden rounded-[28px] shadow-[0_28px_90px_rgba(2,6,23,0.58),0_0_60px_rgba(56,189,248,0.12)]">
-              <div className="border-b border-white/8 px-6 py-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--color-accent)]">
-                  CNR Data Room
-                </p>
-                <h2 className="mt-2 text-xl font-semibold text-white">
-                  Operational data status
-                </h2>
-              </div>
-              <div className="grid grid-cols-[0.8fr_1.2fr] border-b border-white/8 bg-white/[0.04] px-6 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
-                <span>Product</span>
-                <span>Status</span>
-              </div>
-              <div className="divide-y divide-white/8">
-                {rows.map((row) => (
-                  <div key={row.product} className="grid grid-cols-[0.8fr_1.2fr] items-center gap-4 px-6 py-5 transition-colors hover:bg-white/[0.035]">
-                    <span className="font-semibold text-white">{row.product}</span>
-                    <span className={`inline-flex w-fit rounded-full border px-3 py-1 text-sm font-semibold ${row.className}`}>
-                      {row.status}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <DataRoomDashboard locale="en" />
           </Reveal>
         </div>
       </div>
+      <OperationsStrip locale="en" />
     </section>
   );
 }

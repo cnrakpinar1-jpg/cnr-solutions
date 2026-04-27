@@ -4,6 +4,7 @@ import { SectionShell } from "@/components/ui/SectionShell";
 const doNot = [
   "Sertifikalı karbon doğrulaması yapmıyoruz",
   "Resmi beyan sistemi değiliz",
+  "Genel danışmanlık raporu satmıyoruz",
 ];
 
 const doItems = [
@@ -11,6 +12,7 @@ const doItems = [
   "Standart hale getiririz",
   "İzlenebilir hale getiririz",
   "Ekiplerinizin gerçekten kullanacağı sistem kurarız",
+  "Müşteriye hazır veri paketleri oluştururuz",
 ];
 
 export function TrTrust() {
