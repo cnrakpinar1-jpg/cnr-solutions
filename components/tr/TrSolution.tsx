@@ -15,18 +15,18 @@ export function TrSolution() {
             CNR Data Room
           </h2>
           <p className="mt-5 text-lg leading-8 text-slate-300">
-            Üretici verisini tek yerde toplayan ve işlenebilir hale getiren
-            sistem.
+            Veriyi tek merkezde toplayan, standart hale getiren ve ekiplerin
+            birlikte çalışmasını sağlayan operasyon sistemi.
           </p>
-          <p className="mt-4 text-base leading-7 text-slate-400">
-            Ürün, tesis, enerji ve müşteri verilerinizi yapılandırılmış bir
-            ortama taşır. Eksik veriyi görünür kılar, müşteri taleplerine
-            hazır paketler oluşturur ve ihracat sürecini izlenebilir hale
-            getirir.
+          <p className="mt-4 text-base font-medium text-slate-200">
+            Dosya arama yerine sistem kullanılır.
+          </p>
+          <p className="mt-4 rounded-2xl border border-[rgba(125,211,252,0.18)] bg-[rgba(56,189,248,0.06)] px-5 py-4 text-base font-semibold leading-7 text-white">
+            We don&apos;t prepare reports. We build the system behind them.
           </p>
           <div className="mt-8">
             <Button href={demoUrl} target="_blank" rel="noopener noreferrer">
-              Örnek ekran isteyin
+              Nasıl çalıştığını göster
             </Button>
           </div>
         </div>

@@ -4,30 +4,34 @@ import { Footer } from "@/components/shared/Footer";
 import { TrHero } from "@/components/tr/TrHero";
 import { TrFlow } from "@/components/tr/TrFlow";
 import { TrProblem } from "@/components/tr/TrProblem";
+import { TrCost } from "@/components/tr/TrCost";
 import { TrSolution } from "@/components/tr/TrSolution";
 import { TrUseCases } from "@/components/tr/TrUseCases";
 import { TrCbam } from "@/components/tr/TrCbam";
 import { TrFeatures } from "@/components/tr/TrFeatures";
 import { TrTrust } from "@/components/tr/TrTrust";
+import { TrProofSimulation } from "@/components/tr/TrProofSimulation";
+import { TrSetupProcess } from "@/components/tr/TrSetupProcess";
 import { TrCta } from "@/components/tr/TrCta";
 import { TrFloatingWhatsApp } from "@/components/tr/TrFloatingWhatsApp";
 
 export const metadata: Metadata = {
-  title: "CNR Solutions | İhracat Üreticileri İçin Veri Yönetim Sistemi",
+  title: "CNR Data Room | İhracat Üreticileri İçin Operasyon Veri Sistemi",
   description:
-    "CNR Data Room; ürün, üretim, enerji ve müşteri verilerinizi tek yerde toplayıp AB müşteri talepleri ve CBAM uyumluluğuna hazır hale getiren ihracat veri yönetim sistemi.",
+    "CNR Data Room; ihracat yapan üreticiler için ürün, üretim, enerji ve müşteri verilerini tek yerde toplayan operasyon sistemi.",
   openGraph: {
-    title: "CNR Solutions — İhracat Verinizi Yönetin",
+    title: "CNR Data Room | Operational Data System",
     description:
-      "CBAM, AB müşteri veri talepleri ve operasyonel raporlama için tek yapı. İhracat üreticileri için veri odası sistemi.",
+      "İhracat yapan üreticiler için veri odası ve operasyon sistemi.",
   },
 };
 
 const navLinks = [
-  { href: "#akis", label: "Nasıl Çalışır" },
+  { href: "#risk", label: "Risk" },
   { href: "#cozum", label: "Çözüm" },
-  { href: "#kullanim", label: "Kullanım" },
-  { href: "#cbam", label: "CBAM" },
+  { href: "#akis", label: "Akış" },
+  { href: "#ornek", label: "Örnek" },
+  { href: "#surec", label: "Süreç" },
   { href: "#contact", label: "İletişim" },
 ];
 
@@ -40,13 +44,16 @@ export default function TrPage() {
       />
       <Header locale="tr" navLinks={navLinks} />
       <TrHero />
-      <TrFlow />
       <TrProblem />
+      <TrCost />
       <TrSolution />
+      <TrFlow />
+      <TrFeatures />
       <TrUseCases />
       <TrCbam />
-      <TrFeatures />
       <TrTrust />
+      <TrProofSimulation />
+      <TrSetupProcess />
       <TrCta />
       <Footer locale="tr" />
       <TrFloatingWhatsApp />

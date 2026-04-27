@@ -14,6 +14,8 @@
   --color-accent-soft: rgba(56, 189, 248, 0.12);
   --color-success: #86efac;
   --shadow-premium: 0 24px 80px rgba(2, 6, 23, 0.42);
+  --shadow-card: 0 18px 60px rgba(2, 6, 23, 0.32);
+  --shadow-glow: 0 18px 56px rgba(56, 189, 248, 0.28);
 }
 
 @theme inline {
@@ -78,6 +80,7 @@ textarea {
 
   p {
     color: var(--color-text-muted);
+    line-height: 1.75;
   }
 
   a,
@@ -103,26 +106,26 @@ textarea {
   }
 
   .section-spacing {
-    @apply py-24 sm:py-28 lg:py-32;
+    @apply py-24 sm:py-32 lg:py-36;
   }
 
   .surface {
     background:
-      linear-gradient(180deg, rgba(16, 24, 40, 0.76) 0%, rgba(10, 15, 28, 0.84) 100%),
+      linear-gradient(180deg, rgba(18, 28, 48, 0.82) 0%, rgba(9, 14, 27, 0.9) 100%),
       var(--color-panel);
-    border: 1px solid var(--color-border);
-    box-shadow: var(--shadow-premium);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    box-shadow: var(--shadow-card);
     @apply backdrop-blur-md;
   }
 
   .surface-strong {
     background: linear-gradient(
       180deg,
-      rgba(18, 28, 48, 0.9) 0%,
+      rgba(24, 36, 62, 0.94) 0%,
       rgba(10, 15, 28, 0.92) 48%,
       rgba(7, 10, 22, 0.96) 100%
     );
-    border: 1px solid rgba(125, 211, 252, 0.14);
+    border: 1px solid rgba(125, 211, 252, 0.2);
     box-shadow: var(--shadow-premium);
     @apply backdrop-blur-md;
   }
@@ -140,10 +143,10 @@ textarea {
 
   .reveal {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(18px);
     transition:
-      opacity 700ms ease,
-      transform 700ms ease;
+      opacity 620ms ease,
+      transform 620ms ease;
     transition-delay: var(--reveal-delay, 0ms);
   }
 
@@ -154,12 +157,14 @@ textarea {
 
   .section-veil {
     background:
+      radial-gradient(circle at 18% 10%, rgba(125, 211, 252, 0.06), transparent 24%),
+      radial-gradient(circle at 82% 80%, rgba(134, 239, 172, 0.035), transparent 22%),
       linear-gradient(
         180deg,
-        rgba(125, 211, 252, 0.03) 0%,
-        rgba(12, 18, 34, 0.12) 24%,
-        rgba(8, 12, 24, 0.02) 58%,
-        rgba(125, 211, 252, 0.04) 100%
+        rgba(125, 211, 252, 0.035) 0%,
+        rgba(12, 18, 34, 0.16) 26%,
+        rgba(8, 12, 24, 0.04) 58%,
+        rgba(125, 211, 252, 0.045) 100%
       );
     filter: blur(0px);
   }
@@ -182,5 +187,29 @@ textarea {
       transparent 100%
     );
     filter: blur(28px);
+  }
+
+  .dashboard-grid {
+    background-image:
+      linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.88), transparent 82%);
+  }
+
+  .flow-arrow {
+    animation: flow-nudge 2.8s ease-in-out infinite;
+  }
+
+  @keyframes flow-nudge {
+    0%,
+    100% {
+      opacity: 0.45;
+      transform: translate(-2px, -50%);
+    }
+    50% {
+      opacity: 0.95;
+      transform: translate(3px, -50%);
+    }
   }
 }

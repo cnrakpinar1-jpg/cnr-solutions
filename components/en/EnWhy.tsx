@@ -1,45 +1,68 @@
 import { Reveal } from "@/components/ui/Reveal";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
 
-const reasons = [
-  "We design systems businesses actually use — not just pages that look good.",
-  "We understand the business problem first, then solve it with technology.",
-  "We ship fast prototypes and iterate based on real use cases.",
-  "We focus on sales, customer tracking and operational clarity.",
-  "We build simple, workable systems for small businesses — not enterprise complexity.",
-  "We use AI as a workflow tool, not as a marketing tagline.",
+const doNot = [
+  "We do not provide certification",
+  "We are not an official declaration system",
+];
+
+const doItems = [
+  "We collect data",
+  "We organize it",
+  "We make it trackable",
+  "We build a system teams can use",
 ];
 
 export function EnWhy() {
   return (
     <SectionShell>
-      <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-start">
-        <Reveal>
-          <SectionHeading
-            eyebrow="Why Us"
-            title="Why CNR Solutions?"
-          />
+      <Reveal>
+        <h2 className="mb-10 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          Clear boundary
+        </h2>
+      </Reveal>
 
-          <blockquote className="mt-8 rounded-2xl border-l-4 border-[var(--color-accent)] bg-[var(--color-accent-soft)] px-6 py-5">
-            <p className="text-base font-medium italic leading-7 text-white">
-              &ldquo;We don&apos;t do tech demos. We build systems your business will actually use.&rdquo;
+      <div className="grid gap-6 lg:grid-cols-2">
+        <Reveal>
+          <div className="h-full rounded-[24px] border border-rose-300/20 bg-rose-300/[0.035] p-7 shadow-[0_18px_60px_rgba(2,6,23,0.28)] backdrop-blur-md sm:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-rose-300">
+              What we do not do
             </p>
-          </blockquote>
+            <ul className="mt-5 space-y-3">
+              {doNot.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span
+                    aria-hidden="true"
+                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-rose-300/20 bg-rose-300/[0.08] text-xs text-rose-300"
+                  >
+                    ×
+                  </span>
+                  <span className="text-base leading-7 text-slate-300">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </Reveal>
 
-        <Reveal delay={100}>
-          <ul className="space-y-4">
-            {reasons.map((reason, i) => (
-              <li key={i} className="flex items-start gap-3">
-                <span
-                  aria-hidden="true"
-                  className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-[var(--color-accent)]"
-                />
-                <span className="text-base leading-7 text-slate-300">{reason}</span>
-              </li>
-            ))}
-          </ul>
+        <Reveal delay={120}>
+          <div className="h-full rounded-[24px] border border-emerald-300/20 bg-emerald-300/[0.045] p-7 shadow-[0_18px_60px_rgba(2,6,23,0.28)] backdrop-blur-md sm:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-emerald-300">
+              What we do
+            </p>
+            <ul className="mt-5 space-y-3">
+              {doItems.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span
+                    aria-hidden="true"
+                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-emerald-300/[0.28] bg-emerald-300/[0.12] text-xs text-emerald-300"
+                  >
+                    ✓
+                  </span>
+                  <span className="text-base font-medium leading-7 text-white">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </Reveal>
       </div>
     </SectionShell>

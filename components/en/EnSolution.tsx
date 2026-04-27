@@ -1,62 +1,31 @@
 import { Reveal } from "@/components/ui/Reveal";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
-import { SurfaceCard } from "@/components/ui/SurfaceCard";
-
-const systems = [
-  {
-    title: "Lead Collection System",
-    description:
-      "Pull incoming requests from WhatsApp, DMs, forms and phone into one trackable flow. Nothing falls through the cracks.",
-  },
-  {
-    title: "Mini CRM",
-    description:
-      "Track every contact by status. Who is a lead, who is a client, who needs follow-up — visible in one panel.",
-  },
-  {
-    title: "Booking & Admin Panel",
-    description:
-      "Manage appointment requests, confirmations and cancellations without manual back-and-forth.",
-  },
-  {
-    title: "Client Portal",
-    description:
-      "Give clients one clean place for proposals, files, updates and communication. End the email thread chaos.",
-  },
-  {
-    title: "Admin Dashboard",
-    description:
-      "See the full business in one view. Leads, bookings, revenue and operations — clear and fast.",
-  },
-  {
-    title: "AI Assistant & Automation",
-    description:
-      "Summarize, classify and get reply suggestions on incoming messages. AI as a work tool, not a showpiece.",
-  },
-];
+import { Button } from "@/components/ui/Button";
 
 export function EnSolution() {
   return (
-    <SectionShell id="systems">
+    <SectionShell id="solution">
       <Reveal>
-        <SectionHeading
-          eyebrow="Systems We Build"
-          title="Usable business systems built around real workflows."
-          description="The goal isn't complex software. It's a simple, fast, sales-focused infrastructure your business will actually use."
-        />
+        <div className="max-w-2xl">
+          <p className="eyebrow">Solution</p>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            CNR Data Room
+          </h2>
+          <p className="mt-5 text-lg leading-8 text-slate-300">
+            An operations system that centralizes data, standardizes it, and helps
+            teams work from the same source.
+          </p>
+          <p className="mt-4 text-base font-medium text-slate-200">
+            Instead of searching for files, your team uses a system.
+          </p>
+          <p className="mt-4 rounded-2xl border border-[rgba(125,211,252,0.18)] bg-[rgba(56,189,248,0.06)] px-5 py-4 text-base font-semibold leading-7 text-white">
+            We don&apos;t prepare reports. We build the system behind them.
+          </p>
+          <div className="mt-8">
+            <Button href="#flow">Show me how it works</Button>
+          </div>
+        </div>
       </Reveal>
-
-      <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-        {systems.map((item, index) => (
-          <Reveal key={item.title} delay={index * 70}>
-            <SurfaceCard className="h-full hover:-translate-y-1 hover:border-[rgba(125,211,252,0.28)]">
-              <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-              <p className="mt-3 text-base leading-7">{item.description}</p>
-            </SurfaceCard>
-          </Reveal>
-        ))}
-      </div>
     </SectionShell>
   );
 }

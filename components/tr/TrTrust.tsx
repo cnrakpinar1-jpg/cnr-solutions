@@ -10,15 +10,20 @@ const doItems = [
   "Veriyi toplarız",
   "Düzenleriz",
   "Takip edilebilir hale getiririz",
-  "Müşteri taleplerine hazırlarız",
+  "Ekiplerin kullanabileceği sistem kurarız",
 ];
 
 export function TrTrust() {
   return (
     <SectionShell>
+      <Reveal>
+        <h2 className="mb-10 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          Net sınırımız
+        </h2>
+      </Reveal>
       <div className="grid gap-6 lg:grid-cols-2">
         <Reveal>
-          <div className="h-full rounded-[24px] border border-white/8 bg-white/[0.025] p-7 sm:p-8">
+          <div className="h-full rounded-[24px] border border-rose-300/20 bg-rose-300/[0.035] p-7 shadow-[0_18px_60px_rgba(2,6,23,0.28)] backdrop-blur-md sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-rose-300">
               Ne yapmıyoruz
             </p>
@@ -27,7 +32,7 @@ export function TrTrust() {
                 <li key={item} className="flex items-start gap-3">
                   <span
                     aria-hidden="true"
-                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-rose-300/20 bg-rose-300/8 text-xs text-rose-300"
+                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-rose-300/20 bg-rose-300/[0.08] text-xs text-rose-300"
                   >
                     ×
                   </span>
@@ -39,8 +44,8 @@ export function TrTrust() {
         </Reveal>
 
         <Reveal delay={120}>
-          <div className="h-full rounded-[24px] border border-[rgba(125,211,252,0.16)] bg-[rgba(56,189,248,0.04)] p-7 sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--color-accent)]">
+          <div className="h-full rounded-[24px] border border-emerald-300/20 bg-emerald-300/[0.045] p-7 shadow-[0_18px_60px_rgba(2,6,23,0.28)] backdrop-blur-md sm:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-emerald-300">
               Ne yapıyoruz
             </p>
             <ul className="mt-5 space-y-3">
@@ -48,7 +53,7 @@ export function TrTrust() {
                 <li key={item} className="flex items-start gap-3">
                   <span
                     aria-hidden="true"
-                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-[rgba(125,211,252,0.28)] bg-[rgba(56,189,248,0.12)] text-xs text-[var(--color-accent)]"
+                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-emerald-300/[0.28] bg-emerald-300/[0.12] text-xs text-emerald-300"
                   >
                     ✓
                   </span>

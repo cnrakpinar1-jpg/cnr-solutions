@@ -8,20 +8,24 @@ type FooterProps = {
 export function Footer({ locale }: FooterProps) {
   const brandLine =
     locale === "tr"
-      ? "İşletmeleri yapay zekâ çağına taşıyan sistemler."
-      : "AI-assisted business systems for modern companies.";
+      ? "İhracat yapan üreticiler için veri odası ve operasyon sistemi."
+      : "Operational data systems for export-oriented manufacturers.";
   const navLinks =
     locale === "tr"
       ? [
-          { href: "#cozumler", label: "Çözümler" },
-          { href: "#projects", label: "Projeler" },
-          { href: "#case-studies", label: "Vaka Analizleri" },
+          { href: "#risk", label: "Risk" },
+          { href: "#cozum", label: "Çözüm" },
+          { href: "#akis", label: "Akış" },
+          { href: "#ornek", label: "Örnek" },
           { href: "#surec", label: "Süreç" },
           { href: "#contact", label: "İletişim" },
         ]
       : [
-          { href: "#systems", label: "Systems" },
-          { href: "#demo-systems", label: "Demo Systems" },
+          { href: "#risk", label: "Risk" },
+          { href: "#solution", label: "Solution" },
+          { href: "#flow", label: "Flow" },
+          { href: "#proof", label: "Proof" },
+          { href: "#process", label: "Process" },
           { href: "#contact", label: "Contact" },
         ];
   const navHeading = locale === "tr" ? "Navigasyon" : "Navigation";
@@ -80,16 +84,16 @@ export function Footer({ locale }: FooterProps) {
 
         <div className="mt-10 flex flex-col gap-5 border-t border-white/6 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-slate-600">
-            © 2026 CNR Solutions · AI Business Systems
+            © 2026 CNR Solutions · CNR Data Room
           </p>
 
           <div className="flex items-center gap-3">
-            <a
+            <Link
               href="/"
               className="text-xs text-slate-600 transition-colors hover:text-slate-400"
             >
               {locale === "tr" ? "Dil değiştir" : "Language"}
-            </a>
+            </Link>
             <div
               className="flex items-center rounded-full border border-white/10 bg-white/[0.03] p-0.5"
               aria-label="Language selector"

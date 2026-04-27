@@ -8,7 +8,7 @@ type SectionShellProps = {
 
 export function SectionShell({ id, className, children }: SectionShellProps) {
   return (
-    <section id={id} className={`section-spacing relative ${className ?? ""}`}>
+    <section id={id} className={`section-spacing relative overflow-hidden ${className ?? ""}`}>
       <div aria-hidden="true" className="section-veil pointer-events-none absolute inset-x-0 inset-y-6" />
       <div
         aria-hidden="true"

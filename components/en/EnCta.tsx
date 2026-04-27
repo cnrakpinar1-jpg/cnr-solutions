@@ -8,11 +8,10 @@ export function EnCta() {
       <Reveal>
         <div className="surface-strong mx-auto max-w-3xl rounded-[32px] p-10 text-center sm:p-14">
           <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Let&apos;s turn your scattered workflows into a working system.
+            Do not lose your data. Bring the operation under control.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-slate-300">
-            If leads are getting lost across WhatsApp, DMs, phone calls and forms — we can help
-            you design the right system together.
+            We can show how it works through a short 15-minute example.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -21,7 +20,7 @@ export function EnCta() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Message on WhatsApp
+              Let&apos;s look together
             </Button>
             <Button
               href="mailto:cnrakpinar1@gmail.com"
@@ -29,8 +28,8 @@ export function EnCta() {
             >
               Send an Email
             </Button>
-            <Button href="#demo-systems" variant="secondary">
-              View Demo Systems
+            <Button href="#flow" variant="secondary">
+              View system flow
             </Button>
           </div>
 

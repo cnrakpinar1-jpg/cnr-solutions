@@ -4,12 +4,11 @@ import { SectionShell } from "@/components/ui/SectionShell";
 import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const problems = [
-  "Excel dosyaları dağınık, ekipler ayrı çalışıyor",
-  "Müşteri veri talebi gelince ekip dosya arıyor",
-  "Ürün bazında hangi verinin eksik olduğu bilinmiyor",
-  "Son dakika kaos: veri hazır değil, müşteri bekliyor",
-  "Ekipler arası sorumluluk net değil",
-  "Süreç takip edilemiyor, hata geç fark ediliyor",
+  "Veri farklı Excel'lerde tutulur",
+  "Ekipler ayrı çalışır",
+  "Aynı veri birden fazla yerde bulunur",
+  "Müşteri talebi geldiğinde dosya aranır",
+  "Eksik veri son anda fark edilir",
 ];
 
 export function TrProblem() {
@@ -17,12 +16,13 @@ export function TrProblem() {
     <SectionShell id="problem">
       <Reveal>
         <SectionHeading
-          eyebrow="Sorun"
-          title="Veri var, sistem yok."
+          eyebrow="Gerçek durum"
+          title="Bugün içeride olan gerçek durum"
+          description="Çoğu üreticide veri vardır ama sistem yoktur."
         />
       </Reveal>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
         {problems.map((problem, index) => (
           <Reveal key={index} delay={index * 60}>
             <SurfaceCard className="h-full hover:-translate-y-1 hover:border-[rgba(125,211,252,0.28)]">

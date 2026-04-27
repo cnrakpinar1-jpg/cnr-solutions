@@ -4,33 +4,33 @@ import { SectionShell } from "@/components/ui/SectionShell";
 const steps = [
   {
     number: "01",
-    label: "Veri gelir",
-    detail: "Excel, mail, üretim sistemleri",
+    label: "Data comes in",
+    detail: "Spreadsheets, email, production systems",
   },
   {
     number: "02",
-    label: "Tek yerde toplanır",
-    detail: "Ürün ve müşteri bazında",
+    label: "It is centralized",
+    detail: "One place for the team",
   },
   {
     number: "03",
-    label: "Eksik ve hatalı veriler görünür",
-    detail: "Ne eksik, nerede hata var",
+    label: "Missing and incorrect data becomes visible",
+    detail: "What is missing, where the issue is",
   },
   {
     number: "04",
-    label: "Kullanılabilir veri yapısı oluşur",
-    detail: "Ekiplerin çalışacağı yapı",
+    label: "A usable data structure is created",
+    detail: "Ready for the team to use",
   },
 ];
 
-export function TrFlow() {
+export function EnFlow() {
   return (
-    <SectionShell id="akis">
+    <SectionShell id="flow">
       <Reveal>
-        <p className="eyebrow">Sistem akışı</p>
+        <p className="eyebrow">System flow</p>
         <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-          Sistem nasıl çalışır?
+          How the system works
         </h2>
       </Reveal>
 

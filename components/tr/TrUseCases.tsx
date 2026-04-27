@@ -5,29 +5,24 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const useCases = [
   {
-    title: "CBAM / Karbon Veri Hazırlığı",
-    description:
-      "AB ihracatında CBAM kapsamındaki ürünler için enerji, üretim ve emisyon verilerini düzenli yapıya alın.",
+    title: "Müşteri veri talepleri",
+    description: "Talep geldiğinde dosya aramak yerine sistemden ilerleyin.",
   },
   {
-    title: "AB Müşteri Veri Talepleri",
-    description:
-      "Müşteri bazında veri paketleri hazırlayın. Talep geldiğinde dosya aramak yerine sisteminizden gönderin.",
+    title: "İhracat operasyon süreçleri",
+    description: "Ürün, müşteri ve ekip takibini tek akışta yönetin.",
   },
   {
-    title: "Üretim & Enerji Takibi",
-    description:
-      "Tesis ve hat bazında üretim miktarı, enerji tüketimi ve kaynak verilerini kayıt altına alın.",
+    title: "Üretim ve enerji takibi",
+    description: "Üretim ve enerji verisini aynı yapıda toplayın.",
   },
   {
-    title: "Kalite & Doküman Süreçleri",
-    description:
-      "Ürün belgeleri, sertifikalar ve teknik dosyaları ürün bazında tek yapıya toplayın.",
+    title: "İç dokümantasyon yönetimi",
+    description: "Belgeler ekiplerin ulaşabileceği düzende dursun.",
   },
   {
-    title: "İhracat Operasyon Yönetimi",
-    description:
-      "Ekipler arası veri sorumluluğunu netleştirin. Eksik veriyi erken görün, son dakika kaosunu önleyin.",
+    title: "Regülasyon ve raporlama süreçleri",
+    description: "CBAM dahil veri isteyen süreçlere hazır olun.",
   },
 ];
 
@@ -36,7 +31,7 @@ export function TrUseCases() {
     <SectionShell id="kullanim">
       <Reveal>
         <SectionHeading
-          eyebrow="Kullanım Alanları"
+          eyebrow="Kullanım alanları"
           title="Nerede kullanılır?"
         />
       </Reveal>

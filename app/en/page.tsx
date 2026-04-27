@@ -3,20 +3,29 @@ import { Header } from "@/components/shared/Header";
 import { Footer } from "@/components/shared/Footer";
 import { EnHero } from "@/components/en/EnHero";
 import { EnProblem } from "@/components/en/EnProblem";
+import { EnCost } from "@/components/en/EnCost";
 import { EnSolution } from "@/components/en/EnSolution";
+import { EnFlow } from "@/components/en/EnFlow";
+import { EnOutput } from "@/components/en/EnOutput";
 import { EnProjects } from "@/components/en/EnProjects";
+import { EnCbam } from "@/components/en/EnCbam";
 import { EnWhy } from "@/components/en/EnWhy";
+import { EnProofSimulation } from "@/components/en/EnProofSimulation";
+import { EnProcess } from "@/components/en/EnProcess";
 import { EnCta } from "@/components/en/EnCta";
 
 export const metadata: Metadata = {
-  title: "CNR Solutions | AI-Assisted Business Systems",
+  title: "CNR Data Room | Operational Data System",
   description:
-    "CNR Solutions builds AI-assisted business systems — mini CRMs, client portals, booking systems, dashboards and workflow automation for modern companies.",
+    "CNR Data Room organizes product, production, energy and customer data for export-oriented manufacturers.",
 };
 
 const navLinks = [
-  { href: "#systems", label: "Systems" },
-  { href: "#demo-systems", label: "Demo" },
+  { href: "#risk", label: "Risk" },
+  { href: "#solution", label: "Solution" },
+  { href: "#flow", label: "Flow" },
+  { href: "#proof", label: "Example" },
+  { href: "#process", label: "Process" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -30,9 +39,15 @@ export default function EnPage() {
       <Header locale="en" navLinks={navLinks} />
       <EnHero />
       <EnProblem />
+      <EnCost />
       <EnSolution />
+      <EnFlow />
+      <EnOutput />
       <EnProjects />
+      <EnCbam />
       <EnWhy />
+      <EnProofSimulation />
+      <EnProcess />
       <EnCta />
       <Footer locale="en" />
     </main>
