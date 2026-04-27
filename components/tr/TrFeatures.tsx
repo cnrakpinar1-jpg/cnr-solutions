@@ -5,8 +5,8 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const features = [
   {
-    title: "Hangi ürün hazır",
-    description: "Müşteriye gönderilebilir ürünler netleşir.",
+    title: "Hangi ürün ve müşteri hazır",
+    description: "Gönderime hazır kayıtlar netleşir.",
     icon: "✓",
     iconClass: "border-emerald-300/20 bg-emerald-300/10 text-emerald-300",
   },
@@ -42,7 +42,7 @@ export function TrFeatures() {
       <Reveal>
         <SectionHeading
           eyebrow="Çıktı"
-          title="Sistem sonunda ne görürsünüz?"
+          title="Sistem size ne sağlar?"
         />
       </Reveal>
 

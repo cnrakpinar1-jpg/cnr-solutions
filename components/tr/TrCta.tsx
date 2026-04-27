@@ -14,7 +14,7 @@ export function TrCta() {
             Verinizi kaybetmeyin. Operasyonu kontrol altına alın.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-slate-300">
-            15 dakikalık kısa bir örnek üzerinden nasıl çalıştığını gösterebiliriz.
+            15 dakikalık kısa bir demo üzerinden nasıl çalıştığını gösterebiliriz.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Button href={contactUrl} target="_blank" rel="noopener noreferrer">

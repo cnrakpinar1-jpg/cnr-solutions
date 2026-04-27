@@ -12,8 +12,8 @@ export function EnCbam() {
               Be ready for requests like CBAM
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-300">
-              CBAM and similar regulations are one use case for the system. The
-              main structure is built to handle data requests across the operation.
+              The system is built to support CBAM and similar regulatory requests.
+              CBAM is one example, not the product itself.
             </p>
           </div>
         </div>

@@ -12,8 +12,8 @@ export function TrCbam() {
               CBAM gibi talepler için hazır olun
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-300">
-              CBAM ve benzeri regülasyonlar bu sistemin kullanıldığı alanlardan biridir.
-              Ana yapı, tüm veri taleplerini karşılayacak şekilde kurulur.
+              Sistem CBAM ve benzeri regülasyon taleplerine hazır olacak şekilde kurulur.
+              CBAM bir örnektir; ürünün kendisi değildir.
             </p>
           </div>
         </div>

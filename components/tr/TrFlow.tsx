@@ -9,8 +9,8 @@ const steps = [
   },
   {
     number: "02",
-    label: "Tek yerde toplanır",
-    detail: "Ürün ve müşteri bazında",
+    label: "Merkezileştirilir ve temizlenir",
+    detail: "Tek standart yapıya alınır",
   },
   {
     number: "03",
@@ -19,8 +19,8 @@ const steps = [
   },
   {
     number: "04",
-    label: "Kullanılabilir veri yapısı oluşur",
-    detail: "Ekiplerin çalışacağı yapı",
+    label: "Aksiyon alınabilir veri paketleri oluşur",
+    detail: "Müşteri ve regülasyon talepleri için",
   },
 ];
 

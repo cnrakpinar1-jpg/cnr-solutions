@@ -13,7 +13,7 @@ const rows = [
     className: "border-amber-300/20 bg-amber-300/10 text-amber-300",
   },
   {
-    product: "FASTENER",
+    product: "FASTENER-M8",
     status: "Needs GTIP check",
     className: "border-sky-300/20 bg-sky-300/10 text-sky-300",
   },

@@ -8,9 +8,9 @@ const doNot = [
 
 const doItems = [
   "We collect data",
-  "We organize it",
+  "We standardize it",
   "We make it trackable",
-  "We build a system teams can use",
+  "We build systems your teams actually use",
 ];
 
 export function EnWhy() {

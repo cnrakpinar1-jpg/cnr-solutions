@@ -16,7 +16,7 @@ const rows = [
     bg: "bg-amber-300/10",
   },
   {
-    product: "FASTENER",
+    product: "FASTENER-M8",
     status: "GTİP kontrolü gerekli",
     tone: "text-sky-300",
     bg: "bg-sky-300/10",
@@ -30,7 +30,7 @@ export function TrProofSimulation() {
         <Reveal>
           <SectionHeading
             eyebrow="Örnek durum"
-            title="Ekip neyin hazır olduğunu görür"
+            title="Örnek durum"
             description="Bu görünürlük olmadan ekipler kör çalışır."
           />
         </Reveal>

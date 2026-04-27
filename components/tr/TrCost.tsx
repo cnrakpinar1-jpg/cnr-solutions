@@ -4,11 +4,11 @@ import { SectionShell } from "@/components/ui/SectionShell";
 import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const risks = [
-  "Müşteri taleplerine geç dönüş",
+  "Müşteri taleplerinin kaçması",
   "Hatalı veya eksik veri gönderimi",
-  "İçeride zaman kaybı",
-  "Ekipler arası kopukluk",
-  "Güven kaybı",
+  "Boşa giden ekip saatleri",
+  "Departmanlar arası sürtüşme",
+  "Müşteri güveni kaybı",
 ];
 
 export function TrCost() {

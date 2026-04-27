@@ -8,9 +8,9 @@ const doNot = [
 
 const doItems = [
   "Veriyi toplarız",
-  "Düzenleriz",
-  "Takip edilebilir hale getiririz",
-  "Ekiplerin kullanabileceği sistem kurarız",
+  "Standart hale getiririz",
+  "İzlenebilir hale getiririz",
+  "Ekiplerinizin gerçekten kullanacağı sistem kurarız",
 ];
 
 export function TrTrust() {

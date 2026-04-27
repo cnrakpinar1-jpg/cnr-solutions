@@ -9,7 +9,7 @@ const useCases = [
     description: "Talep geldiğinde dosya aramak yerine sistemden ilerleyin.",
   },
   {
-    title: "İhracat operasyon süreçleri",
+    title: "İhracat operasyon yönetimi",
     description: "Ürün, müşteri ve ekip takibini tek akışta yönetin.",
   },
   {
@@ -21,8 +21,8 @@ const useCases = [
     description: "Belgeler ekiplerin ulaşabileceği düzende dursun.",
   },
   {
-    title: "Regülasyon ve raporlama süreçleri",
-    description: "CBAM dahil veri isteyen süreçlere hazır olun.",
+    title: "Uyum ve raporlama süreçleri",
+    description: "CBAM bu süreçlerden sadece biridir.",
   },
 ];
 

@@ -4,10 +4,10 @@ import { SectionShell } from "@/components/ui/SectionShell";
 import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const risks = [
-  "Late responses to client requests",
+  "Missed customer requests",
   "Incorrect or incomplete data sent out",
-  "Time lost inside the company",
-  "Teams working out of sync",
+  "Wasted staff hours",
+  "Inter-department friction",
   "Loss of client trust",
 ];
 

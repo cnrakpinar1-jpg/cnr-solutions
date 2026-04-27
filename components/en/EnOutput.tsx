@@ -5,8 +5,8 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const outputs = [
   {
-    title: "Which product is ready",
-    description: "Ready product records are visible.",
+    title: "Which products and customers are ready",
+    description: "Ready records are visible.",
     icon: "✓",
     iconClass: "border-emerald-300/20 bg-emerald-300/10 text-emerald-300",
   },
@@ -40,7 +40,7 @@ export function EnOutput() {
   return (
     <SectionShell id="output">
       <Reveal>
-        <SectionHeading eyebrow="Output" title="What you see at the end" />
+        <SectionHeading eyebrow="Output" title="What the system gives you" />
       </Reveal>
 
       <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-5">

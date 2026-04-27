@@ -16,7 +16,7 @@ const rows = [
     bg: "bg-amber-300/10",
   },
   {
-    product: "FASTENER",
+    product: "FASTENER-M8",
     status: "HS code check needed",
     tone: "text-sky-300",
     bg: "bg-sky-300/10",
@@ -30,7 +30,7 @@ export function EnProofSimulation() {
         <Reveal>
           <SectionHeading
             eyebrow="Example"
-            title="The team can see what is ready"
+            title="Example status view"
             description="Without this visibility, teams work blind."
           />
         </Reveal>

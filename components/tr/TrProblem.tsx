@@ -6,7 +6,7 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 const problems = [
   "Veri farklı Excel'lerde tutulur",
   "Ekipler ayrı çalışır",
-  "Aynı veri birden fazla yerde bulunur",
+  "Aynı verinin farklı veya hatalı versiyonları dolaşır",
   "Müşteri talebi geldiğinde dosya aranır",
   "Eksik veri son anda fark edilir",
 ];

@@ -9,8 +9,8 @@ const steps = [
   },
   {
     number: "02",
-    label: "It is centralized",
-    detail: "One place for the team",
+    label: "It is centralized and cleaned",
+    detail: "One standard structure",
   },
   {
     number: "03",
@@ -19,8 +19,8 @@ const steps = [
   },
   {
     number: "04",
-    label: "A usable data structure is created",
-    detail: "Ready for the team to use",
+    label: "Actionable data packages are created",
+    detail: "For customers and regulators",
   },
 ];
 

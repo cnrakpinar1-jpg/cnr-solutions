@@ -9,7 +9,7 @@ const useCases = [
     description: "When a client asks, your team does not search for files.",
   },
   {
-    title: "Export operations",
+    title: "Export operations management",
     description: "Product, customer and team status stay in one flow.",
   },
   {
@@ -21,8 +21,8 @@ const useCases = [
     description: "Documents are structured so teams can find and use them.",
   },
   {
-    title: "Regulation and reporting workflows",
-    description: "Regulatory requests become part of the same structure.",
+    title: "Compliance and reporting workflows",
+    description: "CBAM is one example, not the product itself.",
   },
 ];
 
