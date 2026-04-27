@@ -2,35 +2,32 @@ import type { Metadata } from "next";
 import { Header } from "@/components/shared/Header";
 import { Footer } from "@/components/shared/Footer";
 import { TrHero } from "@/components/tr/TrHero";
-import { TrCuriosity } from "@/components/tr/TrCuriosity";
+import { TrFlow } from "@/components/tr/TrFlow";
 import { TrProblem } from "@/components/tr/TrProblem";
 import { TrSolution } from "@/components/tr/TrSolution";
-import { TrWho } from "@/components/tr/TrWho";
-import { TrProjects } from "@/components/tr/TrProjects";
-import { TrWhy } from "@/components/tr/TrWhy";
-import { TrProcess } from "@/components/tr/TrProcess";
-import { TrWorkingModel } from "@/components/tr/TrWorkingModel";
-import { TrPilot } from "@/components/tr/TrPilot";
-import { TrFaq } from "@/components/tr/TrFaq";
+import { TrUseCases } from "@/components/tr/TrUseCases";
+import { TrCbam } from "@/components/tr/TrCbam";
+import { TrFeatures } from "@/components/tr/TrFeatures";
+import { TrTrust } from "@/components/tr/TrTrust";
 import { TrCta } from "@/components/tr/TrCta";
 import { TrFloatingWhatsApp } from "@/components/tr/TrFloatingWhatsApp";
 
 export const metadata: Metadata = {
-  title: "CNR Solutions | İşletmeler İçin Yapay Zekâ Destekli İş Sistemleri",
+  title: "CNR Solutions | İhracat Üreticileri İçin Veri Yönetim Sistemi",
   description:
-    "CNR Solutions; KOBİ’ler, klinikler, güzellik merkezleri, diş klinikleri, emlak ofisleri ve hizmet işletmeleri için müşteri takip sistemi, yönetim paneli, randevu paneli, müşteri portalı ve yapay zekâ destekli operasyon sistemleri kurar.",
+    "CNR Data Room; ürün, üretim, enerji ve müşteri verilerinizi tek yerde toplayıp AB müşteri talepleri ve CBAM uyumluluğuna hazır hale getiren ihracat veri yönetim sistemi.",
   openGraph: {
-    title: "CNR Solutions — İşletmeleri Yapay Zekâ Çağına Taşıyan Sistemler",
+    title: "CNR Solutions — İhracat Verinizi Yönetin",
     description:
-      "Dağınık müşteri taleplerini, manuel süreçleri ve takip karmaşasını sade, ölçülebilir ve yapay zekâ destekli iş sistemlerine dönüştürüyoruz.",
+      "CBAM, AB müşteri veri talepleri ve operasyonel raporlama için tek yapı. İhracat üreticileri için veri odası sistemi.",
   },
 };
 
 const navLinks = [
-  { href: "#cozumler", label: "Çözümler" },
-  { href: "#projects", label: "Projeler" },
-  { href: "#case-studies", label: "Vaka Analizleri" },
-  { href: "#surec", label: "Süreç" },
+  { href: "#akis", label: "Nasıl Çalışır" },
+  { href: "#cozum", label: "Çözüm" },
+  { href: "#kullanim", label: "Kullanım" },
+  { href: "#cbam", label: "CBAM" },
   { href: "#contact", label: "İletişim" },
 ];
 
@@ -43,16 +40,13 @@ export default function TrPage() {
       />
       <Header locale="tr" navLinks={navLinks} />
       <TrHero />
-      <TrCuriosity />
+      <TrFlow />
       <TrProblem />
       <TrSolution />
-      <TrWho />
-      <TrProjects />
-      <TrPilot />
-      <TrWhy />
-      <TrProcess />
-      <TrWorkingModel />
-      <TrFaq />
+      <TrUseCases />
+      <TrCbam />
+      <TrFeatures />
+      <TrTrust />
       <TrCta />
       <Footer locale="tr" />
       <TrFloatingWhatsApp />
