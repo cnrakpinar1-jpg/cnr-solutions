@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
@@ -57,6 +58,22 @@ export function TrSolution() {
           </Reveal>
         ))}
       </div>
+
+      <Reveal delay={420}>
+        <div className="surface-strong mt-12 flex flex-col gap-6 rounded-[28px] p-8 sm:flex-row sm:items-center sm:justify-between sm:p-10">
+          <div className="max-w-2xl">
+            <span className="eyebrow">Yeni · Düğün ve Organizasyon</span>
+            <h3 className="mt-2 text-2xl font-semibold text-white sm:text-3xl">
+              Kaçan Rezervasyon Radarı
+            </h3>
+            <p className="mt-3 text-base leading-7 text-slate-300">
+              Düğün salonları ve organizasyon firmaları için Instagram/WhatsApp
+              rezervasyon taleplerini takip eden sistem.
+            </p>
+          </div>
+          <Button href="/tr/kacan-rezervasyon-radari">Çözümü Gör</Button>
+        </div>
+      </Reveal>
     </SectionShell>
   );
 }
