@@ -66,8 +66,7 @@ export async function submitContactForm(
   try {
     const result = await resend.emails.send({
       from: 'CNR Solutions <onboarding@resend.dev>',
-      // TEMPORARY: sending to Gmail for testing. Change to info@cnr-solutions.com once confirmed working.
-      to: ['cnrakpinar1@gmail.com'],
+      to: ['info@cnr-solutions.com'],
       replyTo: data.email,
       subject: `Yeni CBAM Data Room Demo Talebi — ${data.company}`,
       html: buildEmailHtml(data),
