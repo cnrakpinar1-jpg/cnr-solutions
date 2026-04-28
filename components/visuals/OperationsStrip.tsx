@@ -25,7 +25,7 @@ export function OperationsStrip({ locale }: OperationsStripProps) {
   return (
     <div className="relative z-10 border-y border-white/8 bg-white/[0.025] backdrop-blur-md">
       <div className="container-shell py-4">
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
           {items[locale].map(([icon, label]) => (
             <div
               key={label}

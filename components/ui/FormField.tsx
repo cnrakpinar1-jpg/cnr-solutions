@@ -3,13 +3,16 @@ type FormFieldProps = {
   name: string;
   value: string;
   error?: string;
-  placeholder: string;
+  placeholder?: string;
   onChange: (value: string) => void;
   multiline?: boolean;
+  type?: "text" | "email" | "tel" | "select";
+  options?: string[];
+  required?: boolean;
 };
 
 const fieldClasses =
-  "mt-2 w-full rounded-2xl border border-white/10 bg-[rgba(8,12,24,0.8)] px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-[rgba(125,211,252,0.48)] sm:text-base";
+  "mt-2 w-full rounded-2xl border border-white/10 bg-[rgba(8,12,24,0.8)] px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-[rgba(125,211,252,0.48)] focus:outline-none sm:text-base";
 
 export function FormField({
   label,
@@ -19,10 +22,16 @@ export function FormField({
   placeholder,
   onChange,
   multiline = false,
+  type = "text",
+  options,
+  required = false,
 }: FormFieldProps) {
   return (
     <label className="block">
-      <span className="text-sm font-medium text-slate-200">{label}</span>
+      <span className="text-sm font-medium text-slate-200">
+        {label}
+        {required && <span className="ml-1 text-[var(--color-accent)]">*</span>}
+      </span>
       {multiline ? (
         <textarea
           name={name}
@@ -33,16 +42,38 @@ export function FormField({
           className={`${fieldClasses} resize-none`}
           aria-invalid={Boolean(error)}
           aria-describedby={error ? `${name}-error` : undefined}
+          required={required}
         />
+      ) : type === "select" && options ? (
+        <select
+          name={name}
+          value={value}
+          onChange={(event) => onChange(event.target.value)}
+          className={`${fieldClasses} appearance-none`}
+          aria-invalid={Boolean(error)}
+          aria-describedby={error ? `${name}-error` : undefined}
+          required={required}
+        >
+          <option value="" disabled className="bg-[#0d1120] text-slate-500">
+            {placeholder ?? "Seçiniz"}
+          </option>
+          {options.map((opt) => (
+            <option key={opt} value={opt} className="bg-[#0d1120] text-white">
+              {opt}
+            </option>
+          ))}
+        </select>
       ) : (
         <input
           name={name}
+          type={type}
           value={value}
           onChange={(event) => onChange(event.target.value)}
           placeholder={placeholder}
           className={fieldClasses}
           aria-invalid={Boolean(error)}
           aria-describedby={error ? `${name}-error` : undefined}
+          required={required}
         />
       )}
       {error ? (

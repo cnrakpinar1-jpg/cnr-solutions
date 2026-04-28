@@ -8,17 +8,17 @@ type FooterProps = {
 export function Footer({ locale }: FooterProps) {
   const brandLine =
     locale === "tr"
-      ? "İhracat yapan üreticiler için veri odası ve operasyon sistemi."
+      ? "Türkiye'deki ihracatçı üreticiler için CBAM veri odası ve ihracat veri hazırlama sistemi."
       : "Operational data systems for export-oriented manufacturers.";
   const navLinks =
     locale === "tr"
       ? [
+          { href: "#sorun", label: "Sorun" },
           { href: "#cozum", label: "Çözüm" },
-          { href: "#kullanim", label: "Kullanım Alanları" },
           { href: "#akis", label: "Nasıl Çalışır" },
-          { href: "#guven", label: "Güven" },
-          { href: "#proje-ornekleri", label: "Proje Örnekleri" },
-          { href: "#contact", label: "İletişim" },
+          { href: "#kimler", label: "Kimler İçin" },
+          { href: "#pilot", label: "Pilot" },
+          { href: "#iletisim", label: "İletişim" },
         ]
       : [
           { href: "#solution", label: "Solution" },

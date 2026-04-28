@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
+import { MobileNav } from "@/components/shared/MobileNav";
 
 type NavLink = { href: string; label: string };
 
@@ -11,19 +12,20 @@ type HeaderProps = {
 export function Header({ locale, navLinks }: HeaderProps) {
   const ctaHref =
     locale === "tr"
-      ? "https://wa.me/905331970462?text=Merhaba%2C%20CNR%20Solutions%20sitesinden%20geliyorum.%20%C4%B0%C5%9Fletmem%20i%C3%A7in%20bir%20sistem%20konu%C5%9Fmak%20istiyorum."
+      ? "https://wa.me/905331970462?text=Merhaba%2C%20CBAM%20Data%20Room%20hakk%C4%B1nda%20demo%20almak%20istiyorum."
       : "https://wa.me/905331970462?text=Hello%2C%20I%20want%20to%20see%20how%20CNR%20Data%20Room%20works.";
-  const ctaText = locale === "tr" ? "15 Dakikalık Görüşme" : "Book a 15-Min Call";
+  const ctaText = locale === "tr" ? "Demo İsteyin" : "Book a 15-Min Call";
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/6 bg-[rgba(6,8,22,0.65)] backdrop-blur-md">
-      <div className="container-shell flex h-16 items-center justify-between gap-4 sm:h-18">
+      <div className="container-shell flex h-16 items-center justify-between gap-3 sm:h-18">
         <Link href={`/${locale}`} className="flex-shrink-0">
           <Logo variant="light" size="md" />
         </Link>
 
+        {/* Desktop nav */}
         <nav aria-label="Primary navigation" className="hidden md:block">
-          <ul className="flex items-center gap-6">
+          <ul className="flex items-center gap-5 lg:gap-6">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
@@ -37,7 +39,8 @@ export function Header({ locale, navLinks }: HeaderProps) {
           </ul>
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
+          {/* Language selector — desktop */}
           <div
             className="hidden items-center rounded-full border border-white/10 bg-white/[0.03] p-0.5 sm:flex"
             aria-label="Language selector"
@@ -73,14 +76,19 @@ export function Header({ locale, navLinks }: HeaderProps) {
               </Link>
             )}
           </div>
+
+          {/* Desktop CTA */}
           <a
             href={ctaHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-9 items-center justify-center rounded-full bg-[var(--color-accent)] px-4 text-sm font-semibold text-slate-950 shadow-[0_8px_24px_rgba(56,189,248,0.22)] transition-all hover:-translate-y-0.5 hover:bg-[var(--color-accent-strong)]"
+            className="hidden sm:inline-flex min-h-9 items-center justify-center rounded-full bg-[var(--color-accent)] px-4 text-sm font-semibold text-slate-950 shadow-[0_8px_24px_rgba(56,189,248,0.22)] transition-all hover:-translate-y-0.5 hover:bg-[var(--color-accent-strong)]"
           >
             {ctaText}
           </a>
+
+          {/* Mobile hamburger */}
+          <MobileNav navLinks={navLinks} ctaHref={ctaHref} ctaText={ctaText} />
         </div>
       </div>
     </header>

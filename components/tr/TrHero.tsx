@@ -3,8 +3,8 @@ import { Reveal } from "@/components/ui/Reveal";
 import { DataRoomDashboard } from "@/components/visuals/DataRoomDashboard";
 import { OperationsStrip } from "@/components/visuals/OperationsStrip";
 
-const contactUrl =
-  "https://wa.me/905331970462?text=Merhaba%2C%20CNR%20Data%20Room%20nas%C4%B1l%20%C3%A7al%C4%B1%C5%9Ft%C4%B1%C4%9F%C4%B1n%C4%B1%20g%C3%B6rmek%20istiyorum.";
+const demoUrl =
+  "https://wa.me/905331970462?text=Merhaba%2C%202%20Dakikal%C4%B1k%20CBAM%20Data%20Room%20demosunu%20g%C3%B6rmek%20istiyorum.";
 
 export function TrHero() {
   return (
@@ -16,45 +16,35 @@ export function TrHero() {
         className="pointer-events-none absolute inset-x-0 top-0 h-[40rem] bg-[radial-gradient(ellipse_at_20%_10%,rgba(56,189,248,0.18),transparent_52%),linear-gradient(180deg,rgba(6,8,22,0.18),rgba(6,8,22,0.92))]"
       />
       <div className="container-shell flex flex-col">
-        <div className="grid flex-1 items-center gap-14 pb-24 pt-16 lg:grid-cols-[minmax(0,1fr)_minmax(26rem,0.86fr)] lg:pb-36 lg:pt-24">
+        <div className="grid flex-1 items-center gap-10 pb-16 pt-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-14 lg:pb-32 lg:pt-20">
           <Reveal className="max-w-3xl">
-            <div className="mb-9 inline-block rounded-2xl border border-white/10 bg-white/[0.045] px-5 py-4 shadow-[0_18px_48px_rgba(2,6,23,0.3)] backdrop-blur-md">
-              <p className="text-lg font-semibold leading-snug text-white sm:text-xl">
-                AB müşteriniz veri istediğinde,<br className="hidden sm:block" /> ekibiniz dosya mı arıyor?
-              </p>
-              <p className="mt-1 text-sm font-medium text-slate-400">
-                Bu sadece zaman kaybı değil. Operasyon riski.
-              </p>
-            </div>
-
             <p className="eyebrow">
-              İhracatçı üreticiler için operasyonel veri odası
+              Türkiye&rsquo;deki ihracatçı üreticiler için CBAM veri odası
             </p>
-            <h1 className="text-balance mt-2 text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-[4.6rem] lg:leading-[0.98]">
-              İhracat veriniz dağınık kalmasın.
+            <h1 className="text-balance mt-3 text-[2.4rem] font-bold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-[4rem] lg:leading-[0.98]">
+              CBAM verisini Excel kaosundan çıkarıp tek bir ihracat veri odasında topluyoruz.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-9 text-slate-300">
-              CNR Data Room; ürün, üretim, enerji, kalite ve müşteri verilerini
-              tek yerde toplar. Ekipler arası dağınıklığı ortadan kaldırır.
-            </p>
-            <p className="mt-4 text-base font-medium text-slate-200">
-              Her ekip aynı veriyi görür. Herkes ne yapacağını bilir.
-            </p>
-            <p className="mt-3 text-sm text-slate-500">
-              Excel, e-posta ve klasör kaosu ortadan kalkar.
+            <p className="mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg sm:leading-9">
+              ERP&rsquo;ye dokunmadan çalışan sistemlerle üretim, enerji ve ürün
+              verilerinizi düzenliyor; AB müşterilerine gönderilebilir rapor
+              akışını hızlandırıyoruz.
             </p>
 
-            <div className="mt-9 flex flex-wrap gap-3">
-              <Button href={contactUrl} target="_blank" rel="noopener noreferrer">
-                Nasıl çalıştığını göster
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Button href={demoUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                2 Dakikalık Demo İsteyin
               </Button>
-              <Button href="#akis" variant="secondary">
-                Örnek veri akışını gör
+              <Button href="#akis" variant="secondary" className="w-full sm:w-auto">
+                CBAM Veri Akışını Görün
               </Button>
             </div>
+
+            <p className="mt-6 text-sm text-slate-500">
+              Alüminyum, çelik, kablo ve endüstriyel üreticiler için.
+            </p>
           </Reveal>
 
-          <Reveal delay={120}>
+          <Reveal delay={120} className="w-full min-w-0">
             <DataRoomDashboard locale="tr" />
           </Reveal>
         </div>

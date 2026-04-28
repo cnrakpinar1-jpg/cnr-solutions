@@ -4,28 +4,39 @@ import { SectionShell } from "@/components/ui/SectionShell";
 import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const problems = [
-  { icon: "XL", text: "Veri farklı Excel'lerde" },
-  { icon: "TM", text: "Ekipler ayrı çalışıyor" },
-  { icon: "V2", text: "Birden fazla versiyon oluşuyor" },
-  { icon: "RQ", text: "Müşteri talebi geldiğinde dosya aranıyor" },
-  { icon: "!", text: "Eksik veri son anda çıkıyor" },
-  { icon: "?", text: "Kimin ne yapacağı belirsiz" },
+  {
+    icon: "XL",
+    text: "Veri farklı Excel dosyalarında kalıyor",
+    detail: "Ürün, enerji ve üretim verisi birden fazla dosyaya dağılmış; tek yerden ulaşmak mümkün değil.",
+  },
+  {
+    icon: "TM",
+    text: "Üretim, kalite, ihracat ve enerji ekipleri ayrı çalışıyor",
+    detail: "Her ekip kendi kaydını tutuyor. Talep geldiğinde veriyi bir araya getirmek saatler alıyor.",
+  },
+  {
+    icon: "!",
+    text: "Eksik alanlar son aşamada fark ediliyor",
+    detail: "Müşteriye göndermeden önce eksik olduğu fark edilen veriler süreci yeniden başlatıyor.",
+  },
+  {
+    icon: "ERP",
+    text: "ERP her şeyi çözmüyor; raporlama akışı yine manuel kalıyor",
+    detail: "ERP üretim takibi için güçlü; CBAM ve AB müşteri raporlaması için yeterli değil.",
+  },
 ];
-
-const disconnectedItems = ["Excel files", "Emails", "Folders", "Production notes"];
 
 export function TrProblem() {
   return (
-    <SectionShell id="problem">
+    <SectionShell id="sorun">
       <Reveal>
         <SectionHeading
-          eyebrow="Gerçek durum"
-          title="Gerçek problem veri değil, sistem eksikliği."
-          description="Veri çoğu firmada var ama farklı Excel dosyalarında ve ekipler arasında dağınık. Sonuçta süreçler yavaş, hatalar sık."
+          eyebrow="Neden kilitleniyor?"
+          title="AB müşterisi veri istediğinde süreç neden kilitleniyor?"
         />
       </Reveal>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-10 grid gap-4 sm:grid-cols-2">
         {problems.map((problem, index) => (
           <Reveal key={problem.text} delay={index * 60}>
             <SurfaceCard className="h-full relative overflow-hidden border-amber-300/10 hover:-translate-y-1 hover:border-amber-300/26">
@@ -34,47 +45,24 @@ export function TrProblem() {
                 <div className="text-xs font-semibold uppercase tracking-[0.14em] text-amber-300">
                   0{index + 1}
                 </div>
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-amber-300/16 bg-amber-300/8 text-[0.68rem] font-bold text-amber-300">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-amber-300/16 bg-amber-300/8 text-[0.6rem] font-bold text-amber-300">
                   {problem.icon}
                 </div>
               </div>
-              <p className="relative mt-3 text-base font-medium leading-6 text-white">{problem.text}</p>
+              <p className="relative mt-3 text-base font-semibold leading-6 text-white">{problem.text}</p>
+              <p className="relative mt-2 text-sm leading-6 text-slate-500">{problem.detail}</p>
             </SurfaceCard>
           </Reveal>
         ))}
       </div>
 
-      <Reveal delay={160}>
-        <div className="mt-12 grid gap-6 rounded-[28px] border border-white/10 bg-white/[0.03] p-6 shadow-[0_22px_70px_rgba(2,6,23,0.36)] backdrop-blur-md lg:grid-cols-[1fr_auto_1fr] lg:items-center">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-amber-300">
-              Before
-            </p>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2">
-              {disconnectedItems.map((item) => (
-                <div key={item} className="rounded-2xl border border-amber-300/12 bg-amber-300/[0.045] px-4 py-3 text-sm font-semibold text-slate-200">
-                  {item}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center justify-center gap-2 text-center">
-            <span className="text-2xl text-slate-500">→</span>
-            <span className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-400">
-              Disconnected data
-            </span>
-          </div>
-
-          <div className="rounded-[24px] border border-[rgba(125,211,252,0.22)] bg-[rgba(56,189,248,0.06)] p-5">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--color-accent)]">
-              After
-            </p>
-            <h3 className="mt-3 text-2xl font-bold text-white">CNR Data Room</h3>
-            <p className="mt-3 text-base font-semibold text-slate-200">
-              Structured, visible, actionable
-            </p>
-          </div>
+      <Reveal delay={180}>
+        <div className="mt-10 rounded-[24px] border border-amber-300/14 bg-amber-300/[0.04] px-7 py-6">
+          <p className="text-base leading-8 text-slate-300">
+            <span className="font-semibold text-white">CBAM sürecindeki asıl problem</span> çoğu zaman
+            regülasyonu bilmemek değil; doğru veriyi doğru anda bulup müşteriye{" "}
+            <span className="font-medium text-amber-200">güvenilir formatta sunamamaktır.</span>
+          </p>
         </div>
       </Reveal>
     </SectionShell>
