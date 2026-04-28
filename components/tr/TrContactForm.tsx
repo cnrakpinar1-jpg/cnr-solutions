@@ -34,6 +34,7 @@ export function TrContactForm() {
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState<string>("");
 
   function setField(field: keyof FormState) {
     return (value: string) => {
@@ -64,10 +65,18 @@ export function TrContactForm() {
     }
     setErrors({});
     setStatus("submitting");
+    setErrorMessage("");
     try {
       const result = await submitContactForm(form);
-      setStatus(result.success ? "success" : "error");
-    } catch {
+      if (result.success) {
+        setStatus("success");
+      } else {
+        setErrorMessage(result.error ?? "Bilinmeyen bir hata oluştu.");
+        setStatus("error");
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      setErrorMessage(msg);
       setStatus("error");
     }
   }
@@ -168,7 +177,7 @@ export function TrContactForm() {
             <path fillRule="evenodd" clipRule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm-1-5a1 1 0 1 0 2 0V9a1 1 0 1 0-2 0v4Zm1-7a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" />
           </svg>
           <p className="text-sm text-rose-300">
-            Bir hata oluştu. Lütfen tekrar deneyin veya doğrudan{" "}
+            {errorMessage || "Bir hata oluştu."} Lütfen tekrar deneyin veya doğrudan{" "}
             <a href="https://wa.me/905331970462" className="underline underline-offset-2 hover:text-rose-200">
               WhatsApp
             </a>{" "}

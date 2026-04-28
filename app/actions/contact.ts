@@ -35,7 +35,7 @@ function buildEmailHtml(data: ContactFormData): string {
             ${row('Şirket', data.company)}
             ${row('Sektör', data.sector)}
             ${row('E-posta', `<a href="mailto:${data.email}" style="color:#7dd3fc;text-decoration:none;">${data.email}</a>`)}
-            ${row('Telefon / WhatsApp', data.phone ? `<a href="https://wa.me/${data.phone.replace(/\D/g,'')}" style="color:#7dd3fc;text-decoration:none;">${data.phone}</a>` : '—')}
+            ${row('Telefon / WhatsApp', data.phone ? `<a href="https://wa.me/${data.phone.replace(/\D/g, '')}" style="color:#7dd3fc;text-decoration:none;">${data.phone}</a>` : '—')}
             ${row('Mesaj', data.message ? `<span style="white-space:pre-wrap;">${data.message}</span>` : '—')}
           </tbody>
         </table>
@@ -52,34 +52,42 @@ function buildEmailHtml(data: ContactFormData): string {
 export async function submitContactForm(
   data: ContactFormData,
 ): Promise<{ success: boolean; error?: string }> {
+  console.log('[contact form] Incoming submission:', JSON.stringify(data, null, 2));
+
   const apiKey = process.env.RESEND_API_KEY;
 
   if (!apiKey) {
-    // Graceful fallback when key is not configured (dev/preview)
-    console.warn('[contact form] RESEND_API_KEY not set — logging submission instead');
-    console.log('[contact form submission]', data);
-    return { success: true };
+    console.error('[contact form] RESEND_API_KEY is not set — cannot send email');
+    return { success: false, error: 'Sunucu yapılandırması eksik (API key yok). Lütfen yönetici ile iletişime geçin.' };
   }
 
   const resend = new Resend(apiKey);
 
   try {
-    const { error } = await resend.emails.send({
+    const result = await resend.emails.send({
       from: 'CNR Solutions <onboarding@resend.dev>',
-      to: ['info@cnr-solutions.com'],
+      // TEMPORARY: sending to Gmail for testing. Change to info@cnr-solutions.com once confirmed working.
+      to: ['cnrakpinar1@gmail.com'],
       replyTo: data.email,
       subject: `Yeni CBAM Data Room Demo Talebi — ${data.company}`,
       html: buildEmailHtml(data),
     });
 
-    if (error) {
-      console.error('[contact form resend error]', error);
-      return { success: false, error: 'Mail gönderilemedi. Lütfen tekrar deneyin.' };
+    console.log('[contact form] Resend full response:', JSON.stringify(result, null, 2));
+
+    if (result.error) {
+      console.error('[contact form] Resend returned an error:', JSON.stringify(result.error, null, 2));
+      return {
+        success: false,
+        error: `Mail gönderilemedi: ${result.error.message ?? JSON.stringify(result.error)}`,
+      };
     }
 
+    console.log('[contact form] EMAIL SENT successfully. ID:', result.data?.id);
     return { success: true };
   } catch (err) {
-    console.error('[contact form unexpected error]', err);
-    return { success: false, error: 'Beklenmeyen bir hata oluştu.' };
+    const message = err instanceof Error ? err.message : String(err);
+    console.error('[contact form] Unexpected error:', message, err);
+    return { success: false, error: `Beklenmeyen hata: ${message}` };
   }
 }
