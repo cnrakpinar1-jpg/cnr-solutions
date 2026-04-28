@@ -29,7 +29,22 @@ export function Footer({ locale }: FooterProps) {
           { href: "#contact", label: "Contact" },
         ];
   const navHeading = locale === "tr" ? "Navigasyon" : "Navigation";
-  const contactHeading = locale === "tr" ? "İletişim" : "Contact";
+  const contact =
+    locale === "tr"
+      ? {
+          heading: "İLETİŞİM",
+          text: "CBAM veri akışınızı birlikte inceleyelim.",
+          note: "Demo ve pilot kurulum talepleri form üzerinden alınır.",
+          cta: "Demo Talebi Gönder",
+          href: "#iletisim",
+        }
+      : {
+          heading: "CONTACT",
+          text: "Let’s review your CBAM data flow.",
+          note: "Demo and pilot requests are collected through the form.",
+          cta: "Request a Demo",
+          href: "#contact",
+        };
 
   return (
     <footer className="border-t border-white/8 py-12">
@@ -61,16 +76,16 @@ export function Footer({ locale }: FooterProps) {
 
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-              {contactHeading}
+              {contact.heading}
             </p>
-            <div className="mt-4 flex flex-col gap-2 text-sm text-slate-400">
+            <div className="mt-4 flex max-w-xs flex-col items-start gap-3 text-sm text-slate-400">
+              <p className="leading-6">{contact.text}</p>
+              <p className="text-xs leading-5 text-slate-500">{contact.note}</p>
               <a
-                href="https://wa.me/905331970462"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-white"
+                href={contact.href}
+                className="inline-flex items-center rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-2 text-xs font-semibold text-slate-200 transition-colors hover:border-[rgba(125,211,252,0.36)] hover:bg-white/[0.08] hover:text-white"
               >
-                +90 533 197 0462
+                {contact.cta}
               </a>
             </div>
           </div>
