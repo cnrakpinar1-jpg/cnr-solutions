@@ -65,12 +65,6 @@ export function Footer({ locale }: FooterProps) {
             </p>
             <div className="mt-4 flex flex-col gap-2 text-sm text-slate-400">
               <a
-                href="mailto:cnrakpinar1@gmail.com"
-                className="transition-colors hover:text-white"
-              >
-                cnrakpinar1@gmail.com
-              </a>
-              <a
                 href="https://wa.me/905331970462"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -24,25 +24,12 @@ export function EnCta() {
             >
               Book a 15-Min Call
             </Button>
-            <Button
-              href="mailto:cnrakpinar1@gmail.com"
-              variant="secondary"
-            >
-              Send an Email
-            </Button>
             <Button href="#flow" variant="secondary">
               View system flow
             </Button>
           </div>
 
           <div className="mt-8 flex items-center justify-center gap-6 text-sm text-slate-500">
-            <a
-              href="mailto:cnrakpinar1@gmail.com"
-              className="hover:text-slate-300 transition-colors"
-            >
-              cnrakpinar1@gmail.com
-            </a>
-            <span aria-hidden="true">·</span>
             <a
               href="https://wa.me/905331970462"
               target="_blank"

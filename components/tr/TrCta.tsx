@@ -23,9 +23,6 @@ export function TrCta() {
             <Button href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               Demo İsteyin
             </Button>
-            <Button href="mailto:cnrakpinar1@gmail.com" variant="secondary" className="w-full sm:w-auto">
-              E-posta gönder
-            </Button>
           </div>
         </div>
       </Reveal>

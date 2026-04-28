@@ -59,9 +59,6 @@ export function TrSetupProcess() {
             >
               WhatsApp ile görüşelim
             </a>
-            <p className="mt-4 text-xs leading-5 text-slate-600">
-              Veya: <a href="mailto:cnrakpinar1@gmail.com" className="hover:text-slate-400 transition-colors">cnrakpinar1@gmail.com</a>
-            </p>
           </div>
         </Reveal>
       </div>
