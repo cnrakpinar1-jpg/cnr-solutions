@@ -1,54 +1,82 @@
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
+import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
-const audiences = [
+const systems = [
   {
-    label: "Üretici profili",
-    title: "AB'ye ihracat yapan üreticiler",
-    description:
-      "Alüminyum, çelik, kablo, makine ve endüstriyel parça üreticileri. CBAM kapsamında AB müşterilerine düzenli veri sağlamak zorunda olan firmalar.",
+    title: "Müşteri Talep Merkezi",
+    description: "Farklı kanallardan gelen müşteri taleplerini tek yerde toplar.",
+    sonuc: "Kim yazdı, ne istedi, kim ilgilenecek ve sonraki adım ne; görünür hale gelir.",
   },
   {
-    label: "Ürün kapsamı",
-    title: "CBAM kapsamındaki ürün gruplarıyla çalışan firmalar",
+    title: "Mini CRM",
     description:
-      "Ürün bazlı karbon verisi toplaması gereken, sera gazı emisyon bilgisini belgelemek durumunda olan işletmeler.",
+      "Müşteri bilgileri, görüşmeler, notlar, durumlar ve takip görevleri için sade bir müşteri yönetim sistemi kurar.",
+    sonuc: "Müşteri ilişkileri kişilerin hafızasında değil, düzenli ve erişilebilir bir sistemde tutulur.",
   },
   {
-    label: "ERP kullananlar",
-    title: "Veri hazırlama süreci hâlâ Excel'de kalan ekipler",
+    title: "Satış Pipeline Sistemi",
     description:
-      "ERP sistemleri mevcut olmasına rağmen CBAM ve AB müşteri raporlaması için ayrı bir akış gereken firmalar. ERP'nin üretemediği çıktılar için ek sistem arayanlar.",
+      "Yeni talep → görüşüldü → teklif gönderildi → takip bekliyor → kazanıldı / kaybedildi aşamalarını görünür hale getirir.",
+    sonuc:
+      "Hangi fırsatın nerede olduğu, kimin takip beklediği ve hangi teklifin kapanmaya yakın olduğu netleşir.",
   },
   {
-    label: "Organizasyon yapısı",
-    title: "Ekipler arası veri kopukluğu yaşayan işletmeler",
+    title: "Operasyon Dashboard'u",
     description:
-      "İhracat, kalite ve sürdürülebilirlik ekiplerinin farklı dosyalarda çalıştığı, aynı veriyi birden fazla kez toplamak durumunda kalan organizasyonlar.",
+      "Yönetimin günlük işi, bekleyen süreçleri, ekip durumunu ve performans göstergelerini tek panelden görmesini sağlar.",
+    sonuc: "Yönetim işi sonradan değil, anlık olarak görebilir.",
+  },
+  {
+    title: "AI Destekli Otomasyonlar",
+    description:
+      "Tekrarlayan işleri özetleme, sınıflandırma, görev çıkarma, hatırlatma ve veri düzenleme gibi akışlarla destekler.",
+    sonuc: "Ekip daha az manuel tekrar yapar, daha çok gerçek işe odaklanır.",
+  },
+  {
+    title: "Müşteri Portalı",
+    description:
+      "Müşterilerin proje, belge, süreç veya hizmet durumunu takip edebileceği sade bir alan oluşturur.",
+    sonuc: "Müşteri daha az soru sorar, ekip daha az manuel bilgilendirme yapmak zorunda kalır.",
+  },
+  {
+    title: "ERP Yanı Sistem Katmanı",
+    description:
+      "ERP'nin yerine geçmeden; ERP, Excel, e-posta ve manuel takip arasında eksik kalan görünürlük katmanını tamamlar.",
+    sonuc: "ERP'de duran veri iş akışına bağlanır; ekip ve yönetim süreci daha net takip eder.",
+  },
+  {
+    title: "Sektörel Veri Odaları",
+    description:
+      "Üretim, ihracat, CBAM/AB raporlama veya özel operasyon süreçleri için düzenli veri alanları kurar.",
+    sonuc: "Dağınık sektörel veriler daha hazır, erişilebilir ve raporlanabilir hale gelir.",
   },
 ];
 
-export function TrUseCases() {
+export function TrSystems() {
   return (
-    <SectionShell id="kimler">
+    <SectionShell id="sistemler">
       <Reveal>
         <SectionHeading
-          eyebrow="Hedef kitle"
-          title="Kimler için?"
+          eyebrow="Sistem kategorileri"
+          title="İşletmenizin ihtiyaç duyabileceği sistemler"
         />
       </Reveal>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2">
-        {audiences.map((item, index) => (
-          <Reveal key={item.title} delay={index * 70}>
-            <div className="group h-full rounded-[22px] border border-white/10 bg-white/[0.03] p-7 shadow-[0_18px_54px_rgba(2,6,23,0.22)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(125,211,252,0.24)] hover:bg-[rgba(56,189,248,0.04)]">
-              <span className="inline-block rounded-full border border-[rgba(125,211,252,0.2)] bg-[rgba(125,211,252,0.07)] px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">
-                {item.label}
-              </span>
-              <h3 className="mt-4 text-lg font-semibold leading-7 text-white">{item.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-400">{item.description}</p>
-            </div>
+      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {systems.map((sys, i) => (
+          <Reveal key={sys.title} delay={i * 45}>
+            <SurfaceCard className="h-full flex flex-col hover:-translate-y-1">
+              <h3 className="text-sm font-semibold leading-6 text-white">{sys.title}</h3>
+              <p className="mt-2 flex-1 text-sm leading-6 text-slate-500">{sys.description}</p>
+              <div className="mt-4 border-t border-white/6 pt-4">
+                <p className="text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">
+                  Sonuç
+                </p>
+                <p className="mt-1.5 text-xs leading-5 text-slate-400">{sys.sonuc}</p>
+              </div>
+            </SurfaceCard>
           </Reveal>
         ))}
       </div>

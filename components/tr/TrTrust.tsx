@@ -1,71 +1,62 @@
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
+import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
-const doNot = [
-  "Sertifikalı karbon doğrulaması",
-  "Resmi beyan",
-  "Genel danışmanlık raporu",
-];
-
-const doItems = [
-  "Veriyi toplarız",
-  "Düzenleriz",
-  "Takip edilebilir hale getiririz",
-  "Ekip akışı kurarız",
-  "Müşteri/regülasyon paketleri çıkarırız",
+const principles = [
+  {
+    number: "01",
+    title: "Ekibin gerçekten kullanabileceği kadar sade",
+    description:
+      "Fazla özellik, fazla ekran, fazla karmaşıklık sistemi kullanılmaz hale getirir. Her yapı, ekibin günlük iş akışına uyum sağlayacak şekilde kurulur.",
+  },
+  {
+    number: "02",
+    title: "Yönetimin gerçekten görebileceği kadar net",
+    description:
+      "Kritik bilgi çok sayıda raporun arkasına gizlenmez. Günlük durum, bekleyen süreçler ve temel göstergeler tek bakışta anlaşılır olur.",
+  },
+  {
+    number: "03",
+    title: "İşletmeye gerçekten değer katacak kadar pratik",
+    description:
+      "Sistem kurulur ama kullanılmazsa değer sıfırdır. Her yapıyı, gerçek iş süreciyle eşleşecek ve ekibin benimseyeceği şekilde tasarlarız.",
+  },
 ];
 
 export function TrTrust() {
   return (
-    <SectionShell id="guven">
+    <SectionShell>
       <Reveal>
-        <h2 className="mb-10 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-          Net sınırımız
-        </h2>
+        <SectionHeading
+          eyebrow="Yaklaşımımız"
+          title="Karmaşık teknoloji değil, kullanılabilir sistem."
+          description="CNR Solutions'ın yaklaşımı basittir: İşletmenin gerçek ihtiyacını anlamadan sistem kurulmaz. Gereksiz teknoloji, fazla ekran ve kullanılmayan yazılım işletmeye yük getirir."
+        />
       </Reveal>
-      <div className="grid gap-6 lg:grid-cols-2">
-        <Reveal>
-          <div className="h-full rounded-[24px] border border-rose-300/20 bg-rose-300/[0.035] p-7 shadow-[0_18px_60px_rgba(2,6,23,0.28)] backdrop-blur-md sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-rose-300">
-              Ne yapmıyoruz
-            </p>
-            <ul className="mt-5 space-y-3">
-              {doNot.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <span
-                    aria-hidden="true"
-                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-rose-300/20 bg-rose-300/[0.08] text-xs text-rose-300"
-                  >
-                    ×
-                  </span>
-                  <span className="text-base leading-7 text-slate-300">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </Reveal>
 
-        <Reveal delay={120}>
-          <div className="h-full rounded-[24px] border border-emerald-300/20 bg-emerald-300/[0.045] p-7 shadow-[0_18px_60px_rgba(2,6,23,0.28)] backdrop-blur-md sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-emerald-300">
-              Ne yapıyoruz
-            </p>
-            <ul className="mt-5 space-y-3">
-              {doItems.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <span
-                    aria-hidden="true"
-                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-emerald-300/[0.28] bg-emerald-300/[0.12] text-xs text-emerald-300"
-                  >
-                    ✓
-                  </span>
-                  <span className="text-base font-medium leading-7 text-white">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </Reveal>
+      <div className="mt-10 grid gap-4 sm:grid-cols-3">
+        {principles.map((p, i) => (
+          <Reveal key={p.number} delay={i * 70}>
+            <SurfaceCard className="h-full hover:-translate-y-1">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--color-accent)]">
+                {p.number}
+              </p>
+              <h3 className="mt-3 text-base font-semibold leading-6 text-white">{p.title}</h3>
+              <p className="mt-2.5 text-sm leading-6 text-slate-500">{p.description}</p>
+            </SurfaceCard>
+          </Reveal>
+        ))}
       </div>
+
+      <Reveal delay={200}>
+        <div className="mt-10 rounded-[24px] border border-[rgba(125,211,252,0.12)] bg-[rgba(125,211,252,0.04)] px-8 py-6 text-center">
+          <p className="text-lg font-semibold text-white sm:text-xl">
+            Amaç daha fazla ekran değil;{" "}
+            <span className="text-[var(--color-accent)]">daha net işleyiş.</span>
+          </p>
+        </div>
+      </Reveal>
     </SectionShell>
   );
 }

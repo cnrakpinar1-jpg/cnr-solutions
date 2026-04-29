@@ -8,16 +8,15 @@ type FooterProps = {
 export function Footer({ locale }: FooterProps) {
   const brandLine =
     locale === "tr"
-      ? "Türkiye'deki ihracatçı üreticiler için CBAM veri odası ve ihracat veri hazırlama sistemi."
+      ? "Türkiye’deki işletmeleri yapay zekâ çağına hazırlayan pratik iş sistemleri."
       : "Operational data systems for export-oriented manufacturers.";
   const navLinks =
     locale === "tr"
       ? [
-          { href: "#sorun", label: "Sorun" },
-          { href: "#cozum", label: "Çözüm" },
-          { href: "#akis", label: "Nasıl Çalışır" },
+          { href: "#sistemler", label: "Sistemler" },
           { href: "#kimler", label: "Kimler İçin" },
-          { href: "#pilot", label: "Pilot" },
+          { href: "#surec", label: "Süreç" },
+          { href: "#hakkimizda", label: "Hakkımızda" },
           { href: "#iletisim", label: "İletişim" },
         ]
       : [
@@ -33,9 +32,9 @@ export function Footer({ locale }: FooterProps) {
     locale === "tr"
       ? {
           heading: "İLETİŞİM",
-          text: "CBAM veri akışınızı birlikte inceleyelim.",
-          note: "Demo ve pilot kurulum talepleri form üzerinden alınır.",
-          cta: "Demo Talebi Gönder",
+          text: "İşletmenizin ihtiyacını birlikte netleştirelim.",
+          note: "Ücretsiz iş akışı analizi talepleri form üzerinden alınır.",
+          cta: "Analiz Talebi Gönder",
           href: "#iletisim",
         }
       : {
@@ -93,7 +92,7 @@ export function Footer({ locale }: FooterProps) {
 
         <div className="mt-10 flex flex-col gap-5 border-t border-white/6 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-slate-600">
-            © 2026 CNR Solutions · CNR Data Room
+            © 2026 CNR Solutions
           </p>
 
           <div className="flex items-center gap-3">

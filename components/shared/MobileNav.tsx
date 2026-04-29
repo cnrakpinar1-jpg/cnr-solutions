@@ -110,8 +110,7 @@ export function MobileNav({ navLinks, ctaHref, ctaText }: MobileNavProps) {
             <div className="border-t border-white/8 px-5 py-5">
               <a
                 href={ctaHref}
-                target="_blank"
-                rel="noopener noreferrer"
+                {...(ctaHref.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 onClick={() => setOpen(false)}
                 className="flex min-h-[3rem] w-full items-center justify-center rounded-full bg-[var(--color-accent)] text-sm font-semibold text-slate-950 shadow-[0_8px_24px_rgba(56,189,248,0.3)] transition-all hover:bg-[var(--color-accent-strong)]"
               >

@@ -2,32 +2,37 @@ import type { Metadata } from "next";
 import { Header } from "@/components/shared/Header";
 import { Footer } from "@/components/shared/Footer";
 import { TrHero } from "@/components/tr/TrHero";
+import { TrEducational } from "@/components/tr/TrEducational";
+import { TrPositioning } from "@/components/tr/TrFlow";
 import { TrProblem } from "@/components/tr/TrProblem";
 import { TrSolution } from "@/components/tr/TrSolution";
-import { TrFlow } from "@/components/tr/TrFlow";
-import { TrUseCases } from "@/components/tr/TrUseCases";
-import { TrCbam } from "@/components/tr/TrCbam";
-import { TrSetupProcess } from "@/components/tr/TrSetupProcess";
+import { TrSystems } from "@/components/tr/TrUseCases";
+import { TrDemoSystems } from "@/components/tr/TrDemoSystems";
+import { TrFit } from "@/components/tr/TrCbam";
+import { TrWhoWeServe } from "@/components/tr/TrWhoWeServe";
+import { TrProcess } from "@/components/tr/TrSetupProcess";
+import { TrTrust } from "@/components/tr/TrTrust";
+import { TrComparison } from "@/components/tr/TrComparison";
+import { TrAbout } from "@/components/tr/TrAbout";
 import { TrCta } from "@/components/tr/TrCta";
 import { TrFloatingWhatsApp } from "@/components/tr/TrFloatingWhatsApp";
 
 export const metadata: Metadata = {
-  title: "CBAM Data Room | Türk İhracatçı Üreticiler İçin Veri Hazırlama Sistemi",
+  title: "CNR Solutions | Türkiye'deki İşletmeler İçin Modern İş Sistemleri",
   description:
-    "ERP'ye dokunmadan çalışan sistemlerle üretim, enerji ve ürün verilerinizi düzenleyin; AB müşterilerine gönderilebilir CBAM rapor akışını hızlandırın.",
+    "CNR Solutions, KOBİ'lerin ve büyüyen işletmelerin satış, müşteri yönetimi, operasyon ve veri süreçlerini modern iş sistemleriyle daha görünür, düzenli ve ölçeklenebilir hale getirir.",
   openGraph: {
-    title: "CBAM Data Room | Türk İhracatçı Üreticiler İçin Veri Hazırlama Sistemi",
+    title: "CNR Solutions | Türkiye'deki İşletmeler İçin Modern İş Sistemleri",
     description:
-      "Alüminyum, çelik, kablo ve endüstriyel üreticiler için CBAM veri odası.",
+      "Dağınık iş akışlarını, akıllı işletme altyapısına çeviren pratik iş sistemleri. CRM, dashboard, otomasyon, portal ve ERP-yanı çözümler.",
   },
 };
 
 const navLinks = [
-  { href: "#sorun", label: "Sorun" },
-  { href: "#cozum", label: "Çözüm" },
-  { href: "#akis", label: "Nasıl Çalışır" },
+  { href: "#sistemler", label: "Sistemler" },
   { href: "#kimler", label: "Kimler İçin" },
-  { href: "#pilot", label: "Pilot" },
+  { href: "#surec", label: "Süreç" },
+  { href: "#hakkimizda", label: "Hakkımızda" },
   { href: "#iletisim", label: "İletişim" },
 ];
 
@@ -36,16 +41,22 @@ export default function TrPage() {
     <main className="relative overflow-hidden">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 h-[28rem] bg-[linear-gradient(180deg,rgba(125,211,252,0.1),rgba(6,8,22,0))] blur-3xl"
+        className="pointer-events-none absolute inset-x-0 top-0 h-[28rem] bg-[linear-gradient(180deg,rgba(56,189,248,0.08),rgba(6,8,22,0))] blur-3xl"
       />
       <Header locale="tr" navLinks={navLinks} />
       <TrHero />
+      <TrEducational />
+      <TrPositioning />
       <TrProblem />
       <TrSolution />
-      <TrFlow />
-      <TrUseCases />
-      <TrCbam />
-      <TrSetupProcess />
+      <TrSystems />
+      <TrDemoSystems />
+      <TrFit />
+      <TrWhoWeServe />
+      <TrProcess />
+      <TrTrust />
+      <TrComparison />
+      <TrAbout />
       <TrCta />
       <Footer locale="tr" />
       <TrFloatingWhatsApp />

@@ -5,10 +5,11 @@ import { FormField } from "@/components/ui/FormField";
 import { submitContactForm } from "@/app/actions/contact";
 
 const sectorOptions = [
-  "Alüminyum",
-  "Çelik",
-  "Kablo / Kablaj",
-  "Makine / Endüstriyel Parça",
+  "Üretim",
+  "İhracat",
+  "Klinik / Sağlık",
+  "Profesyonel Hizmet",
+  "Perakende / Ticaret",
   "Diğer",
 ];
 
@@ -163,7 +164,7 @@ export function TrContactForm() {
             label="Mesaj / Mevcut Durum"
             name="message"
             value={form.message}
-            placeholder="Mevcut durumunuzu kısaca anlatın. Hangi ürün grupları için veri hazırlıyorsunuz? Şu an hangi süreçte sorun yaşıyorsunuz?"
+            placeholder="Mevcut durumunuzu kısaca anlatın. Müşteri takibi, satış, operasyon veya veri süreçlerinde hangi sorunları yaşıyorsunuz?"
             onChange={setField("message")}
             error={errors.message}
             multiline
@@ -201,7 +202,7 @@ export function TrContactForm() {
               Gönderiliyor...
             </>
           ) : (
-            "Demo Talebi Gönder"
+            "Analiz Talebi Gönder"
           )}
         </button>
         <p className="text-xs leading-5 text-slate-600">
