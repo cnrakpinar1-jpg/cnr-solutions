@@ -1,9 +1,21 @@
 import { Reveal } from "@/components/ui/Reveal";
 
 const pillars = [
-  { label: "Daha görünür operasyon" },
-  { label: "Daha net müşteri takibi" },
-  { label: "Daha ölçülebilir büyüme" },
+  {
+    step: "01",
+    title: "Daha görünür operasyon",
+    description: "Günlük iş akışı, bekleyen süreçler ve ekip görevleri daha net izlenir.",
+  },
+  {
+    step: "02",
+    title: "Daha net müşteri takibi",
+    description: "Müşteri talepleri, görüşmeler, teklifler ve sonraki adımlar tek sistem mantığında toplanır.",
+  },
+  {
+    step: "03",
+    title: "Daha ölçülebilir büyüme",
+    description: "Satış, operasyon ve müşteri süreçleri raporlanabilir ve geliştirilebilir hale gelir.",
+  },
 ];
 
 export function TrPositioning() {
@@ -15,31 +27,45 @@ export function TrPositioning() {
       />
       <div className="container-shell relative z-10">
         <Reveal>
-          <p className="mx-auto max-w-3xl text-center text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl lg:text-[2.1rem] lg:leading-[1.22]">
-            Dağınık süreçleri görünür, takip edilebilir ve ölçülebilir{" "}
-            <span className="text-[var(--color-accent)]">iş sistemlerine dönüştürüyoruz.</span>
-          </p>
-          <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-7 text-slate-400 sm:leading-8">
-            CNR Solutions, işletmenizin mevcut düzenini tamamen yıkmadan; satış, müşteri yönetimi,
-            operasyon takibi ve veri akışları için daha akıllı bir sistem katmanı kurar.
-          </p>
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="text-balance text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl lg:text-[2.25rem] lg:leading-[1.18]">
+              Dağınık süreçleri, çalışan iş sistemlerine dönüştürüyoruz.
+            </h2>
+            <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate-400 sm:leading-8">
+              CNR Solutions, işletmenizin mevcut düzenini tamamen yıkmadan; satış, müşteri yönetimi,
+              operasyon takibi ve veri akışları için daha görünür ve yönetilebilir bir sistem katmanı kurar.
+            </p>
+          </div>
         </Reveal>
 
         <Reveal delay={100}>
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-0">
-            {pillars.map((pillar, i) => (
-              <div key={pillar.label} className="flex items-center gap-4">
-                <div className="rounded-full border border-[rgba(125,211,252,0.22)] bg-[rgba(125,211,252,0.06)] px-5 py-2.5 text-sm font-semibold text-[var(--color-accent)]">
-                  {pillar.label}
-                </div>
-                {i < pillars.length - 1 && (
+          <div className="relative mt-10">
+            <div
+              aria-hidden="true"
+              className="absolute left-8 right-8 top-1/2 hidden h-px bg-[linear-gradient(90deg,transparent,rgba(125,211,252,0.22),transparent)] lg:block"
+            />
+            <div className="relative grid gap-4 lg:grid-cols-3">
+              {pillars.map((pillar) => (
+                <article
+                  key={pillar.title}
+                  className="group relative overflow-hidden rounded-[22px] border border-white/10 bg-white/[0.035] p-6 shadow-[0_18px_54px_rgba(2,6,23,0.26)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(125,211,252,0.32)] hover:bg-[rgba(56,189,248,0.055)]"
+                >
                   <div
                     aria-hidden="true"
-                    className="hidden h-px w-8 bg-[rgba(125,211,252,0.18)] sm:block"
+                    className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(125,211,252,0.5),transparent)] opacity-70"
                   />
-                )}
-              </div>
-            ))}
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[rgba(125,211,252,0.22)] bg-[rgba(125,211,252,0.09)] text-[0.68rem] font-bold text-[var(--color-accent)] transition-colors group-hover:bg-[rgba(125,211,252,0.15)]">
+                      {pillar.step}
+                    </div>
+                    <div>
+                      <h3 className="text-base font-semibold leading-6 text-white sm:text-lg">{pillar.title}</h3>
+                      <p className="mt-2 text-sm leading-7 text-slate-400">{pillar.description}</p>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </Reveal>
       </div>

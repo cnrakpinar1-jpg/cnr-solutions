@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CNR Data Room | Operational Data System",
+  title: "CNR Solutions | AI Business Systems",
   description:
-    "CNR Solutions builds systems that organize operational data for export-oriented manufacturers.",
+    "CNR Solutions builds practical business systems for sales, operations, customer management and data workflows.",
 };
 
 export default function RootLayout({
