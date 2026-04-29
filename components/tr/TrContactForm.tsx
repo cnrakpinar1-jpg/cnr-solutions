@@ -5,11 +5,13 @@ import { FormField } from "@/components/ui/FormField";
 import { submitContactForm } from "@/app/actions/contact";
 
 const sectorOptions = [
-  "Üretim",
-  "İhracat",
   "Klinik / Sağlık",
-  "Profesyonel Hizmet",
-  "Perakende / Ticaret",
+  "Güzellik & Medikal Estetik",
+  "Oto Servis / Detailing",
+  "Kurs / Eğitim Merkezi",
+  "Mobilya / Dekorasyon",
+  "Danışmanlık / Hizmet",
+  "Perakende / Yerel İşletme",
   "Diğer",
 ];
 

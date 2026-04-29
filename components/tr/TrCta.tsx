@@ -45,7 +45,7 @@ export function TrCta() {
         <div id="form" className="surface-strong mt-14 rounded-[32px] p-8 shadow-[0_30px_100px_rgba(2,6,23,0.48)] sm:p-12">
           <h3 className="mb-2 text-xl font-semibold text-white">Ücretsiz Müşteri Akışı Analizi</h3>
           <p className="mb-8 text-sm leading-6 text-slate-500">
-            Formu doldurun, birkaç iş günü içinde dönüş yapalım. Hızlı yanıt için WhatsApp&rsquo;tan da ulaşabilirsiniz.
+            Formu doldurun, müşteri akışınızı inceleyip size en kısa sürede dönüş yapalım. Hızlı yanıt için WhatsApp&rsquo;tan da ulaşabilirsiniz.
           </p>
           <TrContactForm />
         </div>

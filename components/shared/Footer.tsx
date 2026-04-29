@@ -8,16 +8,16 @@ type FooterProps = {
 export function Footer({ locale }: FooterProps) {
   const brandLine =
     locale === "tr"
-      ? "Türkiye’deki işletmeleri yapay zekâ çağına hazırlayan pratik iş sistemleri."
+      ? "CNR Solutions, işletmeler için müşteri akışı standardı CNR Norm’u kurar. WhatsApp, Instagram, telefon, web formu ve reklam kanallarından gelen müşteri görüşmelerini daha düzenli, görünür ve takip edilebilir hale getirir."
       : "Operational data systems for export-oriented manufacturers.";
   const navLinks =
     locale === "tr"
       ? [
-          { href: "#sistemler", label: "Sistemler" },
-          { href: "#kimler", label: "Kimler İçin" },
-          { href: "#surec", label: "Süreç" },
-          { href: "#hakkimizda", label: "Hakkımızda" },
-          { href: "#iletisim", label: "İletişim" },
+          { href: "#cnr-norm", label: "CNR Norm" },
+          { href: "#nasil-calisir", label: "Nasıl Çalışır?" },
+          { href: "#hizmetler", label: "Destekleyici Hizmetler" },
+          { href: "#kimler", label: "Kimler İçin?" },
+          { href: "#iletisim", label: "Ücretsiz Analiz" },
         ]
       : [
           { href: "#solution", label: "Solution" },
@@ -32,8 +32,8 @@ export function Footer({ locale }: FooterProps) {
     locale === "tr"
       ? {
           heading: "İLETİŞİM",
-          text: "İşletmenizin ihtiyacını birlikte netleştirelim.",
-          note: "Ücretsiz iş akışı analizi talepleri form üzerinden alınır.",
+          text: "Müşteri akışınızın nerede dağıldığını birlikte netleştirelim.",
+          note: "Ücretsiz Müşteri Akışı Analizi talepleri form üzerinden alınır.",
           cta: "Analiz Talebi Gönder",
           href: "#iletisim",
         }

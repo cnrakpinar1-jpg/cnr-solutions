@@ -71,7 +71,7 @@ export function TrServices() {
         </p>
         <div className="mt-6 flex justify-center">
           <Button href="#iletisim" variant="secondary">
-            Önce Müşteri Akışınızı Analiz Edelim
+            CNR Norm’un İşletmenize Nasıl Kurulacağını Çıkaralım
           </Button>
         </div>
       </Reveal>
