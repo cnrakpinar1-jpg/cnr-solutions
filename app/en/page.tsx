@@ -2,32 +2,33 @@ import type { Metadata } from "next";
 import { Header } from "@/components/shared/Header";
 import { Footer } from "@/components/shared/Footer";
 import { EnHero } from "@/components/en/EnHero";
+import { EnCategory } from "@/components/en/EnCategory";
 import { EnProblem } from "@/components/en/EnProblem";
-import { EnCost } from "@/components/en/EnCost";
-import { EnSolution } from "@/components/en/EnSolution";
-import { EnFlow } from "@/components/en/EnFlow";
-import { EnOutput } from "@/components/en/EnOutput";
-import { EnProjects } from "@/components/en/EnProjects";
-import { EnCbam } from "@/components/en/EnCbam";
-import { EnWhy } from "@/components/en/EnWhy";
-import { EnProofSimulation } from "@/components/en/EnProofSimulation";
+import { EnNormProduct } from "@/components/en/EnSolution";
 import { EnProcess } from "@/components/en/EnProcess";
+import { EnServices } from "@/components/en/EnServices";
+import { EnWhoWeServe } from "@/components/en/EnProjects";
+import { EnWhy } from "@/components/en/EnWhy";
+import { EnTrust } from "@/components/en/EnCost";
 import { EnCta } from "@/components/en/EnCta";
-import { PastProjects } from "@/components/shared/PastProjects";
 
 export const metadata: Metadata = {
-  title: "CNR Data Room | Operational Data System",
+  title: "CNR Norm | Customer Flow Standard — CNR Solutions",
   description:
-    "CNR Data Room organizes product, production, energy and customer data for export-oriented manufacturers.",
+    "CNR Norm standardizes customer conversations from WhatsApp, Instagram, phone, website forms and ad leads into one visible flow for follow-up, appointments, quotes, sales and reporting.",
+  openGraph: {
+    title: "CNR Norm | Customer Flow Standard — CNR Solutions",
+    description:
+      "Turn scattered customer conversations into a standardized, visible and trackable customer flow. CNR Norm — the new norm for how your business handles incoming customers.",
+  },
 };
 
 const navLinks = [
-  { href: "#solution", label: "Solution" },
-  { href: "#use-cases", label: "Use Cases" },
-  { href: "#flow", label: "How It Works" },
-  { href: "#trust", label: "Trust" },
-  { href: "#past-projects", label: "Past Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "#cnr-norm", label: "CNR Norm" },
+  { href: "#how-it-works", label: "How It Works" },
+  { href: "#supporting-services", label: "Supporting Services" },
+  { href: "#who-its-for", label: "Who It's For" },
+  { href: "#contact", label: "Free Analysis" },
 ];
 
 export default function EnPage() {
@@ -35,21 +36,18 @@ export default function EnPage() {
     <main className="relative overflow-hidden">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 h-[28rem] bg-[linear-gradient(180deg,rgba(125,211,252,0.1),rgba(6,8,22,0))] blur-3xl"
+        className="pointer-events-none absolute inset-x-0 top-0 h-[28rem] bg-[linear-gradient(180deg,rgba(56,189,248,0.08),rgba(6,8,22,0))] blur-3xl"
       />
       <Header locale="en" navLinks={navLinks} />
       <EnHero />
+      <EnCategory />
       <EnProblem />
-      <EnCost />
-      <EnSolution />
-      <EnFlow />
-      <EnOutput />
-      <EnProjects />
-      <EnCbam />
-      <EnWhy />
-      <EnProofSimulation />
+      <EnNormProduct />
       <EnProcess />
-      <PastProjects locale="en" />
+      <EnServices />
+      <EnWhoWeServe />
+      <EnWhy />
+      <EnTrust />
       <EnCta />
       <Footer locale="en" />
     </main>

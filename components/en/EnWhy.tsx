@@ -1,45 +1,45 @@
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
 
-const doNot = [
-  "Certified carbon verification",
-  "Official declaration filing",
-  "Generic consulting reports",
+const genericItems = [
+  "Talk about features",
+  "Start with technical setup",
+  "Force the business to adapt to the tool",
+  "Leave usage discipline to the team",
+  "Do not own the full customer flow",
 ];
 
-const doItems = [
-  "We collect data",
-  "We organize it",
-  "We make it trackable",
-  "We build team workflows",
-  "We create customer/regulation packages",
+const normItems = [
+  "Start from the business outcome",
+  "Analyze the existing customer flow",
+  "Fit the system around the way the business works",
+  "Handle follow-up, appointment, quote and sales together",
+  "Give the owner operational visibility",
+  "Turn scattered conversations into a new business standard",
 ];
 
 export function EnWhy() {
   return (
-    <SectionShell id="trust">
+    <SectionShell>
       <Reveal>
-        <h2 className="mb-10 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-          Clear boundary
-        </h2>
+        <SectionHeading title="Why CNR Norm?" />
+        <p className="mt-5 max-w-2xl text-base leading-8 text-slate-400">
+          There are CRMs, messaging tools, chatbots and automation products in the market. CNR Norm is different because it does not start from technical features. It starts from the real customer flow of the business.
+        </p>
       </Reveal>
 
-      <div className="grid gap-6 lg:grid-cols-2">
-        <Reveal>
-          <div className="h-full rounded-[24px] border border-rose-300/20 bg-rose-300/[0.035] p-7 shadow-[0_18px_60px_rgba(2,6,23,0.28)] backdrop-blur-md sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-rose-300">
-              What we do not do
+      <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <Reveal delay={60}>
+          <div className="h-full rounded-[20px] border border-white/8 bg-white/[0.03] px-6 py-5">
+            <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-slate-500">
+              Generic tools
             </p>
             <ul className="mt-5 space-y-3">
-              {doNot.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <span
-                    aria-hidden="true"
-                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-rose-300/20 bg-rose-300/[0.08] text-xs text-rose-300"
-                  >
-                    ×
-                  </span>
-                  <span className="text-base leading-7 text-slate-300">{item}</span>
+              {genericItems.map((item) => (
+                <li key={item} className="flex items-start gap-2.5">
+                  <span className="mt-0.5 flex-shrink-0 text-slate-600 select-none">×</span>
+                  <span className="text-sm text-slate-400">{item}</span>
                 </li>
               ))}
             </ul>
@@ -47,26 +47,30 @@ export function EnWhy() {
         </Reveal>
 
         <Reveal delay={120}>
-          <div className="h-full rounded-[24px] border border-emerald-300/20 bg-emerald-300/[0.045] p-7 shadow-[0_18px_60px_rgba(2,6,23,0.28)] backdrop-blur-md sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-emerald-300">
-              What we do
+          <div className="h-full rounded-[20px] border border-[rgba(125,211,252,0.18)] bg-[rgba(125,211,252,0.05)] px-6 py-5">
+            <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
+              CNR Norm
             </p>
             <ul className="mt-5 space-y-3">
-              {doItems.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <span
-                    aria-hidden="true"
-                    className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-emerald-300/[0.28] bg-emerald-300/[0.12] text-xs text-emerald-300"
-                  >
-                    ✓
-                  </span>
-                  <span className="text-base font-medium leading-7 text-white">{item}</span>
+              {normItems.map((item) => (
+                <li key={item} className="flex items-start gap-2.5">
+                  <span className="mt-0.5 flex-shrink-0 text-[var(--color-accent)] select-none">✓</span>
+                  <span className="text-sm text-white">{item}</span>
                 </li>
               ))}
             </ul>
           </div>
         </Reveal>
       </div>
+
+      <Reveal delay={200}>
+        <div className="mt-10 rounded-[24px] border border-[rgba(125,211,252,0.12)] bg-[rgba(125,211,252,0.04)] px-8 py-6 text-center">
+          <p className="text-base font-semibold text-slate-300 sm:text-lg">
+            Our focus is not more screens.{" "}
+            <span className="text-[var(--color-accent)]">Our focus is a clearer, more standardized and more manageable customer flow.</span>
+          </p>
+        </div>
+      </Reveal>
     </SectionShell>
   );
 }

@@ -3,67 +3,60 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
 import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
-const useCases = [
+const segments = [
   {
-    icon: "CR",
-    title: "Customer data requests",
-    description: "When a client asks, your team does not search for files.",
+    title: "Private clinics and dental clinics",
+    description: "For standardizing customer inquiries, appointments and patient candidate follow-up.",
   },
   {
-    icon: "EX",
-    title: "Export operations management",
-    description: "Product, customer and team status stay in one flow.",
+    title: "Beauty centers and medical aesthetics businesses",
+    description: "For connecting Instagram, WhatsApp and phone conversations to the appointment flow.",
   },
   {
-    icon: "EN",
-    title: "Production and energy tracking",
-    description: "Production and energy data are organized together.",
+    title: "Auto service, inspection and detailing businesses",
+    description: "For tracking service requests coming from phone and WhatsApp.",
   },
   {
-    icon: "QD",
-    title: "Quality and documentation management",
-    description: "Documents are structured so teams can find and use them.",
+    title: "Courses and education centers",
+    description: "For turning parent/student conversations into a clear inquiry, meeting and follow-up process.",
   },
   {
-    icon: "RG",
-    title: "Regulation and reporting readiness",
-    description: "CBAM is one example, not the product itself.",
+    title: "Furniture, kitchen, bathroom, curtain and decoration businesses",
+    description: "For organizing price requests, quotes and follow-up.",
   },
   {
-    icon: "CB",
-    title: "CBAM-like data requirements",
-    description: "Regulatory requests are handled from the same data room.",
+    title: "Consulting and service businesses",
+    description: "For connecting incoming conversations to proposals, meetings and sales.",
+  },
+  {
+    title: "SMEs with high customer conversation volume",
+    description: "For businesses receiving customers from multiple channels but still tracking the process manually.",
   },
 ];
 
-export function EnProjects() {
+export function EnWhoWeServe() {
   return (
-    <SectionShell id="use-cases">
+    <SectionShell id="who-its-for">
       <Reveal>
-        <SectionHeading
-          eyebrow="Use cases"
-          title="Where it is used"
-        />
+        <SectionHeading title="Who is CNR Norm for?" />
       </Reveal>
 
-      <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        {useCases.map((item, index) => (
-          <Reveal key={item.title} delay={index * 70}>
-            <SurfaceCard className="group flex h-full flex-col rounded-[24px] hover:-translate-y-1 hover:border-[rgba(125,211,252,0.32)]">
-              <div className="flex items-center justify-between gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-[rgba(125,211,252,0.18)] bg-[rgba(125,211,252,0.08)] text-[0.68rem] font-bold text-[var(--color-accent)]">
-                  {item.icon}
-                </div>
-                <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-slate-500">
-                  Data Room use case
-                </span>
-              </div>
-              <h3 className="mt-5 text-lg font-semibold text-white">{item.title}</h3>
-              <p className="mt-3 text-base leading-7">{item.description}</p>
+      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {segments.map((seg, i) => (
+          <Reveal key={seg.title} delay={i * 55}>
+            <SurfaceCard className="h-full hover:-translate-y-1">
+              <h3 className="text-base font-semibold text-white">{seg.title}</h3>
+              <p className="mt-2.5 text-sm leading-6 text-slate-500">{seg.description}</p>
             </SurfaceCard>
           </Reveal>
         ))}
       </div>
+
+      <Reveal delay={200}>
+        <p className="mt-8 text-sm leading-7 text-slate-400 text-center">
+          CNR Norm is designed for businesses that speak with customers every day but struggle to turn those conversations into a standardized business flow.
+        </p>
+      </Reveal>
     </SectionShell>
   );
 }

@@ -3,79 +3,61 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
 import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
-const systems = [
+const features = [
   {
-    title: "Müşteri Talep Merkezi",
-    description: "Farklı kanallardan gelen müşteri taleplerini tek yerde toplar.",
-    sonuc: "Kim yazdı, ne istedi, kim ilgilenecek ve sonraki adım ne; görünür hale gelir.",
+    badge: "Norm Inbox",
+    subtitle: "Tüm müşteri görüşmeleri tek düzende",
+    body: "WhatsApp, Instagram, telefon notları, web formları ve reklam kaynaklı görüşmeler tek merkezde izlenir.",
   },
   {
-    title: "Mini CRM",
-    description:
-      "Müşteri bilgileri, görüşmeler, notlar, durumlar ve takip görevleri için sade bir müşteri yönetim sistemi kurar.",
-    sonuc: "Müşteri ilişkileri kişilerin hafızasında değil, düzenli ve erişilebilir bir sistemde tutulur.",
+    badge: "Norm Pipeline",
+    subtitle: "Görüşmeden satışa standart süreç",
+    body: "Her müşteri görüşmesi yeni, görüşüldü, randevu verildi, teklif gönderildi, satışa döndü veya kaybedildi gibi aşamalarda takip edilir.",
   },
   {
-    title: "Satış Pipeline Sistemi",
-    description:
-      "Yeni talep → görüşüldü → teklif gönderildi → takip bekliyor → kazanıldı / kaybedildi aşamalarını görünür hale getirir.",
-    sonuc:
-      "Hangi fırsatın nerede olduğu, kimin takip beklediği ve hangi teklifin kapanmaya yakın olduğu netleşir.",
+    badge: "Norm Tasks",
+    subtitle: "Takip kişisel hafızaya bırakılmaz",
+    body: "Kimin, kimi, ne zaman ve hangi nedenle arayacağı netleşir. Ekip takibi rastgele değil, sistemli ilerler.",
   },
   {
-    title: "Operasyon Dashboard'u",
-    description:
-      "Yönetimin günlük işi, bekleyen süreçleri, ekip durumunu ve performans göstergelerini tek panelden görmesini sağlar.",
-    sonuc: "Yönetim işi sonradan değil, anlık olarak görebilir.",
+    badge: "Norm Reports",
+    subtitle: "İşletme sahibi tabloyu görür",
+    body: "Gelen görüşmeler, takip edilen fırsatlar, randevular, teklifler, satışa dönenler ve kayıp noktaları görünür hale gelir.",
   },
   {
-    title: "AI Destekli Otomasyonlar",
-    description:
-      "Tekrarlayan işleri özetleme, sınıflandırma, görev çıkarma, hatırlatma ve veri düzenleme gibi akışlarla destekler.",
-    sonuc: "Ekip daha az manuel tekrar yapar, daha çok gerçek işe odaklanır.",
+    badge: "Norm Automations",
+    subtitle: "Tekrarlayan takip işleri sadeleşir",
+    body: "Formlar, hatırlatmalar, bildirimler ve takip akışları işletmenin çalışma düzenine göre yapılandırılır.",
   },
   {
-    title: "Müşteri Portalı",
-    description:
-      "Müşterilerin proje, belge, süreç veya hizmet durumunu takip edebileceği sade bir alan oluşturur.",
-    sonuc: "Müşteri daha az soru sorar, ekip daha az manuel bilgilendirme yapmak zorunda kalır.",
-  },
-  {
-    title: "ERP Yanı Sistem Katmanı",
-    description:
-      "ERP'nin yerine geçmeden; ERP, Excel, e-posta ve manuel takip arasında eksik kalan görünürlük katmanını tamamlar.",
-    sonuc: "ERP'de duran veri iş akışına bağlanır; ekip ve yönetim süreci daha net takip eder.",
-  },
-  {
-    title: "Sektörel Veri Odaları",
-    description:
-      "Üretim, ihracat, CBAM/AB raporlama veya özel operasyon süreçleri için düzenli veri alanları kurar.",
-    sonuc: "Dağınık sektörel veriler daha hazır, erişilebilir ve raporlanabilir hale gelir.",
+    badge: "Sector Norm",
+    subtitle: "Sektöre göre norm kurulur",
+    body: "Klinik, güzellik merkezi, oto servis, kurs, danışmanlık, mobilya/dekorasyon ve benzeri işletmeler için müşteri akışı özelleştirilir.",
   },
 ];
 
-export function TrSystems() {
+export function TrNormProduct() {
   return (
-    <SectionShell id="sistemler">
+    <SectionShell id="cnr-norm">
       <Reveal>
         <SectionHeading
-          eyebrow="Sistem kategorileri"
-          title="İşletmenizin ihtiyaç duyabileceği sistemler"
+          eyebrow="Ana Ürün"
+          title="Ana ürünümüz: CNR Norm"
         />
+        <p className="mt-5 max-w-2xl text-base leading-7 text-slate-400">
+          CNR Norm, işletmenize gelen müşteri görüşmelerini tek düzene alan, ekibin takip disiplinini netleştiren ve görüşmeden satışa kadar olan süreci görünür hale getiren pratik bir iş sistemidir.
+        </p>
       </Reveal>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {systems.map((sys, i) => (
-          <Reveal key={sys.title} delay={i * 45}>
-            <SurfaceCard className="h-full flex flex-col hover:-translate-y-1">
-              <h3 className="text-sm font-semibold leading-6 text-white">{sys.title}</h3>
-              <p className="mt-2 flex-1 text-sm leading-6 text-slate-500">{sys.description}</p>
-              <div className="mt-4 border-t border-white/6 pt-4">
-                <p className="text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">
-                  Sonuç
-                </p>
-                <p className="mt-1.5 text-xs leading-5 text-slate-400">{sys.sonuc}</p>
-              </div>
+      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {features.map((feat, i) => (
+          <Reveal key={feat.badge} delay={i * 55}>
+            <SurfaceCard className="surface-strong h-full flex flex-col hover:-translate-y-1">
+              <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
+                {feat.badge}
+              </p>
+              <h3 className="mt-2 text-base font-semibold leading-6 text-white">{feat.subtitle}</h3>
+              <p className="mt-2 flex-1 text-sm leading-6 text-slate-500">{feat.body}</p>
             </SurfaceCard>
           </Reveal>
         ))}

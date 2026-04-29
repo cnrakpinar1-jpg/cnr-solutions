@@ -5,34 +5,32 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const segments = [
   {
-    title: "KOBİ'ler",
-    description:
-      "Büyüyen ama henüz kurumsal yazılımlara geçmemiş işletmeler. Satış takibi, müşteri yönetimi ve operasyon görünürlüğü için pratik sisteme ihtiyaç duyar.",
+    title: "Özel klinikler ve diş klinikleri",
+    description: "Müşteri görüşmesi, randevu ve hasta aday takibini standart hale getirmek için.",
   },
   {
-    title: "Büyüyen Yerel İşletmeler",
-    description:
-      "Ekip genişledikçe bilgi dağılmaya başlayan işletmeler. Herkesin aynı veriye aynı anda ulaşabileceği bir yapıya ihtiyaç duyar.",
+    title: "Güzellik merkezleri ve medikal estetik işletmeleri",
+    description: "Instagram, WhatsApp ve telefon görüşmelerini randevu akışına bağlamak için.",
   },
   {
-    title: "Klinikler",
-    description:
-      "Hasta takibi, randevu, belge ve hizmet sürecini daha görünür ve düzenli yönetmek isteyen sağlık işletmeleri.",
+    title: "Oto servis, ekspertiz ve detailing işletmeleri",
+    description: "Telefon ve WhatsApp üzerinden gelen servis taleplerini takip etmek için.",
   },
   {
-    title: "Üretici Firmalar",
-    description:
-      "Sipariş, üretim takibi, kalite ve müşteri verisi farklı sistemlerde dağılan; operasyon görünürlüğü isteyen firmalar.",
+    title: "Kurslar ve eğitim merkezleri",
+    description: "Veli/öğrenci görüşmelerini kayıt, görüşme ve takip sürecine çevirmek için.",
   },
   {
-    title: "İhracatçı Firmalar",
-    description:
-      "AB müşteri talepleri, CBAM/uyumluluk verisi ve ihracat süreci için düzenli veri akışına ihtiyaç duyan işletmeler.",
+    title: "Mobilya, mutfak, banyo, perde ve dekorasyon firmaları",
+    description: "Fiyat alma, teklif ve geri dönüş süreçlerini düzene almak için.",
   },
   {
-    title: "Profesyonel Hizmet Firmaları",
-    description:
-      "Danışmanlık, hukuk, muhasebe veya ajans gibi proje ve müşteri takibinin kritik olduğu hizmet odaklı işletmeler.",
+    title: "Danışmanlık ve hizmet işletmeleri",
+    description: "Gelen görüşmeleri teklif, toplantı ve satış sürecine bağlamak için.",
+  },
+  {
+    title: "Yoğun müşteri görüşmesi alan KOBİ'ler",
+    description: "Birden fazla kanaldan müşteri alan ama süreci manuel takip eden işletmeler için.",
   },
 ];
 
@@ -40,11 +38,7 @@ export function TrWhoWeServe() {
   return (
     <SectionShell id="kimler">
       <Reveal>
-        <SectionHeading
-          eyebrow="Kimler için?"
-          title="Kimler için çalışıyoruz?"
-          description="Ağır, pahalı ve karmaşık kurumsal yazılımlara boğulmadan; daha düzenli, daha görünür ve daha akıllı çalışmak isteyen işletmeler için."
-        />
+        <SectionHeading title="CNR Norm kimler için uygun?" />
       </Reveal>
 
       <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -57,6 +51,12 @@ export function TrWhoWeServe() {
           </Reveal>
         ))}
       </div>
+
+      <Reveal delay={200}>
+        <p className="mt-8 text-sm leading-7 text-slate-400 text-center">
+          CNR Norm, müşteriyle yoğun temas kuran ancak bu temasları standart bir iş akışına bağlamakta zorlanan işletmeler için tasarlanmıştır.
+        </p>
+      </Reveal>
     </SectionShell>
   );
 }

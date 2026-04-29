@@ -2,38 +2,34 @@ import type { Metadata } from "next";
 import { Header } from "@/components/shared/Header";
 import { Footer } from "@/components/shared/Footer";
 import { TrHero } from "@/components/tr/TrHero";
-import { TrEducational } from "@/components/tr/TrEducational";
-import { TrPositioning } from "@/components/tr/TrFlow";
+import { TrCategory } from "@/components/tr/TrCategory";
 import { TrProblem } from "@/components/tr/TrProblem";
-import { TrSolution } from "@/components/tr/TrSolution";
-import { TrSystems } from "@/components/tr/TrUseCases";
-import { TrDemoSystems } from "@/components/tr/TrDemoSystems";
-import { TrFit } from "@/components/tr/TrCbam";
-import { TrWhoWeServe } from "@/components/tr/TrWhoWeServe";
+import { TrNormProduct } from "@/components/tr/TrUseCases";
 import { TrProcess } from "@/components/tr/TrSetupProcess";
-import { TrTrust } from "@/components/tr/TrTrust";
+import { TrServices } from "@/components/tr/TrServices";
+import { TrWhoWeServe } from "@/components/tr/TrWhoWeServe";
 import { TrComparison } from "@/components/tr/TrComparison";
-import { TrAbout } from "@/components/tr/TrAbout";
+import { TrTrust } from "@/components/tr/TrTrust";
 import { TrCta } from "@/components/tr/TrCta";
 import { TrFloatingWhatsApp } from "@/components/tr/TrFloatingWhatsApp";
 
 export const metadata: Metadata = {
-  title: "CNR Solutions | Türkiye'deki İşletmeler İçin Modern İş Sistemleri",
+  title: "CNR Norm | Müşteri Akışı Standardı — CNR Solutions",
   description:
-    "CNR Solutions, KOBİ'lerin ve büyüyen işletmelerin satış, müşteri yönetimi, operasyon ve veri süreçlerini modern iş sistemleriyle daha görünür, düzenli ve ölçeklenebilir hale getirir.",
+    "CNR Norm, işletmenize gelen WhatsApp, Instagram, telefon ve reklam görüşmelerini tek düzene alır; takip, randevu, teklif ve satış sürecinizi görünür hale getirir.",
   openGraph: {
-    title: "CNR Solutions | Türkiye'deki İşletmeler İçin Modern İş Sistemleri",
+    title: "CNR Norm | Müşteri Akışı Standardı — CNR Solutions",
     description:
-      "Dağınık iş akışlarını, akıllı işletme altyapısına çeviren pratik iş sistemleri. CRM, dashboard, otomasyon, portal ve ERP-yanı çözümler.",
+      "Dağınık müşteri görüşmelerini standart, görünür ve takip edilebilir bir müşteri akışına dönüştürün. CNR Norm ile işletmenizin yeni normu.",
   },
 };
 
 const navLinks = [
-  { href: "#sistemler", label: "Sistemler" },
-  { href: "#kimler", label: "Kimler İçin" },
-  { href: "#surec", label: "Süreç" },
-  { href: "#hakkimizda", label: "Hakkımızda" },
-  { href: "#iletisim", label: "İletişim" },
+  { href: "#cnr-norm", label: "CNR Norm" },
+  { href: "#nasil-calisir", label: "Nasıl Çalışır?" },
+  { href: "#hizmetler", label: "Destekleyici Hizmetler" },
+  { href: "#kimler", label: "Kimler İçin?" },
+  { href: "#iletisim", label: "Ücretsiz Analiz" },
 ];
 
 export default function TrPage() {
@@ -45,18 +41,14 @@ export default function TrPage() {
       />
       <Header locale="tr" navLinks={navLinks} />
       <TrHero />
-      <TrEducational />
-      <TrPositioning />
+      <TrCategory />
       <TrProblem />
-      <TrSolution />
-      <TrSystems />
-      <TrDemoSystems />
-      <TrFit />
-      <TrWhoWeServe />
+      <TrNormProduct />
       <TrProcess />
-      <TrTrust />
+      <TrServices />
+      <TrWhoWeServe />
       <TrComparison />
-      <TrAbout />
+      <TrTrust />
       <TrCta />
       <Footer locale="tr" />
       <TrFloatingWhatsApp />

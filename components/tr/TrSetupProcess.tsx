@@ -5,44 +5,41 @@ import { SectionShell } from "@/components/ui/SectionShell";
 const steps = [
   {
     number: "01",
-    title: "İş akışınızı dinleriz",
+    title: "Müşteri Akışı Analizi",
     description:
-      "Müşteri nereden geliyor, ekip nasıl takip ediyor, veri nerede tutuluyor, hangi noktada karmaşa çıkıyor; bunu netleştiririz.",
+      "Mevcut WhatsApp, Instagram, telefon, web formu ve reklam süreçlerinizi inceliyoruz. Müşteri görüşmelerinin nerede dağıldığını çıkarıyoruz.",
   },
   {
     number: "02",
-    title: "Kayıp noktalarını çıkarırız",
+    title: "Norm Tasarımı",
     description:
-      "Kaçan müşteri, geciken teklif, görünmeyen operasyon, dağınık veri veya manuel yük nerede; bunu belirleriz.",
+      "İşletmenize uygun görüşme, takip, randevu, teklif ve satış aşamalarını sade bir müşteri akışı standardına dönüştürüyoruz.",
   },
   {
     number: "03",
-    title: "Sistem tasarımını yaparız",
+    title: "Sistem Kurulumu",
     description:
-      "İhtiyaca göre CRM, dashboard, portal, otomasyon, veri odası veya ERP-yanı yapı planlarız.",
+      "Norm Inbox, Norm Pipeline, Norm Tasks, raporlama ekranları ve gerekli formları işletmenize göre kuruyoruz.",
   },
   {
     number: "04",
-    title: "Kurar ve teslim ederiz",
+    title: "Ekip Kullanımı",
     description:
-      "Ekibin gerçekten kullanabileceği sade, pratik ve ölçülebilir sistemi hazırlarız.",
+      "Ekibin sistemi hızlıca kullanabilmesi için sade bir kullanım düzeni hazırlıyoruz. Karmaşık eğitim değil, günlük iş akışı.",
   },
   {
     number: "05",
-    title: "Kullanıma göre iyileştiririz",
+    title: "Ölçüm ve İyileştirme",
     description:
-      "Gerçek kullanım sonrası sistemi daha keskin hale getiririz. Amaç sistemi büyütmek değil, işe daha iyi hizmet etmesidir.",
+      "Hangi kanaldan müşteri geldiğini, ne kadarının takip edildiğini, hangi aşamada kayıp oluştuğunu düzenli olarak görünür hale getiriyoruz.",
   },
 ];
 
 export function TrProcess() {
   return (
-    <SectionShell id="surec">
+    <SectionShell id="nasil-calisir">
       <Reveal>
-        <SectionHeading
-          eyebrow="Süreç"
-          title="Önce işi anlarız. Sonra sistemi kurarız."
-        />
+        <SectionHeading title="CNR Norm nasıl kurulur?" />
       </Reveal>
 
       <div className="relative mt-12">

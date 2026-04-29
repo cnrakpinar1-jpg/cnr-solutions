@@ -1,98 +1,66 @@
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
-import { Button } from "@/components/ui/Button";
+import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
-const sources = ["Excel", "Email", "ERP", "Production", "Energy", "Quality Docs"];
-const outputs = ["Customer package", "Missing data list", "Action owner", "Readiness status"];
-const pillars = [
+const features = [
   {
-    title: "Collects data",
-    text: "Brings Excel, email, ERP, production and energy sources together.",
+    badge: "Norm Inbox",
+    subtitle: "All customer conversations in one standard flow",
+    body: "WhatsApp, Instagram, phone notes, website forms and ad-driven conversations are tracked in one place.",
   },
   {
-    title: "Standardizes it",
-    text: "Creates one structure by product, customer and period.",
+    badge: "Norm Pipeline",
+    subtitle: "A standard process from conversation to sale",
+    body: "Every customer conversation can move through clear stages such as new, contacted, appointment booked, quote sent, won or lost.",
   },
   {
-    title: "Shows gaps",
-    text: "Makes missing, incorrect or pending fields visible.",
+    badge: "Norm Tasks",
+    subtitle: "Follow-up is no longer left to memory",
+    body: "The team knows who needs to contact whom, when and why. Follow-up becomes systematic instead of random.",
   },
   {
-    title: "Creates packages",
-    text: "Builds data sets for customer and regulatory requests.",
+    badge: "Norm Reports",
+    subtitle: "The owner sees the full picture",
+    body: "Incoming conversations, followed-up opportunities, appointments, quotes, sales and drop-off points become visible.",
+  },
+  {
+    badge: "Norm Automations",
+    subtitle: "Repeating follow-up work becomes simpler",
+    body: "Forms, reminders, notifications and follow-up flows are structured around the way the business actually works.",
+  },
+  {
+    badge: "Sector Norm",
+    subtitle: "Adapted to each business type",
+    body: "The flow can be customized for clinics, beauty centers, auto services, education providers, consultants, furniture/decor businesses and other service-heavy businesses.",
   },
 ];
 
-export function EnSolution() {
+export function EnNormProduct() {
   return (
-    <SectionShell id="solution">
-      <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-        <Reveal>
-          <div className="max-w-2xl">
-          <p className="eyebrow">Solution</p>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            CNR Data Room
-          </h2>
-          <p className="mt-5 text-lg leading-8 text-slate-300">
-            An operations system that centralizes data, standardizes it, and helps
-            teams work from the same source.
-          </p>
-          <p className="mt-4 text-base font-medium text-slate-200">
-            Instead of searching for files, your team uses a system.
-          </p>
-          <p className="mt-4 rounded-2xl border border-[rgba(125,211,252,0.18)] bg-[rgba(56,189,248,0.06)] px-5 py-4 text-base font-semibold leading-7 text-white">
-            We don&apos;t prepare reports; we build the system behind them.
-          </p>
-          <div className="mt-6 grid gap-3 sm:grid-cols-2">
-            {pillars.map((pillar) => (
-              <div key={pillar.title} className="rounded-2xl border border-white/8 bg-white/[0.035] p-4">
-                <h3 className="font-semibold text-white">{pillar.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-400">{pillar.text}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-8">
-            <Button href="#flow">Show me how it works</Button>
-          </div>
-        </div>
-        </Reveal>
+    <SectionShell id="cnr-norm">
+      <Reveal>
+        <SectionHeading
+          eyebrow="Flagship Product"
+          title="Our flagship product: CNR Norm"
+        />
+        <p className="mt-5 max-w-2xl text-base leading-7 text-slate-400">
+          CNR Norm is a practical business system that brings customer conversations into one standard flow, clarifies team follow-up and makes the process from conversation to sale visible.
+        </p>
+      </Reveal>
 
-        <Reveal delay={120}>
-          <div className="surface-strong rounded-[28px] p-6">
-            <div className="grid gap-5 lg:grid-cols-[1fr_auto_1fr] lg:items-center">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-                  Data Sources
-                </p>
-                <div className="mt-4 grid grid-cols-2 gap-3">
-                  {sources.map((source) => (
-                    <div key={source} className="rounded-2xl border border-white/8 bg-white/[0.04] px-4 py-3 text-sm font-semibold text-slate-200">
-                      {source}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="flex items-center justify-center text-2xl text-slate-500">→</div>
-
-              <div>
-                <div className="rounded-[24px] border border-[rgba(125,211,252,0.24)] bg-[rgba(56,189,248,0.07)] p-5 text-center">
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--color-accent)]">
-                    Core
-                  </p>
-                  <h3 className="mt-2 text-2xl font-bold text-white">CNR Data Room</h3>
-                </div>
-                <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                  {outputs.map((output) => (
-                    <div key={output} className="rounded-2xl border border-emerald-300/12 bg-emerald-300/[0.04] px-4 py-3 text-sm font-semibold text-slate-200">
-                      {output}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </Reveal>
+      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {features.map((feat, i) => (
+          <Reveal key={feat.badge} delay={i * 55}>
+            <SurfaceCard className="surface-strong h-full flex flex-col hover:-translate-y-1">
+              <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
+                {feat.badge}
+              </p>
+              <h3 className="mt-2 text-base font-semibold leading-6 text-white">{feat.subtitle}</h3>
+              <p className="mt-2 flex-1 text-sm leading-6 text-slate-500">{feat.body}</p>
+            </SurfaceCard>
+          </Reveal>
+        ))}
       </div>
     </SectionShell>
   );
