@@ -47,8 +47,10 @@ export default function LanguageSelector() {
               href="/tr"
               className="group inline-flex min-h-12 items-center justify-between rounded-xl bg-[var(--color-accent)] px-5 text-sm font-semibold text-slate-950 shadow-[0_12px_32px_rgba(56,189,248,0.28)] transition-all hover:-translate-y-0.5 hover:bg-[var(--color-accent-strong)]"
             >
-              <span className="flex items-center gap-3">
-                <span className="text-base">TR</span>
+              <span className="flex items-center gap-2.5">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-slate-950/15 bg-slate-950/10 text-[0.58rem] font-black tracking-[0.04em]">
+                  TR
+                </span>
                 <span>Türkçe</span>
               </span>
               <span aria-hidden="true" className="text-base transition-transform group-hover:translate-x-0.5">
@@ -59,8 +61,10 @@ export default function LanguageSelector() {
               href="/en"
               className="group inline-flex min-h-12 items-center justify-between rounded-xl border border-white/12 bg-white/[0.03] px-5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:border-[rgba(125,211,252,0.32)] hover:bg-white/[0.06]"
             >
-              <span className="flex items-center gap-3">
-                <span className="text-base">EN</span>
+              <span className="flex items-center gap-2.5">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[rgba(125,211,252,0.18)] bg-[rgba(125,211,252,0.08)] text-[0.58rem] font-black tracking-[0.04em] text-[var(--color-accent)]">
+                  EN
+                </span>
                 <span>English</span>
               </span>
               <span aria-hidden="true" className="text-base transition-transform group-hover:translate-x-0.5">
