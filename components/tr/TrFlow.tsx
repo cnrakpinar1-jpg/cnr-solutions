@@ -32,8 +32,8 @@ export function TrPositioning() {
               Dağınık süreçleri, çalışan iş sistemlerine dönüştürüyoruz.
             </h2>
             <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate-400 sm:leading-8">
-              CNR Solutions, işletmenizin mevcut düzenini tamamen yıkmadan; satış, müşteri yönetimi,
-              operasyon takibi ve veri akışları için daha görünür ve yönetilebilir bir sistem katmanı kurar.
+              İşletmenizin mevcut düzenini tamamen yıkmadan; satış, müşteri yönetimi, operasyon
+              takibi ve veri akışları için daha görünür ve yönetilebilir bir sistem katmanı kuruyoruz.
             </p>
           </div>
         </Reveal>

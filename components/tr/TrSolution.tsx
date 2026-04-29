@@ -9,7 +9,7 @@ export function TrSolution() {
         <Reveal>
           <SectionHeading
             eyebrow="Ne yapıyoruz?"
-            title="CNR Solutions işletmenizin çalışma şeklini sistemleştirir."
+            title="İşletmenizin çalışma şeklini sistemleştiriyoruz."
             description="Web sitesi, CRM, otomasyon, dashboard veya portal tek başına amaç değildir. Asıl amaç; işletmenin daha net çalışması, daha iyi takip yapması ve daha görünür yönetilmesidir."
           />
           <p className="mt-5 max-w-lg text-base leading-8 text-slate-400">

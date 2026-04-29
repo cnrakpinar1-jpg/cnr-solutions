@@ -24,9 +24,9 @@ export function TrHero() {
             </h1>
 
             <p className="mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg sm:leading-9">
-              CNR Solutions, KOBİ&rsquo;lerin ve büyüyen işletmelerin satış, müşteri yönetimi,
-              operasyon ve veri süreçlerini modern iş sistemleriyle daha görünür, düzenli ve
-              ölçeklenebilir hale getirir.
+              KOBİ&rsquo;lerin ve büyüyen işletmelerin satış, müşteri yönetimi, operasyon ve veri
+              süreçlerini modern iş sistemleriyle daha görünür, düzenli ve ölçeklenebilir hale
+              getiriyoruz.
             </p>
 
             <p className="mt-4 max-w-xl text-sm font-medium leading-7 text-slate-400 sm:text-base sm:leading-8">

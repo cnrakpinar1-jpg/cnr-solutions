@@ -360,7 +360,7 @@ export function TrDemoSystems() {
           <SectionHeading
             eyebrow="Örnek sistemler"
             title="Nasıl sistemler kurabildiğimizi görün."
-            description="Aşağıdaki örnekler; CNR Solutions'ın işletmeler için kurabileceği sistem türlerini göstermek için hazırlanmış demo yapılardır. Bunlar hazır şablon değil, gerçek iş akışlarına göre şekillenebilen sistem örnekleridir."
+            description="Aşağıdaki örnekler; işletmeler için kurulabilecek sistem türlerini göstermek için hazırlanmış demo yapılardır. Bunlar hazır şablon değil, gerçek iş akışlarına göre şekillenebilen sistem örnekleridir."
           />
           <p className="mt-4 text-xs text-slate-600">
             Gerçek ihtiyaçlara göre özelleştirilir. Her işletmenin sistemi kendi akışına göre şekillenir.

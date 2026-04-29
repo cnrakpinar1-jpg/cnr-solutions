@@ -3,7 +3,7 @@ import { SectionShell } from "@/components/ui/SectionShell";
 import { TrContactForm } from "@/components/tr/TrContactForm";
 
 const whatsappUrl =
-  "https://wa.me/905331970462?text=Merhaba%2C%20CNR%20Solutions%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.";
+  "https://wa.me/905331970462?text=Merhaba%2C%20bilgi%20almak%20istiyorum.";
 
 export function TrCta() {
   return (
@@ -32,7 +32,7 @@ export function TrCta() {
               rel="noopener noreferrer"
               className="inline-flex min-h-[3.25rem] w-full items-center justify-center rounded-full border border-white/[0.14] bg-white/[0.045] px-7 text-base font-semibold text-white transition-all hover:-translate-y-1 hover:border-[rgba(125,211,252,0.38)] hover:bg-white/[0.08] sm:w-auto"
             >
-              CNR Solutions ile Tanış
+              WhatsApp&rsquo;tan Yaz
             </a>
           </div>
         </div>

@@ -57,7 +57,7 @@ export default function LanguageSelector() {
 
         <div className="w-full rounded-3xl border border-white/8 bg-[rgba(12,18,34,0.6)] p-8 shadow-[0_24px_80px_rgba(2,6,23,0.55)] backdrop-blur-xl sm:p-10">
           <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-[2.15rem]">
-            CNR Solutions
+            AI Business Systems
           </h1>
 
           <div className="mt-3 h-px w-12 mx-auto bg-gradient-to-r from-transparent via-[var(--color-accent)] to-transparent" />

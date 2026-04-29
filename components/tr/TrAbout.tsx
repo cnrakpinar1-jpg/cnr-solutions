@@ -26,7 +26,7 @@ export function TrAbout() {
               net göremiyorsa; orada daha iyi bir sistem kurulması gerekir.
             </p>
             <p>
-              CNR Solutions bu sistemi kurar.
+              Biz bu sistemi kurarız.
             </p>
           </div>
 

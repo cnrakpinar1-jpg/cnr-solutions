@@ -31,7 +31,7 @@ export function TrTrust() {
         <SectionHeading
           eyebrow="Yaklaşımımız"
           title="Karmaşık teknoloji değil, kullanılabilir sistem."
-          description="CNR Solutions'ın yaklaşımı basittir: İşletmenin gerçek ihtiyacını anlamadan sistem kurulmaz. Gereksiz teknoloji, fazla ekran ve kullanılmayan yazılım işletmeye yük getirir."
+          description="Yaklaşımımız basittir: İşletmenin gerçek ihtiyacını anlamadan sistem kurulmaz. Gereksiz teknoloji, fazla ekran ve kullanılmayan yazılım işletmeye yük getirir."
         />
       </Reveal>
 
