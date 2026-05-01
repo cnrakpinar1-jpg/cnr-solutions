@@ -1,6 +1,7 @@
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
+import { TrScoreCta } from "@/components/tr/TrScoreCta";
 
 const setupModules = ["Norm Inbox", "Norm Pipeline", "Norm Tasks", "CNR Norm IQ"];
 
@@ -82,6 +83,12 @@ export function TrProofSimulation() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="mt-8 text-center">
+          <p className="text-sm leading-6 text-slate-400">
+            Bu yalnızca örnek bir skor. Aynı tanılamayı işletmeniz için de çıkarabiliriz.
+          </p>
+          <TrScoreCta label="İşletmem İçin Skor Çıkar" className="mt-4" />
         </div>
       </Reveal>
     </SectionShell>

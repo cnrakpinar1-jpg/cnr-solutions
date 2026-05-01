@@ -2,6 +2,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
 import { SurfaceCard } from "@/components/ui/SurfaceCard";
+import { TrScoreCta } from "@/components/tr/TrScoreCta";
 
 const cards = [
   {
@@ -62,6 +63,7 @@ export function TrNormIQ() {
             CNR Norm IQ ayrı bir ürün veya chatbot değildir; CNR Norm’un içindeki IQ modülüdür. Amacı gelen müşteri akışını önceliklendirmek, takip risklerini göstermek ve sıcak fırsatları öne çıkarmaktır.
           </p>
         </div>
+        <TrScoreCta />
       </Reveal>
     </SectionShell>
   );

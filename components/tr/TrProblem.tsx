@@ -2,6 +2,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
 import { SurfaceCard } from "@/components/ui/SurfaceCard";
+import { TrScoreCta } from "@/components/tr/TrScoreCta";
 
 const problems = [
   {
@@ -61,6 +62,7 @@ export function TrProblem() {
             <span className="text-amber-200">standart, görünür ve takip edilebilir bir müşteri akışına dönüştürür.</span>
           </p>
         </div>
+        <TrScoreCta />
       </Reveal>
     </SectionShell>
   );

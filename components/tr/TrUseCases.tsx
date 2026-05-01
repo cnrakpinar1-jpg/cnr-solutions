@@ -2,6 +2,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
 import { SurfaceCard } from "@/components/ui/SurfaceCard";
+import { TrScoreCta } from "@/components/tr/TrScoreCta";
 
 const features = [
   {
@@ -42,7 +43,7 @@ export function TrNormProduct() {
       <Reveal>
         <SectionHeading
           eyebrow="Ana Ürün"
-          title="Ana ürünümüz: CNR Norm"
+          title="CNR Norm: İşletmenizin müşteri akışı standardı"
         />
         <p className="mt-5 max-w-2xl text-base leading-7 text-slate-400">
           CNR Norm, işletmenize gelen müşteri görüşmelerini tek düzene alan, ekibin takip disiplinini netleştiren ve görüşmeden satışa kadar olan süreci görünür hale getiren pratik bir iş sistemidir.
@@ -67,6 +68,7 @@ export function TrNormProduct() {
         <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-7 text-slate-400">
           Bu temel modüller CNR Norm’un müşteri akışı standardını kurar. CNR Norm IQ ise bu standardın üzerine eklenen zekâ katmanı olarak, gelen taleplerin sıcaklığını, niyetini ve takip önceliğini daha görünür hale getirir.
         </p>
+        <TrScoreCta />
       </Reveal>
     </SectionShell>
   );
