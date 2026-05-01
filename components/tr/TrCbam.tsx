@@ -47,7 +47,7 @@ export function TrFit() {
             Bu sorunları birlikte inceleyelim.
           </p>
           <Button href="#iletisim" className="shrink-0 text-sm">
-            Ücretsiz Analiz İste
+            Ücretsiz Skor İste
           </Button>
         </div>
       </Reveal>

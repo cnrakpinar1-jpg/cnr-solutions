@@ -9,23 +9,24 @@ export function Footer({ locale }: FooterProps) {
   const brandLine =
     locale === "tr"
       ? "CNR Solutions, işletmeler için müşteri akışı standardı CNR Norm’u kurar. WhatsApp, Instagram, telefon, web formu ve reklam kanallarından gelen müşteri görüşmelerini daha düzenli, görünür ve takip edilebilir hale getirir."
-      : "Operational data systems for export-oriented manufacturers.";
+      : "CNR Solutions builds CNR Norm, a customer-flow standard for businesses. We help organize customer inquiries from WhatsApp, Instagram, phone calls, web forms, and ads into a clearer, more visible and trackable flow.";
   const navLinks =
     locale === "tr"
       ? [
           { href: "#cnr-norm", label: "CNR Norm" },
+          { href: "#cnr-norm-iq", label: "CNR Norm IQ" },
           { href: "#nasil-calisir", label: "Nasıl Çalışır?" },
           { href: "#hizmetler", label: "Destekleyici Hizmetler" },
           { href: "#kimler", label: "Kimler İçin?" },
-          { href: "#iletisim", label: "Ücretsiz Analiz" },
+          { href: "#iletisim", label: "Müşteri Akışı Skoru" },
         ]
       : [
-          { href: "#solution", label: "Solution" },
-          { href: "#use-cases", label: "Use Cases" },
-          { href: "#flow", label: "How It Works" },
-          { href: "#trust", label: "Trust" },
-          { href: "#past-projects", label: "Past Projects" },
-          { href: "#contact", label: "Contact" },
+          { href: "#cnr-norm", label: "CNR Norm" },
+          { href: "#cnr-norm-iq", label: "CNR Norm IQ" },
+          { href: "#how-it-works", label: "How It Works" },
+          { href: "#supporting-services", label: "Supporting Services" },
+          { href: "#who-its-for", label: "Who It's For" },
+          { href: "#contact", label: "Free Score" },
         ];
   const navHeading = locale === "tr" ? "Navigasyon" : "Navigation";
   const contact =
@@ -33,15 +34,15 @@ export function Footer({ locale }: FooterProps) {
       ? {
           heading: "İLETİŞİM",
           text: "Müşteri akışınızın nerede dağıldığını birlikte netleştirelim.",
-          note: "Ücretsiz Müşteri Akışı Analizi talepleri form üzerinden alınır.",
-          cta: "Analiz Talebi Gönder",
+          note: "Ücretsiz Müşteri Akışı Skoru talepleri form üzerinden alınır.",
+          cta: "Skor Talebi Gönder",
           href: "#iletisim",
         }
       : {
           heading: "CONTACT",
-          text: "Let’s review your CBAM data flow.",
-          note: "Demo and pilot requests are collected through the form.",
-          cta: "Request a Demo",
+          text: "Let's find where your customer flow is getting scattered.",
+          note: "Free Customer Flow Score requests are collected through the form.",
+          cta: "Get My Free Score",
           href: "#contact",
         };
 

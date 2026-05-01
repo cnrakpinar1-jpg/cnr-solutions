@@ -34,7 +34,7 @@ export function TrHero() {
             </div>
 
             <p className="mt-4 text-xs text-slate-500">
-              15–30 dakikalık ücretsiz analizle işletmenizde müşteri akışının nerede dağıldığını birlikte çıkaralım.
+              15-30 dakikalık ücretsiz Müşteri Akışı Skoru görüşmesinde işletmenizde müşteri akışının nerede dağıldığını birlikte çıkaralım.
             </p>
           </Reveal>
 
@@ -45,7 +45,7 @@ export function TrHero() {
                   Müşteri Akışı Skoru
                 </p>
                 <span className="rounded-full border border-amber-300/24 bg-amber-300/10 px-2.5 py-0.5 text-[0.6rem] font-semibold text-amber-300">
-                  Örnek analiz
+                  Örnek skor
                 </span>
               </div>
 

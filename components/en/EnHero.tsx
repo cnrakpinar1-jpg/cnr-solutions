@@ -34,7 +34,7 @@ export function EnHero() {
             </div>
 
             <p className="mt-4 text-xs text-slate-500">
-              In a free 15–30 minute analysis, we identify where your customer flow gets scattered and what can be improved.
+              In a free 15-30 minute Customer Flow Score review, we identify where your customer flow gets scattered and what can be improved.
             </p>
           </Reveal>
 
@@ -45,7 +45,7 @@ export function EnHero() {
                   Customer Flow Score
                 </p>
                 <span className="rounded-full border border-amber-300/24 bg-amber-300/10 px-2.5 py-0.5 text-[0.6rem] font-semibold text-amber-300">
-                  Sample analysis
+                  Sample score
                 </span>
               </div>
 

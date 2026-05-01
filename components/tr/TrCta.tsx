@@ -14,7 +14,7 @@ export function TrCta() {
             Müşteri akışınızda para nerede kaçıyor, birlikte çıkaralım.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-400">
-            15–30 dakikalık ücretsiz analizde WhatsApp, Instagram, telefon, web formu ve reklam kanallarınızdan gelen taleplerin nerede dağıldığını inceliyoruz. Sonunda size işletmenize özel sade bir CNR Norm kurulum planı çıkarıyoruz.
+            15-30 dakikalık ücretsiz Müşteri Akışı Skoru görüşmesinde WhatsApp, Instagram, telefon, web formu ve reklam kanallarınızdan gelen taleplerin nerede dağıldığını inceliyoruz. Sonunda size işletmenize özel sade bir CNR Norm kurulum planı çıkarıyoruz.
           </p>
           <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
             <a

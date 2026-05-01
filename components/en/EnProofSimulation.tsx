@@ -9,9 +9,9 @@ export function EnProofSimulation() {
     <SectionShell id="proof">
       <Reveal>
         <SectionHeading
-          eyebrow="Sample Analysis"
-          title="Sample Customer Flow Analysis"
-          description="This sample analysis is prepared to show how CNR Norm makes customer-flow gaps visible for businesses."
+          eyebrow="Sample Score"
+          title="Sample Customer Flow Score"
+          description="This sample score is prepared to show how CNR Norm makes customer-flow gaps visible for businesses."
         />
       </Reveal>
 
@@ -23,7 +23,7 @@ export function EnProofSimulation() {
               <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
                 CNR Norm
               </p>
-              <h3 className="mt-0.5 text-base font-semibold text-white">Customer Flow Report</h3>
+              <h3 className="mt-0.5 text-base font-semibold text-white">Customer Flow Score Report</h3>
             </div>
             <span className="rounded-full border border-amber-300/24 bg-amber-300/10 px-3 py-1 text-xs font-semibold text-amber-300">
               Sample — Demo Data

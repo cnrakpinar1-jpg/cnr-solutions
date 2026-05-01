@@ -9,9 +9,9 @@ export function TrProofSimulation() {
     <SectionShell id="ornek">
       <Reveal>
         <SectionHeading
-          eyebrow="Örnek Analiz"
-          title="Örnek Müşteri Akışı Analizi"
-          description="Bu örnek analiz, CNR Norm'un işletmelerde hangi kayıp noktalarını görünür hale getirdiğini göstermek için hazırlanmıştır."
+          eyebrow="Örnek Skor"
+          title="Örnek Müşteri Akışı Skoru"
+          description="Bu örnek skor, CNR Norm'un işletmelerde hangi kayıp noktalarını görünür hale getirdiğini göstermek için hazırlanmıştır."
         />
       </Reveal>
 
@@ -23,7 +23,7 @@ export function TrProofSimulation() {
               <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
                 CNR Norm
               </p>
-              <h3 className="mt-0.5 text-base font-semibold text-white">Müşteri Akışı Raporu</h3>
+              <h3 className="mt-0.5 text-base font-semibold text-white">Müşteri Akışı Skoru Raporu</h3>
             </div>
             <span className="rounded-full border border-amber-300/24 bg-amber-300/10 px-3 py-1 text-xs font-semibold text-amber-300">
               Örnek — Demo Veri

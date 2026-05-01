@@ -14,7 +14,7 @@ export function EnCta() {
             Let&rsquo;s find where money is leaking from your customer flow.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-400">
-            In a free 15–30 minute analysis, we review how inquiries from WhatsApp, Instagram, phone calls, web forms, and ads move through your business. At the end, we give you a simple CNR Norm setup plan tailored to your workflow.
+            In a free 15-30 minute Customer Flow Score review, we review how inquiries from WhatsApp, Instagram, phone calls, web forms, and ads move through your business. At the end, we give you a simple CNR Norm setup plan tailored to your workflow.
           </p>
           <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
             <a
