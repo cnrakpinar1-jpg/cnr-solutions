@@ -10,7 +10,7 @@ type HeaderProps = {
 };
 
 export function Header({ locale, navLinks }: HeaderProps) {
-  const ctaHref = locale === "tr" ? "#iletisim" : "#contact";
+  const ctaHref = locale === "tr" ? "#musteri-akisi-skoru" : "#contact";
   const ctaText = locale === "tr" ? "Ücretsiz Skor Al" : "Free Score";
 
   return (

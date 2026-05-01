@@ -229,7 +229,7 @@ export function TrContactForm() {
         <div className="sm:col-span-2">
           <div className="mb-1">
             <span className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">
-              İşletme Tanılaması
+              2 Dakikalık Müşteri Akışı Tanılaması
             </span>
           </div>
           <div className="rounded-2xl border border-white/8 bg-white/[0.025] px-5 py-5 space-y-6">
@@ -269,7 +269,7 @@ export function TrContactForm() {
             label="Mesaj / Mevcut Durum"
             name="message"
             value={form.message}
-            placeholder="Mevcut durumunuzu kısaca anlatın. Müşteri takibi, satış, operasyon veya veri süreçlerinde hangi sorunları yaşıyorsunuz?"
+            placeholder="Örn: Talepler genelde WhatsApp ve Instagram’dan geliyor, ama kimin takip ettiği bazen karışıyor."
             onChange={setField("message")}
             error={errors.message}
             multiline

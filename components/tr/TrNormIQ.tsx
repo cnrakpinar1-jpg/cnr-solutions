@@ -33,7 +33,7 @@ export function TrNormIQ() {
         <SectionHeading
           eyebrow="CNR Norm IQ"
           title="CNR Norm IQ: Müşteri akışınızın zeka katmanı"
-          description="CNR Norm IQ, gelen müşteri görüşmelerini yalnızca kaydetmez; talebin sıcaklığını, niyetini, aciliyetini ve sonraki aksiyonunu görünür hale getirir. Böylece ekip kime önce döneceğini bilir, işletme sahibi ise hangi fırsatların kaçmak üzere olduğunu görür."
+          description="CNR Norm IQ, CNR Norm’un içinde çalışan zekâ katmanıdır. Gelen müşteri görüşmelerini yalnızca kaydetmekle kalmaz; talebin sıcaklığını, niyetini, aciliyetini ve sonraki aksiyonunu görünür hale getirir. Böylece ekip kime önce döneceğini bilir, işletme sahibi ise hangi fırsatların kaçmak üzere olduğunu görür."
         />
       </Reveal>
 
@@ -59,10 +59,7 @@ export function TrNormIQ() {
       <Reveal delay={280}>
         <div className="mt-8 rounded-[24px] border border-[rgba(125,211,252,0.12)] bg-[rgba(125,211,252,0.04)] px-8 py-6 text-center">
           <p className="text-base font-semibold text-slate-300 sm:text-lg">
-            CNR Norm IQ bir chatbot değil;{" "}
-            <span className="text-[var(--color-accent)]">
-              müşteri akışınızın görünürlük ve önceliklendirme katmanıdır.
-            </span>
+            CNR Norm IQ ayrı bir ürün veya chatbot değildir; CNR Norm’un içindeki IQ modülüdür. Amacı gelen müşteri akışını önceliklendirmek, takip risklerini göstermek ve sıcak fırsatları öne çıkarmaktır.
           </p>
         </div>
       </Reveal>

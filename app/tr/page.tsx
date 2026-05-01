@@ -32,7 +32,7 @@ const navLinks = [
   { href: "#nasil-calisir", label: "Nasıl Çalışır?" },
   { href: "#hizmetler", label: "Destekleyici Hizmetler" },
   { href: "#kimler", label: "Kimler İçin?" },
-  { href: "#iletisim", label: "Müşteri Akışı Skoru" },
+  { href: "#musteri-akisi-skoru", label: "Müşteri Akışı Skoru" },
 ];
 
 export default function TrPage() {

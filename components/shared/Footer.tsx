@@ -18,7 +18,7 @@ export function Footer({ locale }: FooterProps) {
           { href: "#nasil-calisir", label: "Nasıl Çalışır?" },
           { href: "#hizmetler", label: "Destekleyici Hizmetler" },
           { href: "#kimler", label: "Kimler İçin?" },
-          { href: "#iletisim", label: "Müşteri Akışı Skoru" },
+          { href: "#musteri-akisi-skoru", label: "Müşteri Akışı Skoru" },
         ]
       : [
           { href: "#cnr-norm", label: "CNR Norm" },
@@ -36,7 +36,7 @@ export function Footer({ locale }: FooterProps) {
           text: "Müşteri akışınızın nerede dağıldığını birlikte netleştirelim.",
           note: "Ücretsiz Müşteri Akışı Skoru talepleri form üzerinden alınır.",
           cta: "Skor Talebi Gönder",
-          href: "#iletisim",
+          href: "#musteri-akisi-skoru",
         }
       : {
           heading: "CONTACT",

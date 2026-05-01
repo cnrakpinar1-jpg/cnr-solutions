@@ -70,7 +70,7 @@ export function TrServices() {
           Bu hizmetlerin amacı ayrı ayrı yazılım satmak değil; CNR Norm&rsquo;un işletmenizde gerçek bir müşteri akışı standardına dönüşmesini sağlamaktır.
         </p>
         <div className="mt-6 flex justify-center">
-          <Button href="#iletisim" variant="secondary">
+          <Button href="#musteri-akisi-skoru" variant="secondary">
             CNR Norm’un İşletmenize Nasıl Kurulacağını Çıkaralım
           </Button>
         </div>

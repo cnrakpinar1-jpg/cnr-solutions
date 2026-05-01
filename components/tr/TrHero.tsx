@@ -34,7 +34,7 @@ export function TrHero() {
             </div>
 
             <p className="mt-4 text-xs text-slate-500">
-              15-30 dakikalık ücretsiz Müşteri Akışı Skoru görüşmesinde işletmenizde müşteri akışının nerede dağıldığını birlikte çıkaralım.
+              2 dakikalık kısa formu doldurun; işletmenizde müşteri akışının nerede dağıldığını ve hangi taleplerin satışa/randevuya dönüşmeden kaçtığını birlikte çıkaralım.
             </p>
           </Reveal>
 

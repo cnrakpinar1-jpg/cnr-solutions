@@ -14,7 +14,7 @@ export function TrCta() {
             Müşteri akışınızda para nerede kaçıyor, birlikte çıkaralım.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-400">
-            15-30 dakikalık ücretsiz Müşteri Akışı Skoru görüşmesinde WhatsApp, Instagram, telefon, web formu ve reklam kanallarınızdan gelen taleplerin nerede dağıldığını inceliyoruz. Sonunda size işletmenize özel sade bir CNR Norm kurulum planı çıkarıyoruz.
+            2 dakikalık kısa formu doldurun. WhatsApp, Instagram, telefon, web formu ve reklam kanallarınızdan gelen taleplerin nerede dağıldığını, hangi takiplerin geciktiğini ve CNR Norm’un işletmenizde nerede değer yaratabileceğini birlikte çıkaralım.
           </p>
           <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
             <a
@@ -41,10 +41,30 @@ export function TrCta() {
           className="surface-strong mt-14 rounded-[32px] p-8 shadow-[0_30px_100px_rgba(2,6,23,0.48)] sm:p-12"
         >
           <h3 className="mb-2 text-xl font-semibold text-white">Ücretsiz Müşteri Akışı Skoru</h3>
-          <p className="mb-8 text-sm leading-6 text-slate-500">
-            Formu doldurun, müşteri akışınızı inceleyip size en kısa sürede dönüş yapalım. Hızlı yanıt için WhatsApp&rsquo;tan da ulaşabilirsiniz.
+          <p className="mb-3 text-sm leading-6 text-slate-500">
+            Bu form, işletmenizde müşteri taleplerinin nerede dağıldığını anlamamız için kısa bir ön teşhistir. Bilgileri doldurun; size müşteri akışı skorunuzu, ana takip riskinizi ve önerilen CNR Norm kurulum planını çıkaralım.
+          </p>
+          <p className="mb-8 text-xs leading-5 text-slate-500">
+            Önce işletmenizin mevcut müşteri akışını sade şekilde çıkarıyoruz. Uygun görürseniz sonraki adımda CNR Norm’un bu akışı nasıl toparlayabileceğini birlikte değerlendiriyoruz.
           </p>
           <TrContactForm />
+          <div className="mt-10 border-t border-white/8 pt-7">
+            <h4 className="text-sm font-semibold text-white">Formdan sonra ne oluyor?</h4>
+            <div className="mt-5 grid gap-5 sm:grid-cols-3">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">1. Akışınızı inceliyoruz</p>
+                <p className="mt-2 text-xs leading-5 text-slate-500">Kanallarınızı, takip yönteminizi ve en büyük kayıp noktalarınızı değerlendiriyoruz.</p>
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">2. Skorunuzu çıkarıyoruz</p>
+                <p className="mt-2 text-xs leading-5 text-slate-500">Size müşteri akışı skorunuzu, ana riskinizi ve ilk iyileştirme alanınızı netleştiriyoruz.</p>
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">3. Kurulum planını konuşuyoruz</p>
+                <p className="mt-2 text-xs leading-5 text-slate-500">Uygunsa CNR Norm’un işletmenizde nasıl kurulabileceğini 15–30 dakikalık görüşmede gösteriyoruz.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </Reveal>
     </SectionShell>
