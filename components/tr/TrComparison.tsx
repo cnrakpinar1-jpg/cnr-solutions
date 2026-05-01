@@ -23,9 +23,9 @@ export function TrComparison() {
   return (
     <SectionShell>
       <Reveal>
-        <SectionHeading title="Neden CNR Norm?" />
+        <SectionHeading title="CRM karmaşası değil, müşteri akışı standardı." />
         <p className="mt-5 max-w-2xl text-base leading-8 text-slate-400">
-          Piyasada CRM&rsquo;ler, mesajlaşma araçları, chatbotlar ve otomasyon çözümleri var. CNR Norm&rsquo;un farkı, bunları teknik özellik olarak değil, işletmenin gerçek müşteri akışını standartlaştıran sade bir iş sistemi olarak ele almasıdır.
+          Birçok araç size yeni ekranlar verir. CNR Norm ise önce işletmenizde müşterinin nereden geldiğini, nerede beklediğini, kim tarafından takip edildiğini ve nerede kaybolduğunu çıkarır. Sonra sistemi buna göre kurar.
         </p>
       </Reveal>
 

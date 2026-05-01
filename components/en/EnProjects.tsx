@@ -6,31 +6,31 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 const segments = [
   {
     title: "Private clinics and dental clinics",
-    description: "For standardizing customer inquiries, appointments and patient candidate follow-up.",
+    description: "Keep patient inquiries inside a trackable process instead of scattered team memory.",
   },
   {
     title: "Beauty centers and medical aesthetics businesses",
-    description: "For connecting Instagram, WhatsApp and phone conversations to the appointment flow.",
+    description: "Do not let price-request leads from Instagram disappear before they become appointments.",
   },
   {
     title: "Auto service, inspection and detailing businesses",
-    description: "For tracking service requests coming from phone and WhatsApp.",
+    description: "Turn WhatsApp service inquiries into clear quotes and booked appointments.",
   },
   {
     title: "Courses and education centers",
-    description: "For turning parent/student conversations into a clear inquiry, meeting and follow-up process.",
+    description: "Move student and parent inquiries into a clear follow-up and enrollment flow.",
   },
   {
     title: "Furniture, kitchen, bathroom, curtain and decoration businesses",
-    description: "For organizing price requests, quotes and follow-up.",
+    description: "Track price requests and quotes systematically so opportunities do not close before follow-up.",
   },
   {
     title: "Consulting and service businesses",
-    description: "For connecting incoming conversations to proposals, meetings and sales.",
+    description: "Make sure incoming conversations reach a proposal and sales stage, not get lost in scattered threads.",
   },
   {
     title: "SMEs with high customer conversation volume",
-    description: "For businesses receiving customers from multiple channels but still tracking the process manually.",
+    description: "Handle customers from multiple channels without relying on manual memory or scattered note-taking.",
   },
 ];
 

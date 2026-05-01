@@ -5,18 +5,20 @@ import { TrHero } from "@/components/tr/TrHero";
 import { TrCategory } from "@/components/tr/TrCategory";
 import { TrProblem } from "@/components/tr/TrProblem";
 import { TrNormProduct } from "@/components/tr/TrUseCases";
+import { TrNormIQ } from "@/components/tr/TrNormIQ";
 import { TrProcess } from "@/components/tr/TrSetupProcess";
 import { TrServices } from "@/components/tr/TrServices";
 import { TrWhoWeServe } from "@/components/tr/TrWhoWeServe";
 import { TrComparison } from "@/components/tr/TrComparison";
 import { TrTrust } from "@/components/tr/TrTrust";
+import { TrProofSimulation } from "@/components/tr/TrProofSimulation";
 import { TrCta } from "@/components/tr/TrCta";
 import { TrFloatingWhatsApp } from "@/components/tr/TrFloatingWhatsApp";
 
 export const metadata: Metadata = {
   title: "CNR Norm | Müşteri Akışı Standardı — CNR Solutions",
   description:
-    "CNR Norm, işletmenize gelen WhatsApp, Instagram, telefon ve reklam görüşmelerini tek düzene alır; takip, randevu, teklif ve satış sürecinizi görünür hale getirir.",
+    "CNR Norm, WhatsApp, Instagram, telefon, web formu ve reklamlardan gelen müşteri taleplerini tek akışa bağlayan müşteri akışı standardıdır.",
   openGraph: {
     title: "CNR Norm | Müşteri Akışı Standardı — CNR Solutions",
     description:
@@ -26,10 +28,11 @@ export const metadata: Metadata = {
 
 const navLinks = [
   { href: "#cnr-norm", label: "CNR Norm" },
+  { href: "#cnr-norm-iq", label: "CNR Norm IQ" },
   { href: "#nasil-calisir", label: "Nasıl Çalışır?" },
   { href: "#hizmetler", label: "Destekleyici Hizmetler" },
   { href: "#kimler", label: "Kimler İçin?" },
-  { href: "#iletisim", label: "Ücretsiz Analiz" },
+  { href: "#iletisim", label: "Müşteri Akışı Skoru" },
 ];
 
 export default function TrPage() {
@@ -44,11 +47,13 @@ export default function TrPage() {
       <TrCategory />
       <TrProblem />
       <TrNormProduct />
+      <TrNormIQ />
       <TrProcess />
       <TrServices />
       <TrWhoWeServe />
       <TrComparison />
       <TrTrust />
+      <TrProofSimulation />
       <TrCta />
       <Footer locale="tr" />
       <TrFloatingWhatsApp />

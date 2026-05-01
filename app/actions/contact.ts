@@ -9,6 +9,10 @@ export type ContactFormData = {
   email: string;
   phone: string;
   message: string;
+  dailyInquiries: string;
+  channels: string[];
+  trackingMethod: string[];
+  biggestIssue: string[];
 };
 
 function buildEmailHtml(data: ContactFormData): string {
@@ -26,7 +30,7 @@ function buildEmailHtml(data: ContactFormData): string {
       <div style="max-width:600px;margin:0 auto;">
         <div style="margin-bottom:24px;">
           <p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7dd3fc;">CNR Solutions</p>
-          <h1 style="margin:0;font-size:22px;font-weight:700;color:#f1f5f9;">Yeni İş Akışı Analizi Talebi</h1>
+          <h1 style="margin:0;font-size:22px;font-weight:700;color:#f1f5f9;">Yeni Müşteri Akışı Skoru Talebi</h1>
         </div>
 
         <table style="width:100%;border-collapse:collapse;border-radius:16px;overflow:hidden;border:1px solid rgba(148,163,184,.15);background:rgba(17,24,39,.9);">
@@ -36,12 +40,16 @@ function buildEmailHtml(data: ContactFormData): string {
             ${row('Sektör', data.sector)}
             ${row('E-posta', `<a href="mailto:${data.email}" style="color:#7dd3fc;text-decoration:none;">${data.email}</a>`)}
             ${row('Telefon / WhatsApp', data.phone ? `<a href="https://wa.me/${data.phone.replace(/\D/g, '')}" style="color:#7dd3fc;text-decoration:none;">${data.phone}</a>` : '—')}
+            ${row('Günlük Talep Sayısı', data.dailyInquiries)}
+            ${row('Ana Kanallar', data.channels.length ? data.channels.join(', ') : '—')}
+            ${row('Takip Yöntemi', data.trackingMethod.length ? data.trackingMethod.join(', ') : '—')}
+            ${row('En Büyük Sorun', data.biggestIssue.length ? data.biggestIssue.join(', ') : '—')}
             ${row('Mesaj', data.message ? `<span style="white-space:pre-wrap;">${data.message}</span>` : '—')}
           </tbody>
         </table>
 
         <p style="margin:24px 0 0;font-size:12px;color:#475569;">
-          Bu e-posta CNR Solutions iletişim formu aracılığıyla gönderilmiştir.
+          Bu e-posta CNR Solutions müşteri akışı skoru formu aracılığıyla gönderilmiştir.
         </p>
       </div>
     </body>
@@ -68,7 +76,7 @@ export async function submitContactForm(
       from: 'CNR Solutions <onboarding@resend.dev>',
       to: ['info@cnr-solutions.com'],
       replyTo: data.email,
-      subject: `Yeni İş Akışı Analizi Talebi — ${data.company}`,
+      subject: `Müşteri Akışı Skoru Talebi — ${data.company}`,
       html: buildEmailHtml(data),
     });
 

@@ -5,21 +5,21 @@ import { FormField } from "@/components/ui/FormField";
 import { submitContactForm } from "@/app/actions/contact";
 
 const sectorOptions = [
-  "Klinik / Sağlık",
-  "Güzellik & Medikal Estetik",
-  "Oto Servis / Detailing",
-  "Kurs / Eğitim Merkezi",
-  "Mobilya / Dekorasyon",
-  "Danışmanlık / Hizmet",
-  "Perakende / Yerel İşletme",
-  "Diğer",
+  "Clinic / Healthcare",
+  "Beauty & Medical Aesthetics",
+  "Auto Service / Detailing",
+  "Education Center / Courses",
+  "Furniture / Decoration",
+  "Consulting / Services",
+  "Retail / Local Business",
+  "Other",
 ];
 
 const dailyInquiryOptions = ["0–10", "10–30", "30–50", "50+"];
 
-const channelOptions = ["WhatsApp", "Instagram", "Telefon", "Web Form", "Reklam"];
-const trackingOptions = ["WhatsApp", "Excel", "Not defteri", "CRM", "Manuel"];
-const issueOptions = ["Geç dönüş", "Unutulan müşteri", "Teklif takibi", "Randevu takibi", "Patron görünürlüğü"];
+const channelOptions = ["WhatsApp", "Instagram", "Phone", "Web Form", "Ads"];
+const trackingOptions = ["WhatsApp", "Excel", "Notes", "CRM", "Manual"];
+const issueOptions = ["Late replies", "Forgotten customers", "Quote tracking", "Appointment tracking", "Owner visibility"];
 
 type FormState = {
   name: string;
@@ -82,7 +82,7 @@ function CheckboxGroup({
   );
 }
 
-export function TrContactForm() {
+export function EnContactForm() {
   const [form, setForm] = useState<FormState>({
     name: "",
     company: "",
@@ -112,13 +112,13 @@ export function TrContactForm() {
 
   function validate(): FormErrors {
     const errs: FormErrors = {};
-    if (!form.name.trim()) errs.name = "Ad Soyad zorunludur.";
-    if (!form.company.trim()) errs.company = "Şirket adı zorunludur.";
-    if (!form.sector) errs.sector = "Lütfen sektörünüzü seçin.";
+    if (!form.name.trim()) errs.name = "Full name is required.";
+    if (!form.company.trim()) errs.company = "Company name is required.";
+    if (!form.sector) errs.sector = "Please select your sector.";
     if (!form.email.trim()) {
-      errs.email = "E-posta adresi zorunludur.";
+      errs.email = "Email address is required.";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-      errs.email = "Geçerli bir e-posta adresi girin.";
+      errs.email = "Please enter a valid email address.";
     }
     return errs;
   }
@@ -138,7 +138,7 @@ export function TrContactForm() {
       if (result.success) {
         setStatus("success");
       } else {
-        setErrorMessage(result.error ?? "Bilinmeyen bir hata oluştu.");
+        setErrorMessage(result.error ?? "An unexpected error occurred.");
         setStatus("error");
       }
     } catch (err) {
@@ -156,9 +156,9 @@ export function TrContactForm() {
             <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
-        <h3 className="text-xl font-semibold text-white">Talebiniz alındı.</h3>
+        <h3 className="text-xl font-semibold text-white">Request received.</h3>
         <p className="mx-auto mt-3 max-w-sm text-sm leading-7 text-slate-400">
-          En kısa sürede dönüş yapacağız. Hızlı yanıt için WhatsApp&rsquo;tan da ulaşabilirsiniz.
+          We will get back to you shortly. For a faster response, you can also reach us on WhatsApp.
         </p>
         <a
           href="https://wa.me/905331970462"
@@ -166,7 +166,7 @@ export function TrContactForm() {
           rel="noopener noreferrer"
           className="mt-6 inline-flex min-h-[2.75rem] items-center justify-center rounded-full border border-[rgba(125,211,252,0.24)] bg-[rgba(125,211,252,0.07)] px-5 text-sm font-semibold text-[var(--color-accent)] transition-all hover:bg-[rgba(125,211,252,0.12)]"
         >
-          WhatsApp&rsquo;tan yaz — +90 533 197 0462
+          Message us on WhatsApp — +90 533 197 0462
         </a>
       </div>
     );
@@ -176,47 +176,47 @@ export function TrContactForm() {
     <form onSubmit={handleSubmit} noValidate className="mx-auto max-w-2xl">
       <div className="grid gap-5 sm:grid-cols-2">
         <FormField
-          label="Ad Soyad"
+          label="Full Name"
           name="name"
           value={form.name}
-          placeholder="Adınız Soyadınız"
+          placeholder="Your full name"
           onChange={setField("name")}
           error={errors.name}
           required
         />
         <FormField
-          label="Şirket"
+          label="Company"
           name="company"
           value={form.company}
-          placeholder="Şirket adı"
+          placeholder="Company name"
           onChange={setField("company")}
           error={errors.company}
           required
         />
         <FormField
-          label="Sektör"
+          label="Sector"
           name="sector"
           type="select"
           value={form.sector}
-          placeholder="Sektörünüzü seçin"
+          placeholder="Select your sector"
           options={sectorOptions}
           onChange={setField("sector")}
           error={errors.sector}
           required
         />
         <FormField
-          label="E-posta"
+          label="Email"
           name="email"
           type="email"
           value={form.email}
-          placeholder="ornek@sirket.com"
+          placeholder="you@company.com"
           onChange={setField("email")}
           error={errors.email}
           required
         />
         <div className="sm:col-span-2">
           <FormField
-            label="Telefon / WhatsApp"
+            label="Phone / WhatsApp"
             name="phone"
             type="tel"
             value={form.phone}
@@ -229,34 +229,34 @@ export function TrContactForm() {
         <div className="sm:col-span-2">
           <div className="mb-1">
             <span className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">
-              İşletme Tanılaması
+              Business Diagnostic
             </span>
           </div>
           <div className="rounded-2xl border border-white/8 bg-white/[0.025] px-5 py-5 space-y-6">
             <FormField
-              label="Günlük ortalama kaç müşteri talebi alıyorsunuz?"
+              label="How many customer inquiries do you receive per day on average?"
               name="dailyInquiries"
               type="select"
               value={form.dailyInquiries}
-              placeholder="Seçiniz"
+              placeholder="Select range"
               options={dailyInquiryOptions}
               onChange={setField("dailyInquiries")}
               error={errors.dailyInquiries}
             />
             <CheckboxGroup
-              label="Ana kanallarınız neler?"
+              label="What are your main channels?"
               options={channelOptions}
               selected={form.channels}
               onChange={setArrayField("channels")}
             />
             <CheckboxGroup
-              label="Şu an takip nasıl yapılıyor?"
+              label="How do you currently track inquiries?"
               options={trackingOptions}
               selected={form.trackingMethod}
               onChange={setArrayField("trackingMethod")}
             />
             <CheckboxGroup
-              label="En büyük sorun nedir?"
+              label="What is your biggest issue?"
               options={issueOptions}
               selected={form.biggestIssue}
               onChange={setArrayField("biggestIssue")}
@@ -266,10 +266,10 @@ export function TrContactForm() {
 
         <div className="sm:col-span-2">
           <FormField
-            label="Mesaj / Mevcut Durum"
+            label="Message / Current Situation"
             name="message"
             value={form.message}
-            placeholder="Mevcut durumunuzu kısaca anlatın. Müşteri takibi, satış, operasyon veya veri süreçlerinde hangi sorunları yaşıyorsunuz?"
+            placeholder="Briefly describe your current situation. What challenges are you facing with customer follow-up, sales, or operations?"
             onChange={setField("message")}
             error={errors.message}
             multiline
@@ -283,11 +283,11 @@ export function TrContactForm() {
             <path fillRule="evenodd" clipRule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm-1-5a1 1 0 1 0 2 0V9a1 1 0 1 0-2 0v4Zm1-7a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" />
           </svg>
           <p className="text-sm text-rose-300">
-            {errorMessage || "Bir hata oluştu."} Lütfen tekrar deneyin veya doğrudan{" "}
+            {errorMessage || "An error occurred."} Please try again or reach us on{" "}
             <a href="https://wa.me/905331970462" className="underline underline-offset-2 hover:text-rose-200">
               WhatsApp
-            </a>{" "}
-            üzerinden ulaşın.
+            </a>
+            .
           </p>
         </div>
       )}
@@ -304,14 +304,14 @@ export function TrContactForm() {
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4Z" />
               </svg>
-              Gönderiliyor...
+              Sending...
             </>
           ) : (
-            "Müşteri Akışı Skorumu Al"
+            "Get My Customer Flow Score"
           )}
         </button>
         <p className="text-xs leading-5 text-slate-600">
-          Zorunlu alanlar:{" "}
+          Required fields:{" "}
           <span className="text-[var(--color-accent)]">*</span>
         </p>
       </div>

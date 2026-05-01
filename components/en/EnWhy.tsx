@@ -23,9 +23,9 @@ export function EnWhy() {
   return (
     <SectionShell>
       <Reveal>
-        <SectionHeading title="Why CNR Norm?" />
+        <SectionHeading title="Not CRM chaos. A customer flow standard." />
         <p className="mt-5 max-w-2xl text-base leading-8 text-slate-400">
-          There are CRMs, messaging tools, chatbots and automation products in the market. CNR Norm is different because it does not start from technical features. It starts from the real customer flow of the business.
+          Most tools give you more screens. CNR Norm starts by understanding where your customers come from, where they wait, who follows up with them, and where opportunities get lost. Then we build the system around your real workflow.
         </p>
       </Reveal>
 

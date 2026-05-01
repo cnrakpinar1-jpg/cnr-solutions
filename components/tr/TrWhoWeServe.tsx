@@ -6,31 +6,31 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 const segments = [
   {
     title: "Özel klinikler ve diş klinikleri",
-    description: "Müşteri görüşmesi, randevu ve hasta aday takibini standart hale getirmek için.",
+    description: "Hasta adayı görüşmeleri ekip hafızasına değil, takip sistemine bağlansın.",
   },
   {
     title: "Güzellik merkezleri ve medikal estetik işletmeleri",
-    description: "Instagram, WhatsApp ve telefon görüşmelerini randevu akışına bağlamak için.",
+    description: "Instagram'dan fiyat soran danışanlar randevuya dönmeden kaybolmasın.",
   },
   {
     title: "Oto servis, ekspertiz ve detailing işletmeleri",
-    description: "Telefon ve WhatsApp üzerinden gelen servis taleplerini takip etmek için.",
+    description: "WhatsApp'tan gelen servis talepleri teklif ve randevuya bağlansın.",
   },
   {
     title: "Kurslar ve eğitim merkezleri",
-    description: "Veli/öğrenci görüşmelerini kayıt, görüşme ve takip sürecine çevirmek için.",
+    description: "Veli ve öğrenci görüşmeleri kayıt, takip ve ödeme sürecine düzenli ilerlesin.",
   },
   {
     title: "Mobilya, mutfak, banyo, perde ve dekorasyon firmaları",
-    description: "Fiyat alma, teklif ve geri dönüş süreçlerini düzene almak için.",
+    description: "Fiyat soruları ve teklifler sistemli takip edilsin; fırsat penceresi kapanmasın.",
   },
   {
     title: "Danışmanlık ve hizmet işletmeleri",
-    description: "Gelen görüşmeleri teklif, toplantı ve satış sürecine bağlamak için.",
+    description: "Gelen görüşmeler kaybolmadan teklif ve satış sürecine bağlansın.",
   },
   {
     title: "Yoğun müşteri görüşmesi alan KOBİ'ler",
-    description: "Birden fazla kanaldan müşteri alan ama süreci manuel takip eden işletmeler için.",
+    description: "Birden fazla kanaldan müşteri al, ama süreci rastgele değil standart takip et.",
   },
 ];
 
