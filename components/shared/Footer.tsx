@@ -8,17 +8,17 @@ type FooterProps = {
 export function Footer({ locale }: FooterProps) {
   const brandLine =
     locale === "tr"
-      ? "CNR Solutions, işletmeler için müşteri akışı standardı CNR Norm’u kurar. WhatsApp, Instagram, telefon, web formu ve reklam kanallarından gelen müşteri görüşmelerini daha düzenli, görünür ve takip edilebilir hale getirir."
+      ? "CNR Solutions, güzellik ve medikal estetik işletmeleri başta olmak üzere yoğun müşteri görüşmesi alan işletmeler için Norm’u kurar. WhatsApp, Instagram, telefon ve web formundan gelen talepleri görünür, standart ve takip edilebilir bir akışa dönüştürür."
       : "CNR Solutions builds CNR Norm, a customer-flow standard for businesses. We help organize customer inquiries from WhatsApp, Instagram, phone calls, web forms, and ads into a clearer, more visible and trackable flow.";
   const navLinks =
     locale === "tr"
       ? [
-          { href: "#cnr-norm", label: "CNR Norm" },
-          { href: "#cnr-norm-iq", label: "CNR Norm IQ" },
+          { href: "#norm", label: "Norm" },
           { href: "#nasil-calisir", label: "Nasıl Çalışır?" },
-          { href: "#hizmetler", label: "Destekleyici Hizmetler" },
+          { href: "#kurucu-program", label: "Kurucu Program" },
           { href: "#kimler", label: "Kimler İçin?" },
-          { href: "#musteri-akisi-skoru", label: "Müşteri Akışı Skoru" },
+          { href: "#rapor-ornegi", label: "Rapor Örneği" },
+          { href: "#basvur", label: "Başvur" },
         ]
       : [
           { href: "#cnr-norm", label: "CNR Norm" },
@@ -33,10 +33,10 @@ export function Footer({ locale }: FooterProps) {
     locale === "tr"
       ? {
           heading: "İLETİŞİM",
-          text: "Müşteri akışınızın nerede dağıldığını birlikte netleştirelim.",
-          note: "Ücretsiz Müşteri Akışı Skoru talepleri form üzerinden alınır.",
-          cta: "Skor Talebi Gönder",
-          href: "#musteri-akisi-skoru",
+          text: "Müşteri akışınızda fırsat nerede kaçıyor, birlikte çıkaralım.",
+          note: "Ücretsiz Müşteri Akışı Analizi talepleri form üzerinden alınır.",
+          cta: "Başvuruyu Aç",
+          href: "#basvur",
         }
       : {
           heading: "CONTACT",

@@ -4,28 +4,26 @@ import { SectionShell } from "@/components/ui/SectionShell";
 
 const genericItems = [
   "Özellik anlatır",
-  "Teknik kurulumla başlar",
   "İşletmeyi araca uydurmaya çalışır",
-  "Kullanım disiplini işletmeye bırakılır",
+  "Takip disiplinini ekibe bırakır",
   "Müşteri akışını bütün olarak sahiplenmez",
 ];
 
 const normItems = [
   "İş sonucundan başlar",
   "Mevcut müşteri akışını analiz eder",
-  "Sistemi işletmenin çalışma düzenine göre kurar",
+  "Bugün kime dönüleceğini gösterir",
+  "Kaçan fırsatları görünür hale getirir",
   "Takip, randevu, teklif ve satış sürecini birlikte ele alır",
-  "İşletme sahibine operasyonel görünürlük sağlar",
-  "Dağınık müşteri görüşmelerini yeni bir işletme standardına dönüştürür",
 ];
 
 export function TrComparison() {
   return (
     <SectionShell>
       <Reveal>
-        <SectionHeading title="CRM karmaşası değil, müşteri akışı standardı." />
+        <SectionHeading title="Bir CRM daha değil. Müşteri kaçırmama sistemi." />
         <p className="mt-5 max-w-2xl text-base leading-8 text-slate-400">
-          Birçok araç size yeni ekranlar verir. CNR Norm ise önce işletmenizde müşterinin nereden geldiğini, nerede beklediğini, kim tarafından takip edildiğini ve nerede kaybolduğunu çıkarır. Sonra sistemi buna göre kurar.
+          Norm&apos;un amacı işletmeye bir ekran daha vermek değildir. Amaç, gelen müşteri talebinin satışa veya randevuya dönüşene kadar takipten düşmemesidir.
         </p>
       </Reveal>
 
@@ -49,7 +47,7 @@ export function TrComparison() {
         <Reveal delay={120}>
           <div className="h-full rounded-[20px] border border-[rgba(125,211,252,0.18)] bg-[rgba(125,211,252,0.05)] px-6 py-5">
             <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
-              CNR Norm
+              Norm
             </p>
             <ul className="mt-5 space-y-3">
               {normItems.map((item) => (
@@ -67,7 +65,7 @@ export function TrComparison() {
         <div className="mt-10 rounded-[24px] border border-[rgba(125,211,252,0.12)] bg-[rgba(125,211,252,0.04)] px-8 py-6 text-center">
           <p className="text-base font-semibold text-slate-300 sm:text-lg">
             Bizim odağımız daha fazla ekran değil;{" "}
-            <span className="text-[var(--color-accent)]">daha net, daha standart ve daha yönetilebilir müşteri akışı.</span>
+            <span className="text-[var(--color-accent)]">gelen müşterinin takipten düşmemesi.</span>
           </p>
         </div>
       </Reveal>

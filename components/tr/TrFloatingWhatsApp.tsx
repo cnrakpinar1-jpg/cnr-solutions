@@ -1,5 +1,5 @@
 const whatsappUrl =
-  "https://wa.me/905331970462?text=Merhaba%2C%20CNR%20Solutions%20sitesinden%20geliyorum.%20%C4%B0%C5%9Fletmem%20i%C3%A7in%20bir%20sistem%20konu%C5%9Fmak%20istiyorum.";
+  "https://wa.me/905331970462?text=Merhaba%2C%20Norm%20Kurucu%20%C4%B0%C5%9Fletme%20Program%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.";
 
 export function TrFloatingWhatsApp() {
   return (

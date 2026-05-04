@@ -10,8 +10,8 @@ type HeaderProps = {
 };
 
 export function Header({ locale, navLinks }: HeaderProps) {
-  const ctaHref = locale === "tr" ? "#musteri-akisi-skoru" : "#contact";
-  const ctaText = locale === "tr" ? "Ücretsiz Skor Al" : "Free Score";
+  const ctaHref = locale === "tr" ? "#kurucu-program" : "#contact";
+  const ctaText = locale === "tr" ? "Kurucu Programa Katıl" : "Free Score";
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/6 bg-[rgba(6,8,22,0.65)] backdrop-blur-md">

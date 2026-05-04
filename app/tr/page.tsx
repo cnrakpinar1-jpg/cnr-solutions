@@ -2,37 +2,36 @@ import type { Metadata } from "next";
 import { Header } from "@/components/shared/Header";
 import { Footer } from "@/components/shared/Footer";
 import { TrHero } from "@/components/tr/TrHero";
-import { TrCategory } from "@/components/tr/TrCategory";
 import { TrProblem } from "@/components/tr/TrProblem";
-import { TrNormProduct } from "@/components/tr/TrUseCases";
-import { TrNormIQ } from "@/components/tr/TrNormIQ";
+import { TrFoundingProgram } from "@/components/tr/TrFoundingProgram";
 import { TrProcess } from "@/components/tr/TrSetupProcess";
-import { TrServices } from "@/components/tr/TrServices";
+import { TrOpportunityCard } from "@/components/tr/TrOpportunityCard";
+import { TrProofSimulation } from "@/components/tr/TrProofSimulation";
 import { TrWhoWeServe } from "@/components/tr/TrWhoWeServe";
 import { TrComparison } from "@/components/tr/TrComparison";
-import { TrTrust } from "@/components/tr/TrTrust";
-import { TrProofSimulation } from "@/components/tr/TrProofSimulation";
+import { TrNormIQ } from "@/components/tr/TrNormIQ";
 import { TrCta } from "@/components/tr/TrCta";
+import { TrMobileStickyCta } from "@/components/tr/TrMobileStickyCta";
 import { TrFloatingWhatsApp } from "@/components/tr/TrFloatingWhatsApp";
 
 export const metadata: Metadata = {
-  title: "CNR Norm | Müşteri Akışı Standardı — CNR Solutions",
+  title: "Norm | Müşteri Akışı Standardı — CNR Solutions",
   description:
-    "CNR Norm, WhatsApp, Instagram, telefon, web formu ve reklamlardan gelen müşteri taleplerini tek akışa bağlayan müşteri akışı standardıdır.",
+    "Norm, güzellik ve medikal estetik işletmeleri için WhatsApp, Instagram, telefon ve web formundan gelen müşteri taleplerini tek akışa bağlayan pilot sistemdir. İlk 10 kurucu işletme programına başvurun.",
   openGraph: {
-    title: "CNR Norm | Müşteri Akışı Standardı — CNR Solutions",
+    title: "Norm | Müşteri Akışı Standardı — CNR Solutions",
     description:
-      "Dağınık müşteri görüşmelerini standart, görünür ve takip edilebilir bir müşteri akışına dönüştürün. CNR Norm ile işletmenizin yeni normu.",
+      "Dağınık müşteri görüşmelerini standart, görünür ve takip edilebilir bir akışa dönüştürün. Norm ile ilk 10 kurucu işletme programına katılın.",
   },
 };
 
 const navLinks = [
-  { href: "#cnr-norm", label: "CNR Norm" },
-  { href: "#cnr-norm-iq", label: "CNR Norm IQ" },
+  { href: "#norm", label: "Norm" },
   { href: "#nasil-calisir", label: "Nasıl Çalışır?" },
-  { href: "#hizmetler", label: "Destekleyici Hizmetler" },
+  { href: "#kurucu-program", label: "Kurucu Program" },
   { href: "#kimler", label: "Kimler İçin?" },
-  { href: "#musteri-akisi-skoru", label: "Müşteri Akışı Skoru" },
+  { href: "#rapor-ornegi", label: "Rapor Örneği" },
+  { href: "#basvur", label: "Başvur" },
 ];
 
 export default function TrPage() {
@@ -44,18 +43,17 @@ export default function TrPage() {
       />
       <Header locale="tr" navLinks={navLinks} />
       <TrHero />
-      <TrCategory />
       <TrProblem />
-      <TrNormProduct />
-      <TrNormIQ />
+      <TrFoundingProgram />
       <TrProcess />
-      <TrServices />
+      <TrOpportunityCard />
+      <TrProofSimulation />
       <TrWhoWeServe />
       <TrComparison />
-      <TrTrust />
-      <TrProofSimulation />
+      <TrNormIQ />
       <TrCta />
       <Footer locale="tr" />
+      <TrMobileStickyCta />
       <TrFloatingWhatsApp />
     </main>
   );
