@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
-import { NormWordmark } from "@/components/shared/NormWordmark";
 
 export function TrHero() {
   return (
@@ -15,7 +14,6 @@ export function TrHero() {
       <div className="container-shell">
         <div className="grid items-center gap-10 pb-16 pt-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-14 lg:pb-32 lg:pt-20">
           <Reveal className="max-w-3xl">
-            <NormWordmark size="hero" className="mb-6" />
             <p className="eyebrow">Müşteri Akışı Standardı</p>
 
             <h1 className="text-balance mt-4 text-[2.4rem] font-bold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-[3.6rem] lg:leading-[1.04]">

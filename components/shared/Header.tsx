@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { MobileNav } from "@/components/shared/MobileNav";
-import { NormWordmark } from "@/components/shared/NormWordmark";
 
 type NavLink = { href: string; label: string };
 
@@ -17,8 +16,8 @@ export function Header({ locale, navLinks }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 border-b border-white/6 bg-[rgba(6,8,22,0.65)] backdrop-blur-md">
       <div className="container-shell flex h-16 items-center justify-between gap-3 sm:h-18">
-        <Link href={`/${locale}`} className="flex-shrink-0" aria-label={locale === "tr" ? "Norm" : "CNR Solutions"}>
-          {locale === "tr" ? <NormWordmark size="header" /> : <Logo variant="light" size="md" />}
+        <Link href={`/${locale}`} className="flex-shrink-0" aria-label="CNR Solutions">
+          <Logo variant="light" size="md" />
         </Link>
 
         {/* Desktop nav */}
