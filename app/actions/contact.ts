@@ -30,7 +30,7 @@ function buildEmailHtml(data: ContactFormData): string {
       <div style="max-width:600px;margin:0 auto;">
         <div style="margin-bottom:24px;">
           <p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7dd3fc;">CNR Solutions</p>
-          <h1 style="margin:0;font-size:22px;font-weight:700;color:#f1f5f9;">Yeni Müşteri Akışı Skoru Talebi</h1>
+          <h1 style="margin:0;font-size:22px;font-weight:700;color:#f1f5f9;">Yeni Norm Kurucu İşletme Başvurusu</h1>
         </div>
 
         <table style="width:100%;border-collapse:collapse;border-radius:16px;overflow:hidden;border:1px solid rgba(148,163,184,.15);background:rgba(17,24,39,.9);">
@@ -49,7 +49,7 @@ function buildEmailHtml(data: ContactFormData): string {
         </table>
 
         <p style="margin:24px 0 0;font-size:12px;color:#475569;">
-          Bu e-posta CNR Solutions müşteri akışı skoru formu aracılığıyla gönderilmiştir.
+          Bu e-posta CNR Solutions Norm Kurucu İşletme Başvurusu formu aracılığıyla gönderilmiştir.
         </p>
       </div>
     </body>
@@ -76,7 +76,7 @@ export async function submitContactForm(
       from: 'CNR Solutions <onboarding@resend.dev>',
       to: ['info@cnr-solutions.com'],
       replyTo: data.email,
-      subject: `Müşteri Akışı Skoru Talebi — ${data.company}`,
+      subject: `Norm Kurucu İşletme Başvurusu — ${data.company}`,
       html: buildEmailHtml(data),
     });
 

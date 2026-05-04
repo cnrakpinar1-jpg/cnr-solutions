@@ -36,6 +36,10 @@ export function TrFoundingProgram() {
             </p>
           </div>
 
+          <p className="mt-6 max-w-2xl text-sm leading-7 text-slate-400">
+            Bu pilotun amacı yeni bir yazılım denetmek değil; işletmenizde müşteri fırsatlarının nerede kaçtığını 14 gün içinde görünür hale getirmektir.
+          </p>
+
           <ul className="mt-7 space-y-3">
             {bullets.map((bullet) => (
               <li key={bullet} className="flex items-start gap-3">

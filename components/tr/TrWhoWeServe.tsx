@@ -6,7 +6,7 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 const segments = [
   {
     title: "Güzellik merkezleri ve medikal estetik işletmeleri",
-    description: "Instagram'dan fiyat soran danışanlar, WhatsApp'tan randevu isteyenler ve telefonla bilgi alan kişiler tek takip akışında kaybolmadan ilerlesin.",
+    description: "Instagram’dan fiyat soran müşterilerinizin kaçı gerçekten randevuya dönüyor? Instagram’dan fiyat soran danışanlar, WhatsApp’tan randevu isteyenler ve telefonla bilgi alan kişiler tek takip akışında kaybolmadan ilerlesin.",
   },
   {
     title: "Diş klinikleri",

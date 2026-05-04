@@ -7,7 +7,7 @@ export function TrFloatingWhatsApp() {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-4 right-4 z-40 inline-flex max-w-[calc(100vw-2rem)] items-center gap-3 rounded-2xl border border-[rgba(125,211,252,0.28)] bg-[rgba(8,12,24,0.92)] px-4 py-3 text-left shadow-[0_18px_60px_rgba(2,6,23,0.55)] backdrop-blur-md transition-all hover:-translate-y-1 hover:border-[rgba(125,211,252,0.45)] hover:bg-[rgba(12,18,34,0.96)] sm:bottom-6 sm:right-6 sm:px-5"
+      className="fixed bottom-20 right-4 z-40 inline-flex max-w-[calc(100vw-2rem)] items-center gap-3 rounded-2xl border border-[rgba(125,211,252,0.28)] bg-[rgba(8,12,24,0.92)] px-4 py-3 text-left shadow-[0_18px_60px_rgba(2,6,23,0.55)] backdrop-blur-md transition-all hover:-translate-y-1 hover:border-[rgba(125,211,252,0.45)] hover:bg-[rgba(12,18,34,0.96)] sm:px-5 md:bottom-6 md:right-6"
       aria-label="WhatsApp'tan yaz"
     >
       <span
@@ -39,7 +39,7 @@ export function TrFloatingWhatsApp() {
           WhatsApp’tan Yaz
         </span>
         <span className="hidden text-xs leading-5 text-slate-400 md:block">
-          İşletmeniz için sistemi konuşalım
+          Kurucu Programı konuşalım
         </span>
       </span>
     </a>

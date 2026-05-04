@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
+import { NormWordmark } from "@/components/shared/NormWordmark";
 
 export function TrHero() {
   return (
@@ -14,6 +15,7 @@ export function TrHero() {
       <div className="container-shell">
         <div className="grid items-center gap-10 pb-16 pt-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-14 lg:pb-32 lg:pt-20">
           <Reveal className="max-w-3xl">
+            <NormWordmark size="hero" className="mb-6" />
             <p className="eyebrow">Müşteri Akışı Standardı</p>
 
             <h1 className="text-balance mt-4 text-[2.4rem] font-bold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-[3.6rem] lg:leading-[1.04]">
@@ -33,9 +35,14 @@ export function TrHero() {
               </Button>
             </div>
 
-            <p className="mt-4 text-xs text-slate-500">
-              İlk etapta güzellik ve medikal estetik işletmeleri için 14 günlük kurucu pilot programı açıldı.
-            </p>
+            <div className="mt-5 max-w-xl rounded-2xl border border-white/10 bg-white/[0.035] px-4 py-3">
+              <p className="text-xs font-semibold text-slate-300">
+                Kurucu işletme kontenjanı: 10 işletme
+              </p>
+              <p className="mt-1 text-xs text-slate-500">
+                Öncelik: güzellik ve medikal estetik işletmeleri.
+              </p>
+            </div>
           </Reveal>
 
           <Reveal delay={120} className="w-full min-w-0">

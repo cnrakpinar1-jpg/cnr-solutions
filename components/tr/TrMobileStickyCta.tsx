@@ -1,6 +1,6 @@
 export function TrMobileStickyCta() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-30 border-t border-white/8 bg-[rgba(6,8,22,0.92)] px-4 py-3 backdrop-blur-md md:hidden">
+    <div className="fixed bottom-0 left-0 right-0 z-30 border-t border-white/8 bg-[rgba(6,8,22,0.92)] px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur-md md:hidden">
       <div className="flex items-center justify-between gap-3">
         <p className="min-w-0 truncate text-xs font-semibold text-slate-300">
           İlk 10 Kurucu İşletme Programı

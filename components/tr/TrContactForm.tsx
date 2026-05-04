@@ -17,9 +17,17 @@ const sectorOptions = [
 
 const dailyInquiryOptions = ["0–10", "10–30", "30–50", "50+"];
 
-const channelOptions = ["WhatsApp", "Instagram", "Telefon", "Web Form", "Reklam"];
-const trackingOptions = ["WhatsApp", "Excel", "Not defteri", "CRM", "Manuel"];
-const issueOptions = ["Geç dönüş", "Unutulan müşteri", "Teklif takibi", "Randevu takibi", "Patron görünürlüğü"];
+const channelOptions = ["Instagram DM", "WhatsApp", "Telefon", "Web Form", "Reklam mesajları"];
+const trackingOptions = ["WhatsApp içinde", "Excel / tablo", "Not defteri", "Ekip hafızası", "Düzenli takip yok"];
+const issueOptions = [
+  "Instagram / WhatsApp mesajları dağınık kalıyor",
+  "Fiyat soran müşteriler takip edilmiyor",
+  "Kime ne zaman dönüleceği belli olmuyor",
+  "Telefonla gelen talepler kayboluyor",
+  "Patron müşteri akışını net göremiyor",
+  "Randevuya dönmeyen çok müşteri var",
+  "Diğer",
+];
 
 type FormState = {
   name: string;
@@ -38,11 +46,13 @@ type FormErrors = Partial<Record<keyof FormState, string>>;
 
 function CheckboxGroup({
   label,
+  helper,
   options,
   selected,
   onChange,
 }: {
   label: string;
+  helper?: string;
   options: string[];
   selected: string[];
   onChange: (updated: string[]) => void;
@@ -58,6 +68,7 @@ function CheckboxGroup({
   return (
     <div>
       <span className="text-sm font-medium text-slate-200">{label}</span>
+      {helper ? <p className="mt-1 text-xs leading-5 text-slate-500">{helper}</p> : null}
       <div className="mt-2.5 flex flex-wrap gap-2">
         {options.map((opt) => {
           const active = selected.includes(opt);
@@ -97,7 +108,6 @@ export function TrContactForm() {
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
-  const [errorMessage, setErrorMessage] = useState<string>("");
 
   function setField(field: keyof FormState) {
     return (value: string) => {
@@ -113,7 +123,7 @@ export function TrContactForm() {
   function validate(): FormErrors {
     const errs: FormErrors = {};
     if (!form.name.trim()) errs.name = "Ad Soyad zorunludur.";
-    if (!form.company.trim()) errs.company = "Şirket adı zorunludur.";
+    if (!form.company.trim()) errs.company = "İşletme adı zorunludur.";
     if (!form.sector) errs.sector = "Lütfen sektörünüzü seçin.";
     if (!form.email.trim()) {
       errs.email = "E-posta adresi zorunludur.";
@@ -132,18 +142,14 @@ export function TrContactForm() {
     }
     setErrors({});
     setStatus("submitting");
-    setErrorMessage("");
     try {
       const result = await submitContactForm(form);
       if (result.success) {
         setStatus("success");
       } else {
-        setErrorMessage(result.error ?? "Bilinmeyen bir hata oluştu.");
         setStatus("error");
       }
-    } catch (err) {
-      const msg = err instanceof Error ? err.message : String(err);
-      setErrorMessage(msg);
+    } catch {
       setStatus("error");
     }
   }
@@ -156,9 +162,9 @@ export function TrContactForm() {
             <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
-        <h3 className="text-xl font-semibold text-white">Talebiniz alındı.</h3>
-        <p className="mx-auto mt-3 max-w-sm text-sm leading-7 text-slate-400">
-          En kısa sürede dönüş yapacağız. Hızlı yanıt için WhatsApp&rsquo;tan da ulaşabilirsiniz.
+        <h3 className="text-xl font-semibold text-white">Başvurunuz alındı.</h3>
+        <p className="mx-auto mt-3 max-w-md text-sm leading-7 text-slate-400">
+          Başvurunuz alındı. İşletmenizin müşteri akışını inceleyip uygunluk durumuna göre sizinle iletişime geçeceğiz.
         </p>
         <a
           href="https://wa.me/905331970462"
@@ -166,7 +172,7 @@ export function TrContactForm() {
           rel="noopener noreferrer"
           className="mt-6 inline-flex min-h-[2.75rem] items-center justify-center rounded-full border border-[rgba(125,211,252,0.24)] bg-[rgba(125,211,252,0.07)] px-5 text-sm font-semibold text-[var(--color-accent)] transition-all hover:bg-[rgba(125,211,252,0.12)]"
         >
-          WhatsApp&rsquo;tan yaz — +90 533 197 0462
+          Form yerine WhatsApp&rsquo;tan yazmak isterseniz: Kurucu Programı konuşalım.
         </a>
       </div>
     );
@@ -185,10 +191,10 @@ export function TrContactForm() {
           required
         />
         <FormField
-          label="Şirket"
+          label="İşletme Adı"
           name="company"
           value={form.company}
-          placeholder="Şirket adı"
+          placeholder="İşletme adınız"
           onChange={setField("company")}
           error={errors.company}
           required
@@ -229,7 +235,7 @@ export function TrContactForm() {
         <div className="sm:col-span-2">
           <div className="mb-1">
             <span className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">
-              2 Dakikalık Müşteri Akışı Tanılaması
+              Kurucu İşletme Başvurusu
             </span>
           </div>
           <div className="rounded-2xl border border-white/8 bg-white/[0.025] px-5 py-5 space-y-6">
@@ -244,19 +250,20 @@ export function TrContactForm() {
               error={errors.dailyInquiries}
             />
             <CheckboxGroup
-              label="Ana kanallarınız neler?"
+              label="Müşteri talepleriniz en çok nereden geliyor?"
+              helper="Instagram DM, WhatsApp, telefon, web formu, reklam mesajları…"
               options={channelOptions}
               selected={form.channels}
               onChange={setArrayField("channels")}
             />
             <CheckboxGroup
-              label="Şu an takip nasıl yapılıyor?"
+              label="Şu an bu talepleri nasıl takip ediyorsunuz?"
               options={trackingOptions}
               selected={form.trackingMethod}
               onChange={setArrayField("trackingMethod")}
             />
             <CheckboxGroup
-              label="En büyük sorun nedir?"
+              label="En büyük takip sorununuz nedir?"
               options={issueOptions}
               selected={form.biggestIssue}
               onChange={setArrayField("biggestIssue")}
@@ -266,7 +273,7 @@ export function TrContactForm() {
 
         <div className="sm:col-span-2">
           <FormField
-            label="Mesaj / Mevcut Durum"
+            label="Ek not / mevcut durum"
             name="message"
             value={form.message}
             placeholder="Örn: Talepler genelde WhatsApp ve Instagram’dan geliyor, ama kimin takip ettiği bazen karışıyor."
@@ -283,11 +290,11 @@ export function TrContactForm() {
             <path fillRule="evenodd" clipRule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm-1-5a1 1 0 1 0 2 0V9a1 1 0 1 0-2 0v4Zm1-7a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" />
           </svg>
           <p className="text-sm text-rose-300">
-            {errorMessage || "Bir hata oluştu."} Lütfen tekrar deneyin veya doğrudan{" "}
+            Başvuru gönderilirken bir sorun oluştu. Lütfen tekrar deneyin veya{" "}
             <a href="https://wa.me/905331970462" className="underline underline-offset-2 hover:text-rose-200">
-              WhatsApp
-            </a>{" "}
-            üzerinden ulaşın.
+              WhatsApp&rsquo;tan yazın
+            </a>
+            .
           </p>
         </div>
       )}
@@ -307,7 +314,7 @@ export function TrContactForm() {
               Gönderiliyor...
             </>
           ) : (
-            "Müşteri Akışı Skorumu Al"
+            "Kurucu İşletme Başvurumu Gönder"
           )}
         </button>
         <p className="text-xs leading-5 text-slate-600">
@@ -315,6 +322,17 @@ export function TrContactForm() {
           <span className="text-[var(--color-accent)]">*</span>
         </p>
       </div>
+      <p className="mt-5 text-xs leading-5 text-slate-500">
+        Form yerine WhatsApp&rsquo;tan yazmak isterseniz:{" "}
+        <a
+          href="https://wa.me/905331970462?text=Merhaba%2C%20Norm%20Kurucu%20%C4%B0%C5%9Fletme%20Program%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-[var(--color-accent)] underline-offset-2 hover:underline"
+        >
+          Kurucu Programı konuşalım.
+        </a>
+      </p>
     </form>
   );
 }

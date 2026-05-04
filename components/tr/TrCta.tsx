@@ -7,21 +7,21 @@ const whatsappUrl =
 
 export function TrCta() {
   return (
-    <SectionShell id="basvur" className="pb-24">
+    <SectionShell id="basvur" className="pb-40 md:pb-24">
       <Reveal>
         <div className="text-center">
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-[2.8rem]">
-            Müşteri akışınızda fırsat nerede kaçıyor, birlikte çıkaralım.
+            İlk 10 Kurucu İşletmeden biri olmak için başvurun.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-400">
-            2 dakikalık formu doldurun. İşletmenizde müşteri taleplerinin nerede dağıldığını, hangi takiplerin geciktiğini ve Norm&apos;un nerede değer yaratabileceğini birlikte çıkaralım.
+            2 dakikalık formu doldurun. İşletmenizde müşteri taleplerinin nerede dağıldığını, hangi takiplerin geciktiğini ve Norm’un 14 günlük pilotta nerede değer yaratabileceğini birlikte çıkaralım.
           </p>
           <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
             <a
               href="#basvur"
               className="inline-flex min-h-[3.25rem] w-full items-center justify-center rounded-full bg-[var(--color-accent)] px-7 text-base font-semibold text-slate-950 shadow-[0_18px_54px_rgba(56,189,248,0.34)] transition-all hover:-translate-y-1 hover:bg-[var(--color-accent-strong)] sm:w-auto"
             >
-              Müşteri Akışı Analizimi Al
+              Kurucu İşletme Başvurusu
             </a>
             <a
               href={whatsappUrl}
@@ -39,7 +39,7 @@ export function TrCta() {
         <div className="surface-strong mt-14 rounded-[32px] p-8 shadow-[0_30px_100px_rgba(2,6,23,0.48)] sm:p-12">
           <h3 className="mb-2 text-xl font-semibold text-white">Kurucu İşletme Başvurusu</h3>
           <p className="mb-3 text-sm leading-6 text-slate-500">
-            Bu form, işletmenizde müşteri taleplerinin nerede dağıldığını anlamamız için kısa bir ön teşhistir. Bilgileri doldurun; size müşteri akışı analizini, ana takip riskinizi ve Norm&apos;un işletmenizde nerede değer yaratabileceğini çıkaralım.
+            Bu form, işletmenizin Norm Kurucu İşletme Programı’na uygun olup olmadığını anlamamız için kısa bir ön teşhistir.
           </p>
           <p className="mb-8 text-xs leading-5 text-slate-500">
             Önce işletmenizin mevcut müşteri akışını sade şekilde çıkarıyoruz. Uygun görürseniz sonraki adımda Norm&apos;un bu akışı nasıl toparlayabileceğini birlikte değerlendiriyoruz.
@@ -53,12 +53,12 @@ export function TrCta() {
                 <p className="mt-2 text-xs leading-5 text-slate-500">Kanallarınızı, takip yönteminizi ve en büyük kayıp noktalarınızı değerlendiriyoruz.</p>
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">2. Analizinizi çıkarıyoruz</p>
-                <p className="mt-2 text-xs leading-5 text-slate-500">Size müşteri akışı analizini, ana riskinizi ve ilk iyileştirme alanınızı netleştiriyoruz.</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">2. Kısa analiz çıkarıyoruz</p>
+                <p className="mt-2 text-xs leading-5 text-slate-500">Size müşteri akışınızda görünen ana riskleri ve ilk iyileştirme alanlarını iletiyoruz.</p>
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">3. Pilot programı konuşuyoruz</p>
-                <p className="mt-2 text-xs leading-5 text-slate-500">Uygunsa Norm&apos;un işletmenizde nasıl kurulabileceğini 15–30 dakikalık görüşmede gösteriyoruz.</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">3. Pilot uygunluğunu konuşuyoruz</p>
+                <p className="mt-2 text-xs leading-5 text-slate-500">Uygunsa 14 günlük Norm Kurucu İşletme Programı için kısa bir görüşme planlıyoruz.</p>
               </div>
             </div>
           </div>

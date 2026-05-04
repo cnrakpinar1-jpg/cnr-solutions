@@ -19,11 +19,6 @@ const cards = [
     title: "Takip Önerisi",
     body: "Her müşteri için sonraki doğru aksiyon. Ekip kimi ne zaman arayacağını rastgele değil, sistemli olarak bilir.",
   },
-  {
-    icon: "▣",
-    title: "Günlük İşletme Özeti",
-    body: "Bugün kaç talep geldi, kaçı sıcak, kaçı cevapsız kaldı. İşletme sahibi sabah ekrana bakarak gün içinde neyin öncelikli olduğunu görür.",
-  },
 ];
 
 export function TrNormIQ() {
@@ -32,12 +27,12 @@ export function TrNormIQ() {
       <Reveal>
         <SectionHeading
           eyebrow="Norm IQ"
-          title="Norm IQ: Müşteri akışınızın zeka katmanı"
-          description="Norm IQ, Norm'un içinde çalışan zekâ katmanıdır. Gelen müşteri görüşmelerini yalnızca kaydetmekle kalmaz; talebin sıcaklığını, niyetini, aciliyetini ve sonraki aksiyonunu görünür hale getirir."
+          title="Norm IQ: Sıcak fırsatları öne çıkaran zeka katmanı"
+          description="Norm IQ, gelen müşteri taleplerinin sıcaklığını, niyetini ve sonraki aksiyonunu görünür hale getirir. Ana ürün değildir; Norm’un içindeki önceliklendirme katmanıdır."
         />
       </Reveal>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2">
+      <div className="mt-10 grid gap-4 sm:grid-cols-3">
         {cards.map((card, i) => (
           <Reveal key={card.title} delay={i * 60}>
             <SurfaceCard className="h-full">
@@ -56,13 +51,6 @@ export function TrNormIQ() {
         ))}
       </div>
 
-      <Reveal delay={280}>
-        <div className="mt-8 rounded-[24px] border border-[rgba(125,211,252,0.12)] bg-[rgba(125,211,252,0.04)] px-8 py-6 text-center">
-          <p className="text-base font-semibold text-slate-300 sm:text-lg">
-            Norm IQ ayrı bir ürün veya chatbot değildir; Norm&apos;un içindeki zeka katmanıdır. Gelen müşteri akışını önceliklendirmek ve sıcak fırsatları öne çıkarmak için çalışır.
-          </p>
-        </div>
-      </Reveal>
     </SectionShell>
   );
 }
