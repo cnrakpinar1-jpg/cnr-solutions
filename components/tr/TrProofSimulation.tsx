@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
+import { NormLogoImage } from "@/components/shared/NormLogoImage";
 
 export function TrProofSimulation() {
   return (
@@ -18,10 +19,8 @@ export function TrProofSimulation() {
           {/* Card header */}
           <div className="flex items-center justify-between border-b border-white/8 bg-white/[0.03] px-6 py-4 sm:px-8">
             <div>
-              <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
-                Norm
-              </p>
-              <h3 className="mt-0.5 text-base font-semibold text-white">Kaçan Fırsat Raporu</h3>
+              <NormLogoImage className="h-5 w-auto object-contain" />
+              <h3 className="mt-2 text-base font-semibold text-white">Kaçan Fırsat Raporu</h3>
             </div>
             <span className="rounded-full border border-amber-300/24 bg-amber-300/10 px-3 py-1 text-xs font-semibold text-amber-300">
               Örnek / Demo Veri

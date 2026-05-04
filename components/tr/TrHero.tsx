@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
+import { NormLogoImage } from "@/components/shared/NormLogoImage";
 
 export function TrHero() {
   return (
@@ -14,13 +15,14 @@ export function TrHero() {
       <div className="container-shell">
         <div className="grid items-center gap-10 pb-16 pt-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-14 lg:pb-32 lg:pt-20">
           <Reveal className="max-w-3xl">
+            <NormLogoImage className="mb-3 h-6 w-auto object-contain sm:h-8" loading="eager" />
             <p className="eyebrow">Müşteri Akışı Standardı</p>
 
-            <h1 className="text-balance mt-4 text-[2.4rem] font-bold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-[3.6rem] lg:leading-[1.04]">
+            <h1 className="text-balance mt-4 text-[2.1rem] font-bold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-[3.6rem] lg:leading-[1.04]">
               Size yazan müşteriler artık kaybolmasın.
             </h1>
 
-            <p className="mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg sm:leading-9">
+            <p className="mt-5 max-w-[20rem] text-base leading-8 text-slate-300 sm:max-w-2xl sm:text-lg sm:leading-9">
               Norm, WhatsApp, Instagram, telefon, web formu ve reklamlardan gelen müşteri taleplerini tek akışta toplar. Kim sıcak müşteri, kime bugün dönülmeli, nerede fırsat kaçıyor gösterir.
             </p>
 

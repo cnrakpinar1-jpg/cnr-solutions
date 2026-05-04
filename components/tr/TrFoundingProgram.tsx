@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionShell } from "@/components/ui/SectionShell";
 import { Tag } from "@/components/ui/Tag";
+import { NormLogoImage } from "@/components/shared/NormLogoImage";
 
 const bullets = [
   "14 gün müşteri akışı takibi",
@@ -17,6 +18,7 @@ export function TrFoundingProgram() {
     <SectionShell id="kurucu-program">
       <Reveal>
         <div className="flex items-center gap-3 mb-4">
+          <NormLogoImage className="h-6 w-auto object-contain" />
           <Tag>14 Günlük Pilot</Tag>
         </div>
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-[2.8rem]">
