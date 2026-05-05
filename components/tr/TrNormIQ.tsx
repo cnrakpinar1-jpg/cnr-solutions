@@ -6,17 +6,17 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 const cards = [
   {
     icon: "◈",
-    title: "Talep Sıcaklığı",
+    title: "Müşteri ne kadar ilgili?",
     body: "Sıcak, ılık ve soğuk müşteri ayrımı. Ekip kime önce döneceğini bilir; sıcak fırsatlar ekip hafızasında kaybolmaz.",
   },
   {
     icon: "◎",
-    title: "Niyet Analizi",
+    title: "Ne istiyor?",
     body: "Randevu istiyor, fiyat soruyor, teklif bekliyor, kararsız veya takip edilmeli. Her görüşmenin ne aşamada olduğu görünür.",
   },
   {
     icon: "◇",
-    title: "Takip Önerisi",
+    title: "Ne zaman dönülmeli?",
     body: "Her müşteri için sonraki doğru aksiyon. Ekip kimi ne zaman arayacağını rastgele değil, sistemli olarak bilir.",
   },
 ];
@@ -26,9 +26,9 @@ export function TrNormIQ() {
     <SectionShell id="norm-iq">
       <Reveal>
         <SectionHeading
-          eyebrow="Norm IQ"
-          title="Norm IQ: Sıcak fırsatları öne çıkaran zeka katmanı"
-          description="Norm IQ, gelen müşteri taleplerinin sıcaklığını, niyetini ve sonraki aksiyonunu görünür hale getirir. Ana ürün değildir; Norm’un içindeki önceliklendirme katmanıdır."
+          eyebrow="Norm Takip Mantığı"
+          title="Norm Takip Mantığı: Sıcak fırsatları öne çıkaran önceliklendirme katmanı"
+          description="Norm Takip Mantığı, gelen müşteri taleplerinin sıcaklığını, niyetini ve sonraki aksiyonunu görünür hale getirir. Ana ürün değildir; Norm’un içindeki önceliklendirme katmanıdır."
         />
       </Reveal>
 

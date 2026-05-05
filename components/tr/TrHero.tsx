@@ -19,19 +19,25 @@ export function TrHero() {
             <p className="eyebrow">Müşteri Akışı Standardı</p>
 
             <h1 className="text-balance mt-4 text-[2.1rem] font-bold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-[3.6rem] lg:leading-[1.04]">
-              Size yazan müşteriler artık kaybolmasın.
+              Cevap verdiniz. Peki takip ettiniz mi?
             </h1>
 
             <p className="mt-5 max-w-[20rem] text-base leading-8 text-slate-300 sm:max-w-2xl sm:text-lg sm:leading-9">
-              Norm, WhatsApp, Instagram, telefon, web formu ve reklamlardan gelen müşteri taleplerini tek akışta toplar. Kim sıcak müşteri, kime bugün dönülmeli, nerede fırsat kaçıyor gösterir.
+              WhatsApp&rsquo;tan, Instagram&rsquo;dan, telefondan müşteri geliyor. Cevap da veriliyor. Ama cevap vermek yetmez — talebi takip etmek gerekir. Norm, gelen her talebi görünür bir fırsata dönüştürür ve işletmenizin sistematik takip yapmasını sağlar.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button href="#kurucu-program" className="w-full sm:w-auto">
                 Kurucu İşletme Olmak İstiyorum
               </Button>
-              <Button href="#rapor-ornegi" variant="secondary" className="w-full sm:w-auto">
-                Kaçan Fırsatlarımı Göster
+              <Button
+                href="https://norm.cnr-solutions.com/?demo=1"
+                variant="secondary"
+                className="w-full sm:w-auto"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Demo Ekranını Gör
               </Button>
             </div>
 

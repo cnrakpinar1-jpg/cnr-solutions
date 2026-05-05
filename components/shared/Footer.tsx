@@ -18,7 +18,7 @@ export function Footer({ locale }: FooterProps) {
           { href: "#kurucu-program", label: "Kurucu Program" },
           { href: "#kimler", label: "Kimler İçin?" },
           { href: "#rapor-ornegi", label: "Rapor Örneği" },
-          { href: "#basvur", label: "Başvur" },
+          { href: "#basvuru", label: "Başvur" },
         ]
       : [
           { href: "#cnr-norm", label: "CNR Norm" },
@@ -36,7 +36,7 @@ export function Footer({ locale }: FooterProps) {
           text: "Müşteri akışınızda fırsat nerede kaçıyor, birlikte çıkaralım.",
           note: "Ücretsiz Müşteri Akışı Analizi talepleri form üzerinden alınır.",
           cta: "Başvuruyu Aç",
-          href: "#basvur",
+          href: "#basvuru",
         }
       : {
           heading: "CONTACT",

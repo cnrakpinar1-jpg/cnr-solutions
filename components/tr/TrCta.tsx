@@ -7,7 +7,7 @@ const whatsappUrl =
 
 export function TrCta() {
   return (
-    <SectionShell id="basvur" className="pb-40 md:pb-24">
+    <SectionShell id="basvuru" className="pb-40 md:pb-24">
       <Reveal>
         <div className="text-center">
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-[2.8rem]">
@@ -18,7 +18,7 @@ export function TrCta() {
           </p>
           <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
             <a
-              href="#basvur"
+              href="#basvuru"
               className="inline-flex min-h-[3.25rem] w-full items-center justify-center rounded-full bg-[var(--color-accent)] px-7 text-base font-semibold text-slate-950 shadow-[0_18px_54px_rgba(56,189,248,0.34)] transition-all hover:-translate-y-1 hover:bg-[var(--color-accent-strong)] sm:w-auto"
             >
               Kurucu İşletme Başvurusu
@@ -41,8 +41,11 @@ export function TrCta() {
           <p className="mb-3 text-sm leading-6 text-slate-500">
             Bu form, işletmenizin Norm Kurucu İşletme Programı’na uygun olup olmadığını anlamamız için kısa bir ön teşhistir.
           </p>
-          <p className="mb-8 text-xs leading-5 text-slate-500">
+          <p className="mb-6 text-xs leading-5 text-slate-500">
             Önce işletmenizin mevcut müşteri akışını sade şekilde çıkarıyoruz. Uygun görürseniz sonraki adımda Norm&apos;un bu akışı nasıl toparlayabileceğini birlikte değerlendiriyoruz.
+          </p>
+          <p className="mb-8 text-sm leading-7 text-slate-400">
+            Aşağıdaki kısa formu doldurun. Uygun gördüğümüz işletmelerle Kurucu İşletme Programı sürecini ve sonraki adımları paylaşırız. Başvuruların tümüne dönüş yapılır.
           </p>
           <TrContactForm />
           <div className="mt-10 border-t border-white/8 pt-7">

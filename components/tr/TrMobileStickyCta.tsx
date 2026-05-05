@@ -6,7 +6,7 @@ export function TrMobileStickyCta() {
           İlk 10 Kurucu İşletme Programı
         </p>
         <a
-          href="#basvur"
+          href="#basvuru"
           className="flex-shrink-0 inline-flex min-h-9 items-center justify-center rounded-full bg-[var(--color-accent)] px-4 text-sm font-semibold text-slate-950 shadow-[0_8px_24px_rgba(56,189,248,0.22)] transition-all hover:bg-[var(--color-accent-strong)]"
         >
           Başvur

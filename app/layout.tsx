@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CNR Solutions | Modern İş Sistemleri",
+  title: "CNR Solutions | Müşteri Akışı Standardı",
   description:
-    "CNR Solutions builds modern business systems for sales, operations, customer management and data workflows.",
+    "Norm, WhatsApp, Instagram, telefon ve web formundan gelen müşteri taleplerini görünür bir takip akışına dönüştürür.",
 };
 
 export default function RootLayout({

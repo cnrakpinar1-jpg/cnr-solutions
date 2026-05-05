@@ -3,13 +3,17 @@ import { Header } from "@/components/shared/Header";
 import { Footer } from "@/components/shared/Footer";
 import { TrHero } from "@/components/tr/TrHero";
 import { TrProblem } from "@/components/tr/TrProblem";
+import { TrDemoBridge } from "@/components/tr/TrDemoBridge";
 import { TrFoundingProgram } from "@/components/tr/TrFoundingProgram";
 import { TrProcess } from "@/components/tr/TrSetupProcess";
 import { TrOpportunityCard } from "@/components/tr/TrOpportunityCard";
+import { TrSectorScenarios } from "@/components/tr/TrSectorScenarios";
 import { TrProofSimulation } from "@/components/tr/TrProofSimulation";
 import { TrWhoWeServe } from "@/components/tr/TrWhoWeServe";
 import { TrComparison } from "@/components/tr/TrComparison";
 import { TrNormIQ } from "@/components/tr/TrNormIQ";
+import { TrFounderNote } from "@/components/tr/TrFounderNote";
+import { TrTrust } from "@/components/tr/TrTrust";
 import { TrCta } from "@/components/tr/TrCta";
 import { TrMobileStickyCta } from "@/components/tr/TrMobileStickyCta";
 import { TrFloatingWhatsApp } from "@/components/tr/TrFloatingWhatsApp";
@@ -31,7 +35,7 @@ const navLinks = [
   { href: "#kurucu-program", label: "Kurucu Program" },
   { href: "#kimler", label: "Kimler İçin?" },
   { href: "#rapor-ornegi", label: "Rapor Örneği" },
-  { href: "#basvur", label: "Başvur" },
+  { href: "#basvuru", label: "Başvur" },
 ];
 
 export default function TrPage() {
@@ -44,13 +48,17 @@ export default function TrPage() {
       <Header locale="tr" navLinks={navLinks} />
       <TrHero />
       <TrProblem />
+      <TrDemoBridge />
       <TrFoundingProgram />
       <TrProcess />
       <TrOpportunityCard />
+      <TrSectorScenarios />
       <TrProofSimulation />
       <TrWhoWeServe />
       <TrComparison />
       <TrNormIQ />
+      <TrFounderNote />
+      <TrTrust />
       <TrCta />
       <Footer locale="tr" />
       <TrMobileStickyCta />

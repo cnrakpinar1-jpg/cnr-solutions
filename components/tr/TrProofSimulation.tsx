@@ -100,7 +100,7 @@ export function TrProofSimulation() {
             Bu yalnızca örnek bir rapor. Aynı analizi işletmeniz için de çıkarabiliriz.
           </p>
           <div className="mt-4 flex justify-center">
-            <Button href="#basvur">14 Günlük Pilota Başvur</Button>
+            <Button href="#basvuru">14 Günlük Pilota Başvur</Button>
           </div>
         </div>
       </Reveal>

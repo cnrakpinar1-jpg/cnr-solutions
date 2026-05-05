@@ -5,12 +5,10 @@ import { Tag } from "@/components/ui/Tag";
 import { NormLogoImage } from "@/components/shared/NormLogoImage";
 
 const bullets = [
-  "14 gün müşteri akışı takibi",
-  "Fırsat Kartları",
-  "Bugün dönülecekler listesi",
-  "Sıcak müşteri görünürlüğü",
-  "Takip boşluklarının tespiti",
-  "Pilot sonunda Kaçan Fırsat Raporu",
+  "Gelen talepler Fırsat Kartı'na dönüşür.",
+  "Sıcak, bekleyen ve takip isteyen müşteriler görünür olur.",
+  "Bugün kime dönüş yapılacağı netleşir.",
+  "14. gün sonunda işletmeye özel Müşteri Akışı Raporu çıkar.",
 ];
 
 export function TrFoundingProgram() {
@@ -24,6 +22,9 @@ export function TrFoundingProgram() {
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-[2.8rem]">
           İlk 10 Kurucu İşletme Programı
         </h2>
+        <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300">
+          14 günde müşteri akışınızı netleştiriyoruz. Reklamdan önce, gelen müşteriyi kaçırmadığınızdan emin olun.
+        </p>
       </Reveal>
 
       <Reveal delay={80}>
@@ -51,8 +52,12 @@ export function TrFoundingProgram() {
             ))}
           </ul>
 
+          <p className="mt-5 text-sm leading-7 text-slate-400">
+            Günde 5-10 dakika yeterli. Gelen talepleri Norm&apos;a bırakın; akışı birlikte netleştirelim.
+          </p>
+
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Button href="#basvur" className="w-full sm:w-auto">
+            <Button href="#basvuru" className="w-full sm:w-auto">
               Kurucu İşletme Olmak İstiyorum
             </Button>
           </div>

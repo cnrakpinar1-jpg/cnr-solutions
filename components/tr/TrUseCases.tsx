@@ -66,7 +66,7 @@ export function TrNormProduct() {
 
       <Reveal delay={360}>
         <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-7 text-slate-400">
-          Bu temel modüller CNR Norm’un müşteri akışı standardını kurar. CNR Norm IQ ise bu standardın üzerine eklenen zekâ katmanı olarak, gelen taleplerin sıcaklığını, niyetini ve takip önceliğini daha görünür hale getirir.
+          Bu temel modüller CNR Norm’un müşteri akışı standardını kurar. Norm Takip Mantığı ise bu standardın üzerine eklenen önceliklendirme katmanı olarak, gelen taleplerin sıcaklığını, niyetini ve takip önceliğini daha görünür hale getirir.
         </p>
         <TrScoreCta />
       </Reveal>
