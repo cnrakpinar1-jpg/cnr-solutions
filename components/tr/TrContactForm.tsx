@@ -325,12 +325,12 @@ export function TrContactForm() {
       <p className="mt-5 text-xs leading-5 text-slate-500">
         Form yerine WhatsApp&rsquo;tan yazmak isterseniz:{" "}
         <a
-          href="https://wa.me/905331970462?text=Merhaba%2C%20Norm%20Kurucu%20%C4%B0%C5%9Fletme%20Program%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+          href="https://wa.me/905331970462?text=Merhaba%2C%20CNR%20Norm%20i%C3%A7in%20m%C3%BC%C5%9Fteri%20ak%C4%B1%C5%9F%C4%B1%20analizi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%20%C4%B0%C5%9Fletmemde%20gelen%20taleplerin%20ve%20takiplerin%20daha%20d%C3%BCzenli%20hale%20gelmesini%20istiyorum."
           target="_blank"
           rel="noopener noreferrer"
           className="font-semibold text-[var(--color-accent)] underline-offset-2 hover:underline"
         >
-          Kurucu Programı konuşalım.
+          Akış analizini konuşalım.
         </a>
       </p>
     </form>

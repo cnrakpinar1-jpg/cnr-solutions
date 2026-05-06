@@ -8,8 +8,9 @@ export function TrProofSimulation() {
   return (
     <SectionShell id="rapor-ornegi">
       <Reveal>
+        <NormLogoImage className="mb-3 h-5 w-auto object-contain" loading="lazy" />
         <SectionHeading
-          title="Pilot sonunda Kaçan Fırsat Raporu alırsınız."
+          title="14 günlük süreç sonunda Kaçan Fırsat Raporu alırsınız."
           description="Bu rapor, işletmenize gelen müşteri taleplerinin nerede satışa veya randevuya dönüştüğünü, nerede takipte kaybolduğunu ve hangi düzenle iyileştirilebileceğini gösterir."
         />
       </Reveal>
@@ -100,7 +101,7 @@ export function TrProofSimulation() {
             Bu yalnızca örnek bir rapor. Aynı analizi işletmeniz için de çıkarabiliriz.
           </p>
           <div className="mt-4 flex justify-center">
-            <Button href="#basvuru">14 Günlük Pilota Başvur</Button>
+            <Button href="#basvuru">Akış Analizi Başvurusu</Button>
           </div>
         </div>
       </Reveal>

@@ -1,22 +1,24 @@
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/ui/SectionShell";
+import { NormLogoImage } from "@/components/shared/NormLogoImage";
 
 const bullets = [
-  "Norm, müşteriyle işletme arasındaki ilişkiye sahip olmaz.",
-  "Norm, hasta dosyası değil; talep ve takip akışı düzenler.",
-  "Kısa ve gerekli bilgi yeterlidir.",
-  "İletişim işletmenizin kendi kanalları üzerinden devam eder.",
-  "Gelen talepler düzenlenir. Takipler görünür olur. Kontrol sizde kalır.",
+  "Müşteri ilişkiniz işletmenizde kalır.",
+  "Her işletme kendi özel alanında çalışır.",
+  "Gereksiz veri toplamayız.",
+  "İsterseniz verilerinizi dışa aktarabilecek şekilde çalışırız.",
+  "Norm'un amacı müşteri verisini sahiplenmek değil, müşteri akışını görünür hale getirmektir.",
 ];
 
 export function TrTrust() {
   return (
     <SectionShell id="guven">
       <Reveal>
+        <NormLogoImage className="mb-3 h-5 w-auto object-contain" loading="lazy" />
         <SectionHeading
           title="Kontrol işletmenizde kalır."
-          description="Norm, müşteri akışınızı görünür hale getirir. Hangi bilgilerin girildiğine ve nasıl kullanılacağına siz karar verirsiniz."
+          description="Norm, hasta dosyası veya sağlık kaydı sistemi değildir. Gelen müşteri taleplerini, takipleri ve randevu akışını düzenlemek için kısa ve gerekli bilgilerle çalışır."
         />
       </Reveal>
 

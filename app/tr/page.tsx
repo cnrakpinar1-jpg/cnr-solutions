@@ -21,7 +21,7 @@ import { TrFloatingWhatsApp } from "@/components/tr/TrFloatingWhatsApp";
 export const metadata: Metadata = {
   title: "Norm | Müşteri Akışı Standardı — CNR Solutions",
   description:
-    "Norm, güzellik ve medikal estetik işletmeleri için WhatsApp, Instagram, telefon ve web formundan gelen müşteri taleplerini tek akışa bağlayan pilot sistemdir. İlk 10 kurucu işletme programına başvurun.",
+    "Norm, güzellik ve medikal estetik işletmeleri için WhatsApp, Instagram, telefon ve web formundan gelen müşteri taleplerini tek akışa bağlayan müşteri akışı sistemidir. İlk 10 Kurucu İşletme Programı'na başvurun.",
   openGraph: {
     title: "Norm | Müşteri Akışı Standardı — CNR Solutions",
     description:

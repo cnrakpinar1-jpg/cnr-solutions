@@ -17,8 +17,8 @@ const problems = [
     detail: "Arayan kişinin ne istediği ve kime dönüleceği görünmüyor.",
   },
   {
-    title: "Patron gerçek tabloyu göremiyor.",
-    detail: "Kaç kişi geldi, kaçı takip edildi, kaçı randevuya döndü bilinmiyor.",
+    title: "Randevu isteyen müşteri başka yere gidiyor.",
+    detail: "Cevap veriliyor ama takip edilmediği için sıcak talep soğuyor.",
   },
 ];
 

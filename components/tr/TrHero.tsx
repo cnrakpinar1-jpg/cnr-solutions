@@ -23,12 +23,12 @@ export function TrHero() {
             </h1>
 
             <p className="mt-5 max-w-[20rem] text-base leading-8 text-slate-300 sm:max-w-2xl sm:text-lg sm:leading-9">
-              WhatsApp&rsquo;tan, Instagram&rsquo;dan, telefondan müşteri geliyor. Cevap da veriliyor. Ama cevap vermek yetmez — talebi takip etmek gerekir. Norm, gelen her talebi görünür bir fırsata dönüştürür ve işletmenizin sistematik takip yapmasını sağlar.
+              WhatsApp&rsquo;tan, Instagram&rsquo;dan ve telefondan gelen müşteriler cevaplandıktan sonra takip edilmeden kayboluyor. Norm, gelen her talebi görünür hale getirir; sıcak müşteriyi, geciken takibi ve kaçan fırsat riskini tek ekranda gösterir.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <Button href="#kurucu-program" className="w-full sm:w-auto">
-                Kurucu İşletme Olmak İstiyorum
+              <Button href="#basvuru" className="w-full sm:w-auto">
+                Müşteri Akışımı Analiz Et
               </Button>
               <Button
                 href="https://norm.cnr-solutions.com/?demo=1"
@@ -43,10 +43,10 @@ export function TrHero() {
 
             <div className="mt-5 max-w-xl rounded-2xl border border-white/10 bg-white/[0.035] px-4 py-3">
               <p className="text-xs font-semibold text-slate-300">
-                Kurucu işletme kontenjanı: 10 işletme
+                İlk 10 kurucu işletme seçiliyor.
               </p>
               <p className="mt-1 text-xs text-slate-500">
-                Öncelik: güzellik ve medikal estetik işletmeleri.
+                Öncelik: güzellik merkezleri, medikal estetik ve diş klinikleri.
               </p>
             </div>
           </Reveal>
@@ -55,7 +55,7 @@ export function TrHero() {
             <div className="surface-strong rounded-[24px] p-6 sm:p-8 w-full">
               <div className="flex items-center justify-between mb-5">
                 <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
-                  14 Günlük Pilot Önizlemesi
+                  Kaçan Fırsat Raporu Önizlemesi
                 </p>
                 <span className="rounded-full border border-amber-300/24 bg-amber-300/10 px-2.5 py-0.5 text-[0.6rem] font-semibold text-amber-300">
                   Örnek / Demo Veri

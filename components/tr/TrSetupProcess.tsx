@@ -14,7 +14,7 @@ const steps = [
   },
   {
     eyebrow: "3. Kaçağı Göster",
-    body: "14 günlük pilot sonunda hangi fırsatların takipte kaybolduğunu ve nerede iyileştirme yapılması gerektiğini raporlar.",
+    body: "14 günlük süreç sonunda hangi fırsatların takipte kaybolduğunu ve nerede iyileştirme yapılması gerektiğini raporlar.",
   },
 ];
 
