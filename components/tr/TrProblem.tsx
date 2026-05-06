@@ -5,20 +5,20 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const problems = [
   {
-    title: "Instagram DM'leri satışa bağlanmıyor.",
-    detail: "Fiyat soran kişiler konuşma kutusunda unutuluyor.",
-  },
-  {
-    title: "WhatsApp takip listesine dönüşmüyor.",
-    detail: "Cevap veriliyor ama sonraki adım belirsiz kalıyor.",
-  },
-  {
-    title: "Telefon görüşmeleri kayıt altına alınmıyor.",
-    detail: "Arayan kişinin ne istediği ve kime dönüleceği görünmüyor.",
+    title: "Fiyat soran müşteri takip edilmiyor.",
+    detail: "Cevap veriliyor ama sonraki dönüş netleşmediği için sıcak talep soğuyor.",
   },
   {
     title: "Randevu isteyen müşteri başka yere gidiyor.",
-    detail: "Cevap veriliyor ama takip edilmediği için sıcak talep soğuyor.",
+    detail: "Uygun saat konuşuluyor ama takip edilmediğinde müşteri rakibe kayabiliyor.",
+  },
+  {
+    title: "Telefonla arayan müşteri kayda girmiyor.",
+    detail: "Arayan kişinin ne istediği, kime dönüş yapılacağı ve hangi aşamada kaldığı görünmüyor.",
+  },
+  {
+    title: "Patron gerçek müşteri akışını göremiyor.",
+    detail: "Kaç talep geldi, kaçı takip edildi, kaçı randevuya veya satışa döndü bilinmiyor.",
   },
 ];
 

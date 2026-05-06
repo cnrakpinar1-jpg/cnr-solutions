@@ -5,15 +5,19 @@ import { FormField } from "@/components/ui/FormField";
 import { submitContactForm } from "@/app/actions/contact";
 
 const sectorOptions = [
-  "Klinik / Sağlık",
-  "Güzellik & Medikal Estetik",
-  "Oto Servis / Detailing",
-  "Kurs / Eğitim Merkezi",
-  "Mobilya / Dekorasyon",
-  "Danışmanlık / Hizmet",
-  "Perakende / Yerel İşletme",
+  "Oto servis / ekspertiz / detailing",
+  "Kurs / eğitim merkezi",
+  "Emlak ofisi",
+  "Mobilya / dekorasyon / teklifli işler",
+  "Güzellik / bakım hizmetleri",
+  "Danışmanlık / hizmet işletmesi",
   "Diğer",
 ];
+
+const whatsappMessage =
+  "Merhaba, Norm’un 14 günlük ücretsiz müşteri akışı analizi hakkında bilgi almak istiyorum. İşletmemde gelen taleplerin ve takiplerin daha düzenli hale gelmesini istiyorum.";
+const whatsappUrl =
+  `https://wa.me/905331970462?text=${encodeURIComponent(whatsappMessage)}`;
 
 const dailyInquiryOptions = ["0–10", "10–30", "30–50", "50+"];
 
@@ -167,12 +171,12 @@ export function TrContactForm() {
           Başvurunuz alındı. İşletmenizin müşteri akışını inceleyip uygunluk durumuna göre sizinle iletişime geçeceğiz.
         </p>
         <a
-          href="https://wa.me/905331970462"
+          href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="mt-6 inline-flex min-h-[2.75rem] items-center justify-center rounded-full border border-[rgba(125,211,252,0.24)] bg-[rgba(125,211,252,0.07)] px-5 text-sm font-semibold text-[var(--color-accent)] transition-all hover:bg-[rgba(125,211,252,0.12)]"
         >
-          Form yerine WhatsApp&rsquo;tan yazmak isterseniz: Kurucu Programı konuşalım.
+          Form yerine WhatsApp&rsquo;tan yazmak isterseniz: Akış analizini konuşalım.
         </a>
       </div>
     );
@@ -291,7 +295,7 @@ export function TrContactForm() {
           </svg>
           <p className="text-sm text-rose-300">
             Başvuru gönderilirken bir sorun oluştu. Lütfen tekrar deneyin veya{" "}
-            <a href="https://wa.me/905331970462" className="underline underline-offset-2 hover:text-rose-200">
+            <a href={whatsappUrl} className="underline underline-offset-2 hover:text-rose-200">
               WhatsApp&rsquo;tan yazın
             </a>
             .
@@ -314,7 +318,7 @@ export function TrContactForm() {
               Gönderiliyor...
             </>
           ) : (
-            "Kurucu İşletme Başvurumu Gönder"
+            "Ücretsiz Akış Analizi Başvurumu Gönder"
           )}
         </button>
         <p className="text-xs leading-5 text-slate-600">
@@ -325,7 +329,7 @@ export function TrContactForm() {
       <p className="mt-5 text-xs leading-5 text-slate-500">
         Form yerine WhatsApp&rsquo;tan yazmak isterseniz:{" "}
         <a
-          href="https://wa.me/905331970462?text=Merhaba%2C%20CNR%20Norm%20i%C3%A7in%20m%C3%BC%C5%9Fteri%20ak%C4%B1%C5%9F%C4%B1%20analizi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%20%C4%B0%C5%9Fletmemde%20gelen%20taleplerin%20ve%20takiplerin%20daha%20d%C3%BCzenli%20hale%20gelmesini%20istiyorum."
+          href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="font-semibold text-[var(--color-accent)] underline-offset-2 hover:underline"

@@ -4,25 +4,28 @@ import { SectionShell } from "@/components/ui/SectionShell";
 
 const scenarios = [
   {
-    sector: "Güzellik Merkezi",
-    before:
-      "Instagram'dan lazer epilasyon fiyatı soran kişi cevap aldıktan sonra DM kutusunda unutulur.",
-    after:
-      "Norm'da sıcak fırsat olarak görünür. Takip günü belirlenir. Bugün kime dönülecek listesine düşer.",
+    title: "Randevu talebi alan işletmeler",
+    detail:
+      "Müşteri uygun saat sorar, bilgi alır, sonra takip edilmezse başka yere gider.",
+    example: "Örnek: oto ekspertiz, bakım hizmetleri, kurs, kuaför.",
   },
   {
-    sector: "Diş Kliniği",
-    before:
-      "Protez veya implant için bilgi alan kişi not defterinde kalır, takip edilmez.",
-    after:
-      "Talep kartı oluşur. Randevuya dönmemiş talepler görünür olur. Asistan ne zaman dönüş yapacağını bilir.",
+    title: "Teklif / fiyat talebi alan işletmeler",
+    detail:
+      "Fiyat isteyen müşteri dönüş bekler; takip gecikirse aynı işi rakip alır.",
+    example: "Örnek: mobilya, dekorasyon, cam balkon, tabela.",
   },
   {
-    sector: "Emlak Ofisi",
-    before:
-      "Web formundan gelen 3+1 daire talebi kimse fark etmeden kaybolur.",
-    after:
-      "Talep fırsat kartına dönüşür. Satın alma niyeti ve takip zamanı görünür olur.",
+    title: "Bilgi talebi toplayan işletmeler",
+    detail:
+      "‘Detay alabilir miyim?’ diyen kişiler konuşma kutusunda kalır; kim sıcak, kim bekliyor görünmez.",
+    example: "Örnek: eğitim merkezi, danışmanlık, emlak, hizmet ofisleri.",
+  },
+  {
+    title: "Telefonla yoğun talep alan işletmeler",
+    detail:
+      "Aramalar notlara veya hafızaya kalır; dönüş zamanı ve sorumlusu netleşmez.",
+    example: "Örnek: teknik servis, oto servis, yerel hizmet işletmeleri.",
   },
 ];
 
@@ -30,29 +33,24 @@ export function TrSectorScenarios() {
   return (
     <SectionShell id="sektorler">
       <Reveal>
-        <SectionHeading title="İşletmenizde nasıl görünür?" />
+        <SectionHeading title="Sektör değişse de problem aynı: gelen talep takip edilmezse kaybolur." />
       </Reveal>
 
-      <div className="mt-10 grid gap-5 sm:grid-cols-3">
+      <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {scenarios.map((s, i) => (
-          <Reveal key={s.sector} delay={i * 80}>
+          <Reveal key={s.title} delay={i * 80}>
             <div className="flex h-full flex-col overflow-hidden rounded-[20px] border border-white/8 bg-white/[0.02]">
               <div className="border-b border-white/8 px-5 py-3">
                 <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
-                  {s.sector}
+                  Akış örneği
                 </p>
               </div>
               <div className="flex-1 border-b border-white/6 px-5 py-4">
-                <p className="mb-2 text-[0.6rem] font-semibold uppercase tracking-[0.12em] text-slate-600">
-                  Şimdi
-                </p>
-                <p className="text-sm leading-6 text-slate-500">{s.before}</p>
+                <h3 className="text-base font-semibold leading-6 text-white">{s.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-400">{s.detail}</p>
               </div>
-              <div className="flex-1 bg-[rgba(125,211,252,0.03)] px-5 py-4">
-                <p className="mb-2 text-[0.6rem] font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">
-                  Norm ile
-                </p>
-                <p className="text-sm leading-6 text-slate-300">{s.after}</p>
+              <div className="bg-[rgba(125,211,252,0.03)] px-5 py-4">
+                <p className="text-xs leading-5 text-slate-500">{s.example}</p>
               </div>
             </div>
           </Reveal>

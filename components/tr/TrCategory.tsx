@@ -7,7 +7,7 @@ export function TrCategory() {
       <Reveal>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-balance text-3xl font-bold leading-[1.15] tracking-tight text-white sm:text-4xl lg:text-[2.6rem]">
-            CNR Norm bir araç değil, müşteri akışı standardıdır.
+            Norm bir araç değil, müşteri akışı standardıdır.
           </h2>
 
           <div className="mt-8 space-y-5 text-base leading-8 text-slate-400">
@@ -18,7 +18,7 @@ export function TrCategory() {
               Sorun çoğu zaman müşteri gelmemesi değildir. Sorun, gelen müşteri görüşmelerinin ortak bir düzene bağlanmadan dağınık kalmasıdır.
             </p>
             <p>
-              CNR Norm, bu dağınıklığı işletmenin yeni müşteri akışı normuna dönüştürür. Ekip neyi takip edeceğini bilir, işletme sahibi süreci görür, müşteri görüşmeleri randevuya, teklife ve satışa daha düzenli ilerler.
+              Norm, bu dağınıklığı işletmenin yeni müşteri akışı düzenine dönüştürür. Ekip neyi takip edeceğini bilir, işletme sahibi süreci görür, müşteri görüşmeleri randevuya, teklife ve satışa daha düzenli ilerler.
             </p>
           </div>
 

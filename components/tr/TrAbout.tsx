@@ -14,7 +14,7 @@ export function TrAbout() {
           <div className="mt-8 space-y-5 text-base leading-8 text-slate-400">
             <p>
               CNR Solutions, Türkiye&rsquo;deki işletmeleri ve KOBİ&rsquo;leri yapay zekâ çağına pratik iş
-              sistemleriyle hazırlamak için kuruldu.
+              sistemleriyle hazırlama amacıyla yola çıktı.
             </p>
             <p>
               Biz yapay zekâyı süslü bir teknoloji vitrini olarak değil, işletmelerin gerçek
@@ -23,7 +23,7 @@ export function TrAbout() {
             <p>
               Bir işletmede müşteri talebi kayboluyorsa, takip kişilerin hafızasına kalıyorsa,
               teklifler gecikiyorsa, ekipler Excel ve WhatsApp arasında sıkışıyorsa, yönetim işi
-              net göremiyorsa; orada daha iyi bir sistem kurulması gerekir.
+              net göremiyorsa; orada daha iyi bir sistem gerekir.
             </p>
             <p>
               Biz bu sistemi kurarız.

@@ -19,13 +19,13 @@ import { TrMobileStickyCta } from "@/components/tr/TrMobileStickyCta";
 import { TrFloatingWhatsApp } from "@/components/tr/TrFloatingWhatsApp";
 
 export const metadata: Metadata = {
-  title: "Norm | Müşteri Akışı Standardı — CNR Solutions",
+  title: "Norm | Müşteri Akışı Standardı",
   description:
-    "Norm, güzellik ve medikal estetik işletmeleri için WhatsApp, Instagram, telefon ve web formundan gelen müşteri taleplerini tek akışa bağlayan müşteri akışı sistemidir. İlk 10 Kurucu İşletme Programı'na başvurun.",
+    "Norm, WhatsApp, Instagram, telefon ve web formundan gelen müşteri taleplerini tek akışta görünür hale getiren müşteri akışı sistemidir. Randevu, teklif ve bilgi taleplerini takip edin; geciken dönüşleri ve kaçan fırsat riskini görün.",
   openGraph: {
-    title: "Norm | Müşteri Akışı Standardı — CNR Solutions",
+    title: "Norm | Müşteri Akışı Standardı",
     description:
-      "Dağınık müşteri görüşmelerini standart, görünür ve takip edilebilir bir akışa dönüştürün. Norm ile ilk 10 kurucu işletme programına katılın.",
+      "Norm, WhatsApp, Instagram, telefon ve web formundan gelen müşteri taleplerini tek akışta görünür hale getiren müşteri akışı sistemidir. Randevu, teklif ve bilgi taleplerini takip edin; geciken dönüşleri ve kaçan fırsat riskini görün.",
   },
 };
 

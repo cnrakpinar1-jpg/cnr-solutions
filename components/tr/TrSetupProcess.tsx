@@ -5,16 +5,16 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const steps = [
   {
-    eyebrow: "1. Yakala",
-    body: "WhatsApp, Instagram, telefon, web formu ve reklam kanallarından gelen müşteri talepleri tek akışta toplanır.",
+    eyebrow: "1. Akışı çıkarıyoruz",
+    body: "WhatsApp, Instagram, telefon ve formdan gelen taleplerin nasıl takip edildiğini birlikte netleştiriyoruz.",
   },
   {
-    eyebrow: "2. Takip Et",
-    body: "Norm, hangi müşterinin sıcak olduğunu, kime bugün dönülmesi gerektiğini ve hangi fırsatın beklediğini gösterir.",
+    eyebrow: "2. Norm’u kuruyoruz",
+    body: "Gelen taleplerin Fırsat Kartı’na dönüşeceği, takiplerin görünür olacağı sade bir alan oluşturuyoruz.",
   },
   {
-    eyebrow: "3. Kaçağı Göster",
-    body: "14 günlük süreç sonunda hangi fırsatların takipte kaybolduğunu ve nerede iyileştirme yapılması gerektiğini raporlar.",
+    eyebrow: "3. Raporluyoruz",
+    body: "14 günlük süreç sonunda hangi fırsatların takipte kaybolduğunu ve nerede iyileştirme yapılması gerektiğini raporlarız.",
   },
 ];
 

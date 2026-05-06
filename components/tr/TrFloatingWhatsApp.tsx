@@ -1,5 +1,7 @@
+const whatsappMessage =
+  "Merhaba, Norm’un 14 günlük ücretsiz müşteri akışı analizi hakkında bilgi almak istiyorum. İşletmemde gelen taleplerin ve takiplerin daha düzenli hale gelmesini istiyorum.";
 const whatsappUrl =
-  "https://wa.me/905331970462?text=Merhaba%2C%20Norm%20Kurucu%20%C4%B0%C5%9Fletme%20Program%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.";
+  `https://wa.me/905331970462?text=${encodeURIComponent(whatsappMessage)}`;
 
 export function TrFloatingWhatsApp() {
   return (
@@ -7,7 +9,7 @@ export function TrFloatingWhatsApp() {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-20 right-4 z-40 inline-flex max-w-[calc(100vw-2rem)] items-center gap-3 rounded-2xl border border-[rgba(125,211,252,0.28)] bg-[rgba(8,12,24,0.92)] px-4 py-3 text-left shadow-[0_18px_60px_rgba(2,6,23,0.55)] backdrop-blur-md transition-all hover:-translate-y-1 hover:border-[rgba(125,211,252,0.45)] hover:bg-[rgba(12,18,34,0.96)] sm:px-5 md:bottom-6 md:right-6"
+      className="fixed bottom-20 right-4 z-40 hidden max-w-[calc(100vw-2rem)] items-center gap-3 rounded-2xl border border-[rgba(125,211,252,0.28)] bg-[rgba(8,12,24,0.92)] px-4 py-3 text-left shadow-[0_18px_60px_rgba(2,6,23,0.55)] backdrop-blur-md transition-all hover:-translate-y-1 hover:border-[rgba(125,211,252,0.45)] hover:bg-[rgba(12,18,34,0.96)] sm:px-5 md:bottom-6 md:right-6 md:inline-flex"
       aria-label="WhatsApp'tan yaz"
     >
       <span
@@ -39,7 +41,7 @@ export function TrFloatingWhatsApp() {
           WhatsApp’tan Yaz
         </span>
         <span className="hidden text-xs leading-5 text-slate-400 md:block">
-          Kurucu Programı konuşalım
+          Ücretsiz akış analizini konuşalım
         </span>
       </span>
     </a>

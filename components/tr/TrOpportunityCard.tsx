@@ -34,7 +34,7 @@ export function TrOpportunityCard() {
             </div>
             <div className="flex items-center justify-between rounded-xl border border-white/8 bg-white/[0.02] px-4 py-2.5">
               <span className="text-xs text-slate-400">Talep</span>
-              <span className="text-sm font-semibold text-white">Lazer epilasyon fiyat/randevu</span>
+              <span className="text-sm font-semibold text-white">Fiyat / teklif talebi</span>
             </div>
             <div className="flex items-center justify-between rounded-xl border border-emerald-300/12 bg-emerald-300/[0.05] px-4 py-2.5">
               <span className="text-xs text-slate-400">Sıcaklık</span>
@@ -42,11 +42,11 @@ export function TrOpportunityCard() {
             </div>
             <div className="flex items-center justify-between rounded-xl border border-white/8 bg-white/[0.02] px-4 py-2.5">
               <span className="text-xs text-slate-400">Durum</span>
-              <span className="text-sm font-semibold text-white">Fiyat bekliyor</span>
+              <span className="text-sm font-semibold text-white">Dönüş bekliyor</span>
             </div>
             <div className="flex items-center justify-between rounded-xl border border-[rgba(125,211,252,0.12)] bg-[rgba(125,211,252,0.05)] px-4 py-2.5">
               <span className="text-xs text-slate-400">Sonraki Aksiyon</span>
-              <span className="text-sm font-semibold text-[var(--color-accent)]">Randevu teklifi gönder</span>
+              <span className="text-sm font-semibold text-[var(--color-accent)]">Teklif dönüşü yap</span>
             </div>
             <div className="flex items-center justify-between rounded-xl border border-amber-300/12 bg-amber-300/[0.05] px-4 py-2.5">
               <span className="text-xs text-slate-400">Takip Zamanı</span>

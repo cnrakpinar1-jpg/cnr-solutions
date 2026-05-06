@@ -129,7 +129,7 @@ function PortalMockup() {
     <div className="rounded-xl border border-white/8 bg-white/[0.03] p-3 space-y-3">
       <div>
         <p className="text-[0.6rem] font-semibold uppercase tracking-wider text-[var(--color-accent)]">Proje Durumu</p>
-        <p className="mt-0.5 text-[0.65rem] font-medium text-slate-200">Müşteri Sistemi Kurulumu</p>
+        <p className="mt-0.5 text-[0.65rem] font-medium text-slate-200">Müşteri Sistemi Uygulaması</p>
         <div className="mt-2 h-1.5 w-full rounded-full bg-white/[0.06]">
           <div className="h-1.5 w-[72%] rounded-full bg-[var(--color-accent)]" />
         </div>
@@ -175,7 +175,7 @@ const demos: Demo[] = [
     ],
     sonuc: "Dağınık talepler düzenli bir akışa dönüşür.",
     mockup: <InboxMockup />,
-    who: ["KOBİ'ler", "Klinikler", "Hizmet işletmeleri", "Satış ekipleri olan firmalar"],
+    who: ["KOBİ'ler", "Hizmet işletmeleri", "Yerel işletmeler", "Satış ekipleri olan firmalar"],
     outcomes: [
       "Dağınık taleplerin tek yerde toplanması",
       "Görev ve takip netliği",
@@ -251,7 +251,7 @@ const demos: Demo[] = [
     ],
     sonuc: "Müşteri iletişimi daha düzenli ve güven verici olur.",
     mockup: <PortalMockup />,
-    who: ["Danışmanlık firmaları", "Klinikler", "Proje bazlı çalışan işletmeler"],
+    who: ["Danışmanlık firmaları", "Hizmet işletmeleri", "Proje bazlı çalışan işletmeler"],
     outcomes: [
       "Müşteri memnuniyetinde artış",
       "Ekip üzerindeki bilgilendirme yükünün azalması",
@@ -360,7 +360,7 @@ export function TrDemoSystems() {
           <SectionHeading
             eyebrow="Örnek sistemler"
             title="Nasıl sistemler kurabildiğimizi görün."
-            description="Aşağıdaki örnekler; işletmeler için kurulabilecek sistem türlerini göstermek için hazırlanmış demo yapılardır. Bunlar hazır şablon değil, gerçek iş akışlarına göre şekillenebilen sistem örnekleridir."
+            description="Aşağıdaki örnekler; işletmeler için hazırlanabilecek sistem türlerini göstermek için hazırlanmış demo yapılardır. Bunlar hazır şablon değil, gerçek iş akışlarına göre şekillenebilen sistem örnekleridir."
           />
           <p className="mt-4 text-xs text-slate-600">
             Gerçek ihtiyaçlara göre özelleştirilir. Her işletmenin sistemi kendi akışına göre şekillenir.

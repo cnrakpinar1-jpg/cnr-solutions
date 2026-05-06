@@ -15,7 +15,7 @@ const services = [
   },
   {
     title: "WhatsApp / Instagram / Form Akışları",
-    body: "Farklı kanallardan gelen müşteri görüşmelerini CNR Norm düzenine bağlarız.",
+    body: "Farklı kanallardan gelen müşteri görüşmelerini Norm düzenine bağlarız.",
   },
   {
     title: "Takip ve Hatırlatma Sistemleri",
@@ -31,11 +31,11 @@ const services = [
   },
   {
     title: "Sektörel Uyarlamalar",
-    body: "Klinik, güzellik merkezi, oto servis, kurs, danışmanlık ve teklifli iş yapan firmalar için CNR Norm'u sektöre göre yapılandırırız.",
+    body: "Randevu, teklif veya bilgi talebi alan hizmet işletmeleri için Norm’u iş akışına göre yapılandırırız.",
   },
   {
     title: "Özel İş Sistemleri",
-    body: "CNR Norm'un dışında kalan daha büyük operasyon, veri odası, raporlama ve iş akışı ihtiyaçları için özel sistemler geliştiririz.",
+    body: "Norm’un dışında kalan daha büyük operasyon, veri odası, raporlama ve iş akışı ihtiyaçları için özel sistemler geliştiririz.",
   },
 ];
 
@@ -47,10 +47,10 @@ export function TrServices() {
           <Tag>Destekleyici Hizmetler</Tag>
         </div>
         <div className="mt-4">
-          <SectionHeading title="CNR Norm'u güçlendiren hizmetlerimiz" />
+          <SectionHeading title="Norm'u güçlendiren hizmetlerimiz" />
         </div>
         <p className="mt-4 max-w-2xl text-base leading-7 text-slate-400">
-          CNR Norm ana ürünümüzdür. Diğer hizmetlerimiz, işletmenizde müşteri akışını daha doğru kurmak, ölçmek, genişletmek ve sürdürülebilir hale getirmek için CNR Norm etrafında konumlanır.
+          Norm ana ürünümüzdür. Diğer hizmetlerimiz, işletmenizde müşteri akışını daha doğru kurmak, ölçmek, genişletmek ve sürdürülebilir hale getirmek için Norm etrafında konumlanır.
         </p>
       </Reveal>
 
@@ -67,11 +67,11 @@ export function TrServices() {
 
       <Reveal delay={180}>
         <p className="mt-8 text-sm text-slate-400 text-center">
-          Bu hizmetlerin amacı ayrı ayrı yazılım satmak değil; CNR Norm&rsquo;un işletmenizde gerçek bir müşteri akışı standardına dönüşmesini sağlamaktır.
+          Bu hizmetlerin amacı ayrı ayrı yazılım satmak değil; Norm&rsquo;un işletmenizde gerçek bir müşteri akışı standardına dönüşmesini sağlamaktır.
         </p>
         <div className="mt-6 flex justify-center">
           <Button href="#musteri-akisi-skoru" variant="secondary">
-            CNR Norm’un İşletmenize Nasıl Kurulacağını Çıkaralım
+            Norm’un İşletmenizde Nasıl Uygulanacağını Çıkaralım
           </Button>
         </div>
       </Reveal>

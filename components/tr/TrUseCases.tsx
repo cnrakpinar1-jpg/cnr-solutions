@@ -31,9 +31,9 @@ const features = [
     body: "Formlar, hatırlatmalar, bildirimler ve takip akışları işletmenin çalışma düzenine göre yapılandırılır.",
   },
   {
-    badge: "Sector Norm",
-    subtitle: "Sektöre göre norm kurulur",
-    body: "Klinik, güzellik merkezi, oto servis, kurs, danışmanlık, mobilya/dekorasyon ve benzeri işletmeler için müşteri akışı özelleştirilir.",
+    badge: "Flow Norm",
+    subtitle: "İşletmenizin akışına göre uyarlanır",
+    body: "Randevu, teklif, fiyat ve bilgi talebi alan hizmet işletmeleri için müşteri akışı özelleştirilir.",
   },
 ];
 
@@ -43,10 +43,10 @@ export function TrNormProduct() {
       <Reveal>
         <SectionHeading
           eyebrow="Ana Ürün"
-          title="CNR Norm: İşletmenizin müşteri akışı standardı"
+          title="Norm: İşletmenizin müşteri akışı standardı"
         />
         <p className="mt-5 max-w-2xl text-base leading-7 text-slate-400">
-          CNR Norm, işletmenize gelen müşteri görüşmelerini tek düzene alan, ekibin takip disiplinini netleştiren ve görüşmeden satışa kadar olan süreci görünür hale getiren pratik bir iş sistemidir.
+          Norm, işletmenize gelen müşteri görüşmelerini tek düzene alan, ekibin takip disiplinini netleştiren ve görüşmeden satışa kadar olan süreci görünür hale getiren pratik bir iş sistemidir.
         </p>
       </Reveal>
 
@@ -66,7 +66,7 @@ export function TrNormProduct() {
 
       <Reveal delay={360}>
         <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-7 text-slate-400">
-          Bu temel modüller CNR Norm’un müşteri akışı standardını kurar. Norm Takip Mantığı ise bu standardın üzerine eklenen önceliklendirme katmanı olarak, gelen taleplerin sıcaklığını, niyetini ve takip önceliğini daha görünür hale getirir.
+          Bu temel modüller Norm’un müşteri akışı standardını kurar. Norm Takip Mantığı ise bu standardın üzerine eklenen önceliklendirme katmanı olarak, gelen taleplerin sıcaklığını, niyetini ve takip önceliğini daha görünür hale getirir.
         </p>
         <TrScoreCta />
       </Reveal>

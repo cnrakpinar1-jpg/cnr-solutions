@@ -18,7 +18,7 @@ export function TrTrust() {
         <NormLogoImage className="mb-3 h-5 w-auto object-contain" loading="lazy" />
         <SectionHeading
           title="Kontrol işletmenizde kalır."
-          description="Norm, hasta dosyası veya sağlık kaydı sistemi değildir. Gelen müşteri taleplerini, takipleri ve randevu akışını düzenlemek için kısa ve gerekli bilgilerle çalışır."
+          description="Norm, müşteri taleplerini, takipleri ve randevu/teklif akışını düzenlemek için kısa ve gerekli bilgilerle çalışır. Amacı müşteri verisini sahiplenmek değil, işletmenizin müşteri akışını görünür hale getirmektir."
         />
       </Reveal>
 

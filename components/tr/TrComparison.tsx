@@ -23,7 +23,7 @@ export function TrComparison() {
       <Reveal>
         <SectionHeading title="Bir CRM daha değil. Müşteri kaçırmama sistemi." />
         <p className="mt-5 max-w-2xl text-base leading-8 text-slate-400">
-          Norm&apos;un amacı işletmeye bir ekran daha vermek değildir. Amaç, gelen müşteri talebinin satışa veya randevuya dönüşene kadar takipten düşmemesidir.
+          CRM müşteri kaydı tutar. Norm, gelen talebin randevuya, teklife veya satışa dönüşmeden nerede beklediğini gösterir ve işletmeniz için müşteri akışı standardı kurar.
         </p>
       </Reveal>
 
@@ -64,8 +64,8 @@ export function TrComparison() {
       <Reveal delay={200}>
         <div className="mt-10 rounded-[24px] border border-[rgba(125,211,252,0.12)] bg-[rgba(125,211,252,0.04)] px-8 py-6 text-center">
           <p className="text-base font-semibold text-slate-300 sm:text-lg">
-            Bizim odağımız daha fazla ekran değil;{" "}
-            <span className="text-[var(--color-accent)]">gelen müşterinin takipten düşmemesi.</span>
+            Norm, hizmet işletmeleri için{" "}
+            <span className="text-[var(--color-accent)]">Müşteri Akışı Standardı&rsquo;dır.</span>
           </p>
         </div>
       </Reveal>

@@ -5,32 +5,28 @@ import { SurfaceCard } from "@/components/ui/SurfaceCard";
 
 const segments = [
   {
-    title: "Güzellik merkezleri ve medikal estetik işletmeleri",
-    description: "Instagram’dan fiyat soran müşterilerinizin kaçı gerçekten randevuya dönüyor? Instagram’dan fiyat soran danışanlar, WhatsApp’tan randevu isteyenler ve telefonla bilgi alan kişiler tek takip akışında kaybolmadan ilerlesin.",
+    title: "Randevu talebi alan hizmet işletmeleri",
+    description: "WhatsApp, Instagram, telefon veya formdan gelen randevu talepleri takipten düşmeden ilerlesin.",
   },
   {
-    title: "Diş klinikleri",
-    description: "Hasta adayı görüşmeleri ekip hafızasına değil, takip sistemine bağlansın.",
+    title: "Teklif / fiyat talebi alan firmalar",
+    description: "Fiyat soran müşterilerin kimde beklediği, kime dönüş yapılacağı ve hangi fırsatın sıcak olduğu görünür olsun.",
   },
   {
-    title: "Oto servis, ekspertiz ve detailing işletmeleri",
-    description: "WhatsApp'tan gelen servis talepleri teklif ve randevuya bağlansın.",
+    title: "Bilgi talebi toplayan işletmeler",
+    description: "Detay isteyen müşteriler konuşma kutusunda kalmasın; takip zamanı ve sonraki adım netleşsin.",
   },
   {
-    title: "Kurslar ve eğitim merkezleri",
-    description: "Veli ve öğrenci görüşmeleri kayıt, takip ve ödeme sürecine düzenli ilerlesin.",
+    title: "Telefonla yoğun talep alan işletmeler",
+    description: "Arayan müşterilerin ne istediği, kime dönüş yapılacağı ve hangi aşamada kaldığı takip edilsin.",
   },
   {
-    title: "Mobilya, mutfak, banyo ve dekorasyon firmaları",
-    description: "Fiyat soruları ve teklifler sistemli takip edilsin; fırsat penceresi kapanmasın.",
+    title: "Ekipli takip yapan KOBİ’ler",
+    description: "Müşteri dönüşleri ekip hafızasına kalmasın; günlük takip listesi herkes için görünür olsun.",
   },
   {
-    title: "Danışmanlık ve hizmet işletmeleri",
-    description: "Gelen görüşmeler kaybolmadan teklif ve satış sürecine bağlansın.",
-  },
-  {
-    title: "Yoğun müşteri görüşmesi alan KOBİ'ler",
-    description: "Birden fazla kanaldan müşteri al, ama süreci rastgele değil standart takip et.",
+    title: "Çok kanallı müşteri akışı olan işletmeler",
+    description: "Instagram, WhatsApp, telefon ve form talepleri tek düzende toplansın; kaçan fırsat riski azalsın.",
   },
 ];
 
@@ -47,7 +43,7 @@ export function TrWhoWeServe() {
             <SurfaceCard className={`h-full hover:-translate-y-1 ${i === 0 ? "border-[rgba(125,211,252,0.22)] bg-[rgba(125,211,252,0.04)]" : ""}`}>
               {i === 0 && (
                 <span className="mb-3 inline-block text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
-                  Öncelikli Sektör
+                  Uygun Profil
                 </span>
               )}
               <h3 className="text-base font-semibold text-white">{seg.title}</h3>

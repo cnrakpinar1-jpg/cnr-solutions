@@ -8,10 +8,10 @@ export function TrFounderNote() {
         <div className="mx-auto max-w-2xl">
           <span className="eyebrow">Kurucudan kısa not</span>
           <p className="mt-6 text-base leading-8 text-slate-400">
-            Ben Çınar. Sahada işletmelerin müşteri taleplerini WhatsApp, Instagram, telefon ve notlar
-            arasında kaybettiğini gördüm. Norm&apos;u, özellikle küçük ve orta ölçekli işletmelerin
-            gelen talebi daha düzenli takip edebilmesi için geliştiriyorum. İlk kurucu işletmelerle
-            beraber ürünü gerçek kullanımda iyileştiriyoruz.
+            Ben Çınar. Bu problemi farklı işletmelerde aynı şekilde gördük: müşteri geliyor,
+            cevap alıyor ama takip edilmediği için fırsat kayboluyor. Norm&apos;u, küçük ve orta
+            ölçekli hizmet işletmelerinin gelen talebi daha düzenli takip edebilmesi için
+            geliştiriyorum. İlk kurucu işletmelerle beraber ürünü gerçek kullanımda iyileştiriyoruz.
           </p>
         </div>
       </Reveal>

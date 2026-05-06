@@ -30,7 +30,7 @@ export function TrFoundingProgram() {
       <Reveal delay={80}>
         <div className="surface-strong mt-8 rounded-[24px] p-8 sm:p-10">
           <p className="text-base leading-8 text-slate-300 max-w-2xl">
-            Norm&apos;u ilk aşamada 10 seçili işletmeyle kontrollü şekilde kuruyoruz. Bu süreçte gelen talepleri, randevu takiplerini ve sıcak fırsatları görünür hale getiriyoruz.
+            Norm’u ilk aşamada 10 farklı hizmet işletmesiyle ücretsiz ve kontrollü şekilde uyguluyoruz. Bu süreçte randevu, teklif ve bilgi taleplerinin nerede beklediğini ve hangi fırsatların takipte kaybolduğunu görünür hale getiriyoruz.
           </p>
 
           <div className="mt-6 rounded-[16px] border border-amber-300/20 bg-amber-300/[0.04] px-5 py-4">
@@ -40,7 +40,7 @@ export function TrFoundingProgram() {
           </div>
 
           <p className="mt-6 max-w-2xl text-sm leading-7 text-slate-400">
-            Bu sürecin amacı yeni bir yazılım denetmek değil; işletmenizde müşteri fırsatlarının nerede kaçtığını 14 gün içinde görünür hale getirmektir.
+            Bu sürecin amacı yeni bir yazılım denetmek değil; işletmenize gelen müşteri taleplerinin nerede kaybolduğunu 14 gün içinde görünür hale getirmektir.
           </p>
 
           <ul className="mt-7 space-y-3">
@@ -57,33 +57,25 @@ export function TrFoundingProgram() {
           </p>
 
           <div className="mt-6 rounded-[16px] border border-white/10 bg-white/[0.025] px-5 py-5">
-            <p className="text-sm font-semibold text-white">Kurucu işletmelere özel başlangıç</p>
+            <p className="text-sm font-semibold text-white">İlk 10 işletme için ücretsiz saha uygulaması</p>
             <p className="mt-2 text-sm leading-7 text-slate-400">
-              İlk 10 işletme için kurulum ve aylık destek modeliyle ilerliyoruz. Net teklif, kısa akış analizinden sonra işletmenin ihtiyacına göre belirlenir.
+              Norm’u ilk aşamada 10 seçili hizmet işletmesiyle ücretsiz olarak uyguluyoruz.
+              14 gün boyunca gelen talepleri, geciken takipleri ve kaçan fırsat risklerini birlikte görünür hale getiriyoruz.
             </p>
-            <div className="mt-3 grid gap-2 text-sm text-slate-300 sm:grid-cols-2">
-              <div className="flex items-baseline justify-between rounded-lg border border-white/8 bg-white/[0.025] px-3 py-2">
-                <span className="text-xs text-slate-500">Kurulum</span>
-                <span className="font-semibold text-white">7.500 – 10.000 TL&rsquo;den başlar</span>
-              </div>
-              <div className="flex items-baseline justify-between rounded-lg border border-white/8 bg-white/[0.025] px-3 py-2">
-                <span className="text-xs text-slate-500">Aylık destek</span>
-                <span className="font-semibold text-white">1.500 – 2.500 TL&rsquo;den başlar</span>
-              </div>
-            </div>
-            <p className="mt-3 text-xs leading-5 text-slate-500">
-              Ücretsiz demo vardır. Tamamen ücretsiz pilot yoktur; süreç kurulum ve destek emeği içerir.
+            <p className="mt-3 text-sm leading-7 text-slate-400">
+              Program sonunda işletmenize özel kısa bir Müşteri Akışı Raporu sunulur.
+              Bu süreçte ücret alınmaz; karşılığında gerçek kullanım geri bildirimi ve anonimleştirilmiş sonuçları öğrenme izni isteriz.
             </p>
           </div>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Button href="#basvuru" className="w-full sm:w-auto">
-              Müşteri Akışımı Analiz Et
+              Ücretsiz Akış Analizine Başvur
             </Button>
           </div>
 
           <p className="mt-4 text-xs text-slate-500">
-            Öncelik: güzellik merkezleri, medikal estetik ve diş klinikleri.
+            Randevu, teklif veya bilgi talebi alan hizmet işletmeleri için.
           </p>
         </div>
       </Reveal>

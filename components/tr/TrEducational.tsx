@@ -34,7 +34,7 @@ const readinessLayers = [
   {
     step: "03",
     title: "Sistem",
-    description: "CRM, dashboard, portal ve otomasyon katmanı kurulur.",
+    description: "CRM, dashboard, portal ve otomasyon katmanı oluşturulur.",
     accent: "from-emerald-300/18 to-emerald-300/[0.03]",
   },
   {
@@ -135,7 +135,7 @@ export function TrEducational() {
           <Reveal delay={80}>
             <div className="mt-7 inline-flex rounded-2xl border border-[rgba(125,211,252,0.18)] bg-[rgba(125,211,252,0.06)] px-6 py-4">
               <p className="text-base font-semibold text-white sm:text-lg">
-                Önce sistem kurulur.{" "}
+                Önce sistem netleşir.{" "}
                 <span className="text-[var(--color-accent)]">Sonra yapay zekâ o sistemi hızlandırır.</span>
               </p>
             </div>

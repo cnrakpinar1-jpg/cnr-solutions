@@ -11,14 +11,14 @@ export function TrProofSimulation() {
         <NormLogoImage className="mb-3 h-5 w-auto object-contain" loading="lazy" />
         <SectionHeading
           title="14 günlük süreç sonunda Kaçan Fırsat Raporu alırsınız."
-          description="Bu rapor, işletmenize gelen müşteri taleplerinin nerede satışa veya randevuya dönüştüğünü, nerede takipte kaybolduğunu ve hangi düzenle iyileştirilebileceğini gösterir."
+          description="Bu rapor, işletmenize gelen müşteri taleplerinin nerede randevuya, teklife veya satışa dönüştüğünü, nerede takipte kaybolduğunu ve hangi düzenle iyileştirilebileceğini gösterir."
         />
       </Reveal>
 
       <Reveal delay={100}>
         <div className="surface-strong mt-10 overflow-hidden rounded-[24px] shadow-[0_26px_86px_rgba(2,6,23,0.48)]">
           {/* Card header */}
-          <div className="flex items-center justify-between border-b border-white/8 bg-white/[0.03] px-6 py-4 sm:px-8">
+          <div className="flex flex-col items-start gap-3 border-b border-white/8 bg-white/[0.03] px-6 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-8">
             <div>
               <NormLogoImage className="h-5 w-auto object-contain" />
               <h3 className="mt-2 text-base font-semibold text-white">Kaçan Fırsat Raporu</h3>
@@ -32,8 +32,8 @@ export function TrProofSimulation() {
             {/* Left: business info + score */}
             <div className="px-6 py-6 sm:px-8 space-y-4">
               <div>
-                <p className="text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-slate-500 mb-1">Sektör</p>
-                <p className="text-sm font-medium text-white">Güzellik merkezi</p>
+                <p className="text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-slate-500 mb-1">İşletme türü</p>
+                <p className="text-sm font-medium text-white">Hizmet işletmesi</p>
               </div>
               <div>
                 <p className="text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-slate-500 mb-1">Kanallar</p>
@@ -63,23 +63,23 @@ export function TrProofSimulation() {
                 <span className="text-sm font-semibold text-[var(--color-accent)]">74</span>
               </div>
               <div className="flex items-center justify-between rounded-xl border border-emerald-300/12 bg-emerald-300/[0.05] px-3 py-2">
-                <span className="text-xs text-slate-400">Yüksek niyetli fırsat</span>
+                <span className="text-xs text-slate-400">Sıcak fırsat</span>
                 <span className="text-sm font-semibold text-emerald-300">23</span>
               </div>
               <div className="flex items-center justify-between rounded-xl border border-amber-300/12 bg-amber-300/[0.05] px-3 py-2">
-                <span className="text-xs text-slate-400">Bugün takip edilmesi gereken</span>
+                <span className="text-xs text-slate-400">Takipte bekleyen müşteri</span>
                 <span className="text-sm font-semibold text-amber-300">11</span>
               </div>
               <div className="flex items-center justify-between rounded-xl border border-amber-300/12 bg-amber-300/[0.05] px-3 py-2">
-                <span className="text-xs text-slate-400">Geç dönülen müşteri</span>
+                <span className="text-xs text-slate-400">Geciken takip</span>
                 <span className="text-sm font-semibold text-amber-300">8</span>
               </div>
               <div className="flex items-center justify-between rounded-xl border border-rose-300/16 bg-rose-300/[0.05] px-3 py-2">
-                <span className="text-xs text-slate-400">Takip edilmeden kalan</span>
+                <span className="text-xs text-slate-400">Kaçan fırsat riski</span>
                 <span className="text-sm font-semibold text-rose-300">5</span>
               </div>
               <div className="flex items-center justify-between rounded-xl border border-emerald-300/12 bg-emerald-300/[0.05] px-3 py-2">
-                <span className="text-xs text-slate-400">Randevuya dönen</span>
+                <span className="text-xs text-slate-400">Randevu / teklif / bilgi talebi</span>
                 <span className="text-sm font-semibold text-emerald-300">12</span>
               </div>
 
@@ -88,7 +88,7 @@ export function TrProofSimulation() {
                 <div className="flex items-start gap-2.5 rounded-xl border border-rose-300/16 bg-rose-300/[0.05] px-4 py-3">
                   <span className="mt-0.5 text-rose-400 shrink-0 select-none">▲</span>
                   <p className="text-sm leading-6 text-slate-300">
-                    Fiyat soran müşterilere sistemli takip yapılmıyor.
+                    Fiyat / teklif talebi alan müşterilerde geciken takip oluşuyor.
                   </p>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export function TrProofSimulation() {
             Bu yalnızca örnek bir rapor. Aynı analizi işletmeniz için de çıkarabiliriz.
           </p>
           <div className="mt-4 flex justify-center">
-            <Button href="#basvuru">Akış Analizi Başvurusu</Button>
+            <Button href="#basvuru">Ücretsiz Akış Analizine Başvur</Button>
           </div>
         </div>
       </Reveal>

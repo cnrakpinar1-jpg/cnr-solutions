@@ -23,12 +23,16 @@ export function TrHero() {
             </h1>
 
             <p className="mt-5 max-w-[20rem] text-base leading-8 text-slate-300 sm:max-w-2xl sm:text-lg sm:leading-9">
-              WhatsApp&rsquo;tan, Instagram&rsquo;dan ve telefondan gelen müşteriler cevaplandıktan sonra takip edilmeden kayboluyor. Norm, gelen her talebi görünür hale getirir; sıcak müşteriyi, geciken takibi ve kaçan fırsat riskini tek ekranda gösterir.
+              WhatsApp&rsquo;tan, Instagram&rsquo;dan, telefondan veya formdan gelen müşteri talepleri cevaplandıktan sonra takip edilmeden kaybolabiliyor. Norm; randevu isteyen, fiyat soran veya dönüş bekleyen müşterileri görünür hale getirir. Sıcak talepleri, geciken takipleri ve kaçan fırsat riskini tek ekranda gösterir.
+            </p>
+
+            <p className="mt-4 max-w-[20rem] text-sm font-semibold leading-7 text-slate-200 sm:max-w-xl">
+              Norm, randevu, teklif ve bilgi talepleri için işletmenizde sade bir müşteri akışı standardı kurar.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button href="#basvuru" className="w-full sm:w-auto">
-                Müşteri Akışımı Analiz Et
+                Ücretsiz Akış Analizine Başvur
               </Button>
               <Button
                 href="https://norm.cnr-solutions.com/?demo=1"
@@ -46,14 +50,17 @@ export function TrHero() {
                 İlk 10 kurucu işletme seçiliyor.
               </p>
               <p className="mt-1 text-xs text-slate-500">
-                Öncelik: güzellik merkezleri, medikal estetik ve diş klinikleri.
+                14 günlük ücretsiz müşteri akışı analizi için sınırlı kontenjan.
+              </p>
+              <p className="mt-1 text-xs text-slate-500">
+                Randevu, teklif veya bilgi talebi alan hizmet işletmeleri için.
               </p>
             </div>
           </Reveal>
 
           <Reveal delay={120} className="w-full min-w-0">
             <div className="surface-strong rounded-[24px] p-6 sm:p-8 w-full">
-              <div className="flex items-center justify-between mb-5">
+              <div className="mb-5 flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
                 <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
                   Kaçan Fırsat Raporu Önizlemesi
                 </p>

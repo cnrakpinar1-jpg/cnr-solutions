@@ -2,8 +2,10 @@ import { Reveal } from "@/components/ui/Reveal";
 import { SectionShell } from "@/components/ui/SectionShell";
 import { TrContactForm } from "@/components/tr/TrContactForm";
 
+const whatsappMessage =
+  "Merhaba, Norm’un 14 günlük ücretsiz müşteri akışı analizi hakkında bilgi almak istiyorum. İşletmemde gelen taleplerin ve takiplerin daha düzenli hale gelmesini istiyorum.";
 const whatsappUrl =
-  "https://wa.me/905331970462?text=Merhaba%2C%20CNR%20Norm%20i%C3%A7in%20m%C3%BC%C5%9Fteri%20ak%C4%B1%C5%9F%C4%B1%20analizi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%20%C4%B0%C5%9Fletmemde%20gelen%20taleplerin%20ve%20takiplerin%20daha%20d%C3%BCzenli%20hale%20gelmesini%20istiyorum.";
+  `https://wa.me/905331970462?text=${encodeURIComponent(whatsappMessage)}`;
 
 export function TrCta() {
   return (
@@ -14,14 +16,14 @@ export function TrCta() {
             İşletmenizde müşteri talepleri nerede kayboluyor?
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-400">
-            2 dakikalık formu doldurun. Mevcut müşteri akışınızı inceleyelim; gelen taleplerin, geciken takiplerin ve kaçan fırsat risklerinin nerede oluştuğunu birlikte görelim.
+            2 dakikalık formu doldurun. İlk 10 kurucu işletme için 14 günlük ücretsiz müşteri akışı analizi açıyoruz. Mevcut müşteri akışınızı inceleyelim; geciken takiplerin ve kaçan fırsat risklerinin nerede oluştuğunu birlikte görelim.
           </p>
           <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
             <a
               href="#basvuru"
               className="inline-flex min-h-[3.25rem] w-full items-center justify-center rounded-full bg-[var(--color-accent)] px-7 text-base font-semibold text-slate-950 shadow-[0_18px_54px_rgba(56,189,248,0.34)] transition-all hover:-translate-y-1 hover:bg-[var(--color-accent-strong)] sm:w-auto"
             >
-              Akış Analizi Başvurusu
+              Ücretsiz Akış Analizine Başvur
             </a>
             <a
               href={whatsappUrl}
@@ -39,7 +41,7 @@ export function TrCta() {
         <div className="surface-strong mt-14 rounded-[32px] p-8 shadow-[0_30px_100px_rgba(2,6,23,0.48)] sm:p-12">
           <h3 className="mb-2 text-xl font-semibold text-white">Kurucu İşletme Başvurusu</h3>
           <p className="mb-3 text-sm leading-6 text-slate-500">
-            Bu form, işletmenizin Kurucu İşletme Programı’na uygun olup olmadığını anlamamız için kısa bir ön teşhistir.
+            Bu form, işletmenizin ücretsiz Kurucu İşletme Programı’na uygun olup olmadığını anlamamız için kısa bir ön teşhistir.
           </p>
           <p className="mb-6 text-xs leading-5 text-slate-500">
             Önce işletmenizin mevcut müşteri akışını sade şekilde çıkarıyoruz. Uygun görürseniz sonraki adımda Norm&apos;un bu akışı nasıl toparlayabileceğini birlikte değerlendiriyoruz.
@@ -61,7 +63,7 @@ export function TrCta() {
               </div>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-accent)]">3. Programı konuşuyoruz</p>
-                <p className="mt-2 text-xs leading-5 text-slate-500">Uygunsa 14 günlük Kurucu İşletme Programı için kısa bir görüşme planlıyoruz.</p>
+                <p className="mt-2 text-xs leading-5 text-slate-500">Uygunsa 14 günlük ücretsiz Kurucu İşletme Programı için kısa bir görüşme planlıyoruz.</p>
               </div>
             </div>
           </div>
